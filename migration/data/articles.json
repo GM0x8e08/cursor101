@@ -1,0 +1,338 @@
+[
+  {
+    "fields": {
+      "Title": "Semi-Fungible Assets and the Future of Compute Markets",
+      "Key Takeaways": "\u2022 Compute is a semi-fungible asset with heterogeneous characteristics\n\u2022 Traditional financial derivatives frameworks can be applied to compute markets\n\u2022 Crypto enables programmable, composable compute asset trading\n\nExplores treating compute (GPU/CPU) as a semi-fungible tradable asset class. Discusses how crypto can enable spot/futures markets for compute resources, formal pricing frameworks for semi-fungible assets, and implications for AI agents consuming compute at scale. Published by Anagram.",
+      "Date Published": "2025-01-01",
+      "URL": "https://blog.anagram.xyz/semi-fungible-assets-and-the-future-of-compute-markets/",
+      "Type": "Research Paper",
+      "Publisher": "Anagram",
+      "Author(s)": [
+        "Theodora Diamandis"
+      ],
+      "Themes": [
+        "recL8qNIY2DXgYOkt"
+      ]
+    }
+  },
+  {
+    "fields": {
+      "Title": "Traditional Power Markets Are The Analog (Thread by @0xturbanurban)",
+      "Key Takeaways": "\u2022 Traditional power markets provide a template for compute derivatives\n\u2022 Electricity markets have capacity (rights) and energy (delivery) layers\n\u2022 Compute markets lack standardization but are moving toward it\n\nThread comparing compute markets to traditional commodity/power markets. Breaks compute into three layers (the chip as capital asset, GPU-hours as fungible rental, tokens as branded fuel). Argues token pricing across providers (OpenAI, Anthropic, Google) is non-comparable due to proprietary tokenizers and non-stationary value. Draws parallels to electricity capacity vs. energy layers as a template for compute derivatives.",
+      "Date Published": "2025-04-01",
+      "URL": "https://x.com/0xturbanurban/status/2047159953157214715",
+      "Type": "Blog Post",
+      "Publisher": "X",
+      "Author(s)": [
+        "0xturbanurban"
+      ],
+      "Themes": [
+        "recL8qNIY2DXgYOkt"
+      ]
+    }
+  },
+  {
+    "fields": {
+      "Title": "100,000 H100 Clusters: Power, Network Topology, Ethernet vs InfiniBand, Reliability, Failures, Checkpointing",
+      "Key Takeaways": "\u2022 100K GPU clusters face significant power and reliability challenges\n\u2022 Memory checkpointing is critical for fault tolerance\n\u2022 Network topology (InfiniBand vs Ethernet) impacts cluster performance\n\nSemiAnalysis deep-dive (Jun 2024) on building 100K+ H100 GPU clusters for frontier model training. Covers power requirements (>150MW, 1.59 TWh/year), network topology (InfiniBand vs Ethernet), fault recovery through memory reconstruction, rack layouts, and checkpointing. Contextualizes the race between OpenAI/Microsoft, xAI, and Meta to build massive training clusters costing $4B+ in server capex each.",
+      "Date Published": "2024-06-17",
+      "URL": "https://newsletter.semianalysis.com/p/100000-h100-clusters-power-network",
+      "Type": "Industry Analysis",
+      "Publisher": "SemiAnalysis",
+      "Author(s)": [
+        "Dylan Patel",
+        "Daniel Nishball"
+      ],
+      "Themes": [
+        "recaVy3RP4F3pkout"
+      ]
+    }
+  },
+  {
+    "fields": {
+      "Title": "China's CXMT Is Set to Challenge DRAM Incumbents",
+      "Key Takeaways": "\u2022 CXMT is challenging DRAM incumbents with state backing\n\u2022 HBM demand is driving memory shortages\n\u2022 China's semiconductor ambitions are accelerating despite export controls\n\nSemiAnalysis deep-dive (Jun 2026) on CXMT ahead of its STAR Market IPO, potentially the largest semiconductor IPO in China. Covers CXMT's history since 2016, technology transfer from Micron, founder Zhu Yiming's background, process node deficit vs. Samsung/SK Hynix/Micron, China's HBM ambitions, and memory supply implications from AI-driven demand.",
+      "Date Published": "2026-06-23",
+      "URL": "https://newsletter.semianalysis.com/p/chinas-cxmt-is-set-to-challenge-dram",
+      "Type": "Industry Analysis",
+      "Publisher": "SemiAnalysis",
+      "Author(s)": [
+        "Ray Wang",
+        "Myron Xie",
+        "Dylan Patel"
+      ],
+      "Themes": [
+        "recaVy3RP4F3pkout"
+      ]
+    }
+  },
+  {
+    "fields": {
+      "Title": "The Commoditization of Compute: Why GPU Infrastructure Needs a Derivatives Market",
+      "Key Takeaways": "\u2022 GPU infrastructure needs a derivatives market to manage price risk\n\u2022 Standardized contracts are essential for market liquidity\n\u2022 Compute is becoming a commodity with unique characteristics\n\nBy Ronit Jain (Jun 2026). Argues GPU compute qualifies for commoditization and needs a derivatives market. Covers structural conditions (measurement, basis risk management, standard contracts), maps market participants and risks, and surveys derivative instruments required. Introduces Pluto's product architecture for this market.",
+      "Date Published": "2026-06-29",
+      "URL": "https://ronitrjain.substack.com/p/the-commoditization-of-compute-why",
+      "Type": "Blog Post",
+      "Publisher": "Substack",
+      "Author(s)": [
+        "Ronit Jain"
+      ],
+      "Companies Mentioned": [
+        "Architect"
+      ],
+      "Themes": [
+        "recL8qNIY2DXgYOkt"
+      ]
+    }
+  },
+  {
+    "fields": {
+      "Title": "Compute is the Commodity No One Knows How to Price",
+      "Key Takeaways": "\u2022 Compute pricing is opaque and volatile\n\u2022 No forward curve exists for compute resources\n\u2022 Electricity markets offer lessons for compute market development\n\nBy Dave Friedman (Feb 2026). Draws parallels between electricity markets and compute markets. Argues the core problem is the absence of a forward curve for compute, which prevents proper GPU financing and hedging. Discusses H100 price collapse ($8 to $2-3/hr), CoreWeave's $14B+ debt financing, and why lenders can't underwrite GPU-backed loans without standardized pricing infrastructure.",
+      "Date Published": "2026-02-04",
+      "URL": "https://davefriedman.substack.com/p/compute-is-the-commodity-no-one-knows",
+      "Type": "Blog Post",
+      "Publisher": "Substack",
+      "Author(s)": [
+        "Dave Friedman"
+      ],
+      "Themes": [
+        "recL8qNIY2DXgYOkt",
+        "rechjPrNupEz4Fvty"
+      ]
+    }
+  },
+  {
+    "fields": {
+      "Title": "Compute Markets Framework: 5 Conditions for Futures Trading (Thread by @firstc0in)",
+      "Key Takeaways": "\u2022 5 conditions needed for futures markets: fragmentation, volatility, settlement, standardization, no substitutes\n\u2022 Compute market currently meets only some conditions\n\u2022 Market is evolving but not yet mature for robust futures trading\n\nVariant framework for evaluating compute market readiness for futures trading. Outlines 5 preconditions: supply-side fragmentation, price volatility, physical settlement infrastructure, standardization, absence of substitutes. Scores current compute market: volatility (green), settlement infrastructure (green), substitutes (yellow), supply fragmentation (red), standardization (red). Concludes market not yet mature for robust futures market.",
+      "Date Published": "2026-05-12",
+      "URL": "https://x.com/firstc0in/status/2054314730182070565",
+      "Type": "Blog Post",
+      "Publisher": "X",
+      "Author(s)": [
+        "Caleb Shack",
+        "Alana Levin"
+      ],
+      "Themes": [
+        "recL8qNIY2DXgYOkt"
+      ]
+    }
+  },
+  {
+    "fields": {
+      "Title": "A Framework for Valuing Bitcoin Miners as AI Infrastructure",
+      "Key Takeaways": "\u2022 Bitcoin miners can pivot to AI infrastructure, creating new revenue streams\n\u2022 Valuation framework compares mining hardware utility for both crypto and AI workloads\n\u2022 Hybrid miners may command premium valuations as AI compute demand grows\n\nVanEck research analyzing how Bitcoin mining companies can transition to AI infrastructure providers. Proposes valuation framework treating mining hardware as dual-use AI compute assets.",
+      "Date Published": "2024-11-01",
+      "URL": "https://www.vaneck.com/us/en/blogs/digital-assets/matthew-sigel-a-framework-for-valuing-bitcoin-miners-as-ai-infrastructure/",
+      "Type": "Industry Analysis",
+      "Publisher": "VanEck",
+      "Author(s)": [
+        "Matthew Sigel"
+      ],
+      "Themes": [
+        "rechjPrNupEz4Fvty",
+        "recaVy3RP4F3pkout"
+      ]
+    }
+  },
+  {
+    "fields": {
+      "Title": "Nvidia GPU Debt Backstop Unleashes the AI Project Trinity",
+      "Key Takeaways": "\u2022 Nvidia provides take-or-pay commitment (backstop) to Neoclouds as minimum revenue guarantee on GPU capacity\n\u2022 Over $7T in AI debt projected by 2029\n\u2022 Three-way partnership between Nvidia, Neoclouds, and data centers (AI Project Trinity) is essential for compute market growth\n\nAnalysis of Nvidia's debt backstop program that provides revenue guarantees to Neoclouds, enabling the AI Project Trinity of capital, offtake agreements, and datacenters. Critical for understanding how AI infrastructure debt is being structured and scaled.",
+      "Date Published": "2026-07-06",
+      "URL": "https://newsletter.semianalysis.com/p/nvidia-gpu-debt-backstop-unleashes",
+      "Type": "Industry Analysis",
+      "Publisher": "SemiAnalysis",
+      "Companies Mentioned": [
+        "NVIDIA"
+      ],
+      "Themes": [
+        "rechjPrNupEz4Fvty"
+      ]
+    }
+  },
+  {
+    "fields": {
+      "Title": "Post by @0xMetaLight on Compute Markets",
+      "Key Takeaways": "\u2022 Social media post about compute markets\n\u2022 Content details unavailable due to scraping limitations\n\u2022 Author likely discusses crypto/compute intersection\n\nX/Twitter post by @0xMetaLight discussing compute markets. Specific content could not be retrieved due to temporary service unavailability.",
+      "Date Published": null,
+      "URL": "https://x.com/0xMetaLight/status/2074883460942959100",
+      "Type": "Blog Post",
+      "Publisher": "X",
+      "Author(s)": [
+        "0xMetaLight"
+      ],
+      "Themes": [
+        "recL8qNIY2DXgYOkt"
+      ]
+    }
+  },
+  {
+    "fields": {
+      "Title": "Some Bitcoin Mines can be AI Data Centers; Most Can't",
+      "Key Takeaways": "\u2022 Converting bitcoin mines to AI data centers is not as straightforward as commonly believed\n\u2022 Mining requires cheap, interruptible, geo-flexible power in remote locations\n\u2022 AI data centers have different power needs and infrastructure requirements\n\nDetailed analysis arguing that the crypto-miner-to-AI-data-center conversion narrative is overstated. Mining facilities have fundamentally different characteristics than what AI workloads require.",
+      "Date Published": "2026-07-06",
+      "URL": "https://davefriedman.substack.com/p/some-bitcoin-mines-can-be-ai-data",
+      "Type": "Blog Post",
+      "Publisher": "Substack",
+      "Author(s)": [
+        "Dave Friedman"
+      ],
+      "Themes": [
+        "recaVy3RP4F3pkout"
+      ]
+    }
+  },
+  {
+    "fields": {
+      "Title": "The Growing Compute Shortage",
+      "Key Takeaways": "\u2022 On-demand GPU capacity is effectively sold out, even older-generation chips seeing high rental rates\n\u2022 Constraints emerging across entire AI supply chain: GPUs scarce, memory prices surging, TSMC capacity sold out\n\u2022 Investment implications for AI infrastructure and compute markets\n\nApollo Global Management analysis of the growing compute shortage. Examines supply constraints across GPUs, memory, and foundry capacity, and their investment implications.",
+      "Date Published": "2026-06-01",
+      "URL": "https://www.apollo.com/wealth/insights-news/insights/2026/06/growing-compute-shortage",
+      "Type": "Industry Analysis",
+      "Publisher": "Apollo",
+      "Companies Mentioned": [
+        "Apollo Global Management"
+      ],
+      "Themes": [
+        "recaVy3RP4F3pkout"
+      ]
+    }
+  },
+  {
+    "fields": {
+      "Title": "Overview of the Energy Economy (with Datacenters)",
+      "Key Takeaways": "\u2022 Overview of how data-center demand is reshaping power prices\n\u2022 Examines intersection of energy economy and AI infrastructure\n\u2022 Likely covers implications for compute market economics\n\nNewsletter post providing an overview of how data-center demand is reshaping power prices in the energy economy. Connects energy market dynamics to AI infrastructure growth.",
+      "Date Published": "2026-06-29",
+      "URL": "https://substack.com/home/post/p-204196486",
+      "Type": "Blog Post",
+      "Publisher": "Substack",
+      "Themes": [
+        "recaVy3RP4F3pkout"
+      ]
+    }
+  },
+  {
+    "fields": {
+      "Title": "Post by Brett Harrison on Compute as Asset Class",
+      "Key Takeaways": "\u2022 Architect's thesis: compute will mature as a US exchange-traded asset class very quickly\n\u2022 Fulfilling US government mandate to \"accelerate the maturation of a healthy financial market for compute\"\n\u2022 Competition with incumbent players in compute derivatives space\n\nX/Twitter post by Brett Harrison (associated with Architect) discussing the maturation of compute as a US exchange-traded asset class and fulfilling government mandates for healthy compute financial markets.",
+      "Date Published": null,
+      "URL": "https://x.com/BrettHarrison/status/2074866708553117896",
+      "Type": "Blog Post",
+      "Publisher": "X",
+      "Author(s)": [
+        "Brett Harrison"
+      ],
+      "Companies Mentioned": [
+        "Architect"
+      ],
+      "Themes": [
+        "recL8qNIY2DXgYOkt"
+      ]
+    }
+  },
+  {
+    "fields": {
+      "Title": "Post by @ConorMoore on Compute Market Segments",
+      "Key Takeaways": "\u2022 Identifies the \"Compute Middle Market\" as lower risk, higher returns\n\u2022 Estimates $2T in compute spend through 2030\n\u2022 Segments compute market: Hyperscale ($2bn+), Middle Market, and other tiers\n\nX/Twitter thread by Conor Moore analyzing the compute market structure, identifying a \"middle market\" segment with attractive risk-return characteristics and projecting massive capital expenditure through 2030.",
+      "Date Published": "2026-07-01",
+      "URL": "https://x.com/_ConorMoore/status/2074958391118590288",
+      "Type": "Blog Post",
+      "Publisher": "X",
+      "Author(s)": [
+        "Conor Moore"
+      ],
+      "Themes": [
+        "recL8qNIY2DXgYOkt"
+      ]
+    }
+  },
+  {
+    "fields": {
+      "Title": "Building a Robust GPU Index",
+      "Key Takeaways": "\u2022 Methodology for creating reliable GPU pricing indices\n\u2022 Approaches to ensure robustness in GPU market data\n\u2022 Framework for tracking and benchmarking GPU prices\n\nBlog post from Silicon Data discussing the methodology and approach to building reliable GPU pricing indices, likely covering data collection, validation, and benchmarking practices.",
+      "Date Published": null,
+      "URL": "https://www.silicondata.com/blog/building-a-robust-gpu-index",
+      "Type": "Industry Analysis",
+      "Publisher": "Silicon Data",
+      "Companies Mentioned": [
+        "Silicon Data"
+      ],
+      "Themes": [
+        "recL8qNIY2DXgYOkt",
+        "recbeTp4pOiPyKZsT"
+      ]
+    }
+  },
+  {
+    "fields": {
+      "Title": "SiliconMark vs. InferenceX: Comparing AI Inference Benchmarking Frameworks",
+      "Key Takeaways": "\u2022 Compares two AI inference benchmarking frameworks for smarter GPU procurement in 2026\n\u2022 SiliconMark focuses on hardware-centric validation and supports both inference and training benchmarks\n\u2022 InferenceX (formerly InferenceMax) focuses on LLM-specific inference optimization but is not publicly accessible\n\nDetailed technical comparison of two benchmarking frameworks. SiliconMark benchmarks your own cluster with public access, while InferenceX benchmarks only their own cluster. SiliconMark supports both inference and training workloads, while InferenceX is limited to inference only.",
+      "Date Published": "2026-03-04",
+      "URL": "https://www.silicondata.com/blog/siliconmark-vs.-inferencex",
+      "Type": "Blog Post",
+      "Publisher": "Silicon Data",
+      "Author(s)": [
+        "Platon Slynko"
+      ],
+      "Companies Mentioned": [
+        "Silicon Data"
+      ],
+      "Themes": [
+        "recbeTp4pOiPyKZsT"
+      ]
+    }
+  },
+  {
+    "fields": {
+      "Title": "Not All H100s Are Created Equal",
+      "Key Takeaways": "\u2022 Research from Silicon Data shows up to 38% performance variation within identical H100 GPUs\n\u2022 Individual chip identity is the dominant factor (32-73% of variance)\n\u2022 Lenders should require performance certificates before extending credit against GPU pools\n\nAnalysis of how identical H100 GPUs show significant performance variation (up to 38%) due to manufacturing differences and cloud provider configurations. Examines implications for GPU-backed lending and risk assessment.",
+      "Date Published": "2026-03-27",
+      "URL": "https://davefriedman.substack.com/p/not-all-h100s-are-created-equal",
+      "Type": "Blog Post",
+      "Publisher": "Substack",
+      "Author(s)": [
+        "Dave Friedman"
+      ],
+      "Companies Mentioned": [
+        "Silicon Data"
+      ],
+      "Themes": [
+        "recbeTp4pOiPyKZsT",
+        "rechjPrNupEz4Fvty"
+      ]
+    }
+  },
+  {
+    "fields": {
+      "Title": "Did You Win the GPU Cloud Lottery? Benchmarking from TFLOPS to Tokens/$",
+      "Key Takeaways": "1. Measured 3,500+ physical GPUs across 11 cloud providers, finding up to 38% performance variation for the same GPU model\n2. Silicon lottery effects (manufacturing variability) dominate performance variation, not software factors\n3. Cloud providers amplify these effects through persistent, systematic second-order effects in their configurations\n\nLarge-scale measurement study of 3,500+ physical GPUs across 11 cloud providers. Found up to 38% performance variation for the same GPU model, with silicon lottery effects (manufacturing variability) dominating performance variation rather than software factors.",
+      "Date Published": "2026-03-22",
+      "URL": "https://downloads.silicondata.com/documents/GPGPU26_SiliconData.pdf",
+      "Type": "Research Paper",
+      "Publisher": "Silicon Data",
+      "Author(s)": [
+        "Platon Slynko",
+        "Jay Lu",
+        "Jason Cornick",
+        "Laksh Sharma",
+        "Shou-Kai Cheng",
+        "Benjamin Cornick",
+        "Arthur O. Dias dos Santos",
+        "Caique Sobral",
+        "Carmen Li",
+        "Daoxuan Xu",
+        "Xinxin Mei",
+        "Yifan Sun"
+      ],
+      "Companies Mentioned": [
+        "Silicon Data"
+      ],
+      "Themes": [
+        "recbeTp4pOiPyKZsT",
+        "rechjPrNupEz4Fvty"
+      ]
+    }
+  }
+]

@@ -1,0 +1,300 @@
+[
+  {
+    "fields": {
+      "Company Name": "Ornn",
+      "Description": "Financial products for compute. Provides compute access (Ornn Compute), market measurement data (Ornn Data), and the OCPI (Ornn Compute Price Index) - a reference price for compute. Aims to make compute a priceable, financeable, and hedgeable commodity.",
+      "Primary Focus": "Compute Price Index",
+      "Company Type": "Index Provider, Exchange, Marketplace",
+      "Website": "https://ornn.ai",
+      "Backers": "a16z ($33M seed)",
+      "Themes": [
+        "recL8qNIY2DXgYOkt"
+      ]
+    }
+  },
+  {
+    "fields": {
+      "Company Name": "Silicon Data",
+      "Description": "Compute market intelligence platform providing real-time GPU price transparency, performance data, and standardized indexing for traders, financial institutions, and builders. Products include SiliconNavigator, SiliconMark, SiliconIndex, and SiliconPriceIQ.",
+      "Primary Focus": "GPU Market Data & Analytics",
+      "Company Type": "Index Provider",
+      "Website": "https://silicondata.com",
+      "LinkedIn": "https://www.linkedin.com/company/silicon-data",
+      "Backers": "DRW, Jump Trading ($4.7M seed)",
+      "Themes": [
+        "recbeTp4pOiPyKZsT",
+        "recL8qNIY2DXgYOkt"
+      ]
+    }
+  },
+  {
+    "fields": {
+      "Company Name": "SF Compute",
+      "Description": "GPU cloud provider offering H100 and H200 compute at competitive prices. Provides on-demand GPU access with flexible contracts.",
+      "Primary Focus": "GPU Cloud Provider",
+      "Company Type": "Neocloud/GPU Provider",
+      "Website": "https://sfcompute.com/",
+      "LinkedIn": "https://www.linkedin.com/company/sf-compute/",
+      "X (Twitter)": "https://x.com/sfcompute",
+      "Backers": "NVIDIA, Roboflow, Datology, Liquid AI, MIT",
+      "Themes": [
+        "recaVy3RP4F3pkout"
+      ]
+    }
+  },
+  {
+    "fields": {
+      "Company Name": "NVIDIA",
+      "Description": "GPU chip manufacturer. Backstop provider for neocloud debt.",
+      "Primary Focus": "GPU Manufacturing",
+      "Company Type": "Chipmaker, Investor/VC",
+      "Website": "https://nvidia.com",
+      "Themes": [
+        "recaVy3RP4F3pkout",
+        "rechjPrNupEz4Fvty"
+      ]
+    }
+  },
+  {
+    "fields": {
+      "Company Name": "Architect",
+      "Description": "Compute derivatives exchange offering futures and options on GPU rental prices, including H100, H200, B200, B300 contracts. Enables hedging and speculation on compute prices.",
+      "Primary Focus": "GPU Futures & Options Trading",
+      "Company Type": "Exchange",
+      "Website": "https://architect.co/",
+      "Tags": "Derivatives & Trading",
+      "Themes": [
+        "recL8qNIY2DXgYOkt"
+      ]
+    }
+  },
+  {
+    "fields": {
+      "Company Name": "SemiAnalysis",
+      "Description": "Research and advisory firm bridging semiconductors and business. Provides industry models (Accelerator, AI Cloud TCO, Datacenter), market intelligence, and consulting on AI compute infrastructure.",
+      "Primary Focus": "AI Infrastructure Research",
+      "Company Type": "Research Firm",
+      "Website": "https://semianalysis.com",
+      "LinkedIn": "https://www.linkedin.com/company/semianalysis",
+      "X (Twitter)": "https://x.com/semianalysis1",
+      "Themes": []
+    }
+  },
+  {
+    "fields": {
+      "Company Name": "Anagram",
+      "Description": "Crypto research firm. Published semi-fungible compute assets paper.",
+      "Primary Focus": "Crypto Research",
+      "Company Type": "Research Firm",
+      "Website": "https://anagram.xyz",
+      "Themes": []
+    }
+  },
+  {
+    "fields": {
+      "Company Name": "Variant Fund",
+      "Description": "Crypto venture fund. Published compute markets framework.",
+      "Primary Focus": "Crypto Venture Capital",
+      "Company Type": "Investor/VC",
+      "Website": "https://variant.fund",
+      "Themes": []
+    }
+  },
+  {
+    "fields": {
+      "Company Name": "VanEck",
+      "Description": "Asset manager. Published framework for valuing bitcoin miners as AI infrastructure.",
+      "Primary Focus": "Asset Management",
+      "Company Type": "Investor/VC",
+      "Website": "https://vaneck.com",
+      "Themes": [
+        "rechjPrNupEz4Fvty"
+      ]
+    }
+  },
+  {
+    "fields": {
+      "Company Name": "Apollo Global Management",
+      "Description": "Alternative asset manager. Published on compute shortage.",
+      "Primary Focus": "Alternative Investments",
+      "Company Type": "Investor/VC",
+      "Website": "https://apollo.com",
+      "Themes": [
+        "recaVy3RP4F3pkout"
+      ]
+    }
+  },
+  {
+    "fields": {
+      "Company Name": "GPU Lease Index (GLRI)",
+      "Description": "Provides bankable Time-to-Power intelligence and GPU lease pricing data. Offers market scorecards for datacenter sites (Texas, Georgia, Carolinas, Ohio/PJM) and speed-to-power watchlists.",
+      "Primary Focus": "Cloud Pricing Comparison",
+      "Company Type": "Index Provider",
+      "Website": "https://gpuleaseindex.com",
+      "Tags": "Pricing & Indices, Derivatives & Trading",
+      "Themes": [
+        "recL8qNIY2DXgYOkt"
+      ]
+    }
+  },
+  {
+    "fields": {
+      "Company Name": "Axon Index",
+      "Description": "Settlement-grade GPU pricing index provider, offering standardized benchmarks for GPU rental pricing. Provides transparent, reliable pricing data for the compute market.",
+      "Primary Focus": "GPU Pricing Benchmarks",
+      "Company Type": "Index Provider",
+      "Website": "https://axonindex.com/",
+      "LinkedIn": "https://www.linkedin.com/company/axonindex/",
+      "X (Twitter)": "https://x.com/AxonIndex",
+      "Tags": "Pricing & Indices, Benchmarking, Settlement & Clearing",
+      "Themes": [
+        "recL8qNIY2DXgYOkt"
+      ]
+    }
+  },
+  {
+    "fields": {
+      "Company Name": "Anera Markets",
+      "Description": "Clearinghouse for AI risk, providing indices and financial products for managing AI market risks. Specializes in risk management for the AI and compute economy.",
+      "Primary Focus": "AI Risk Indices & Clearing",
+      "Company Type": "Clearinghouse",
+      "Website": "https://anera.markets/",
+      "Tags": "Pricing & Indices, Settlement & Clearing, Derivatives & Trading",
+      "Themes": [
+        "rechjPrNupEz4Fvty",
+        "recL8qNIY2DXgYOkt"
+      ]
+    }
+  },
+  {
+    "fields": {
+      "Company Name": "BitOoda",
+      "Description": "AI-native, agency-first brokerage and market infrastructure platform connecting compute, power, infrastructure, and capital into standardized markets.",
+      "Primary Focus": "Compute Brokerage & Market Infrastructure",
+      "Company Type": "Broker",
+      "Website": "https://bitooda.io/",
+      "Tags": "Brokerage",
+      "Themes": [
+        "recL8qNIY2DXgYOkt"
+      ]
+    }
+  },
+  {
+    "fields": {
+      "Company Name": "NativX",
+      "Description": "Exchange infrastructure for compute, providing trading and settlement systems for GPU compute markets. Enables transparent pricing and trading of compute resources.",
+      "Primary Focus": "Compute Exchange Infrastructure",
+      "Company Type": "Exchange",
+      "Website": "https://www.nativx.net/",
+      "Tags": "Settlement & Clearing",
+      "Themes": [
+        "recL8qNIY2DXgYOkt"
+      ]
+    }
+  },
+  {
+    "fields": {
+      "Company Name": "Thunder Compute",
+      "Description": "Systems lab commercializing GPU virtualization to increase GPU utilization. Team from Citadel Securities, Aquatic, and AWS. Offers cloud services to create step-change improvements in data center capacity.",
+      "Primary Focus": "Free Compute Aggregation",
+      "Company Type": "Neocloud/GPU Provider, Orchestration",
+      "Website": "https://thundercompute.com",
+      "LinkedIn": "https://www.linkedin.com/company/thundercompute",
+      "X (Twitter)": "https://x.com/thundercompute",
+      "Tags": "Pricing & Indices, Energy & Power",
+      "Themes": [
+        "recaVy3RP4F3pkout"
+      ]
+    }
+  },
+  {
+    "fields": {
+      "Company Name": "Exascale Labs",
+      "Description": "AI infrastructure provider offering next-generation compute hardware including GB200s, B200s, H100s, H200s, and RTX5090s. Provides high-performance computing solutions for AI workloads.",
+      "Primary Focus": "Advanced GPU Infrastructure",
+      "Company Type": "Neocloud/GPU Provider",
+      "Website": "https://www.exascalelabs.ai/",
+      "Themes": [
+        "recaVy3RP4F3pkout"
+      ]
+    }
+  },
+  {
+    "fields": {
+      "Company Name": "GetDeploying",
+      "Description": "Cloud provider comparison platform helping users find and compare different cloud and GPU providers. Provides detailed pricing, specs, and feature comparisons.",
+      "Primary Focus": "Cloud Provider Comparison",
+      "Company Type": "Marketplace/Comparison, Orchestration",
+      "Website": "https://getdeploying.com/",
+      "Tags": "Pricing & Indices",
+      "Themes": [
+        "recL8qNIY2DXgYOkt"
+      ]
+    }
+  },
+  {
+    "fields": {
+      "Company Name": "CloudPrice",
+      "Description": "Cloud pricing comparison tool for Azure, AWS EC2, and GCP instances. Provides comprehensive VM specification and pricing data across regions and payment options.",
+      "Primary Focus": "GPU Virtualization",
+      "Company Type": "Marketplace/Comparison",
+      "Website": "https://cloudprice.net",
+      "Tags": "Compute Access, Pricing & Indices, Market Intelligence",
+      "Themes": [
+        "recL8qNIY2DXgYOkt"
+      ]
+    }
+  },
+  {
+    "fields": {
+      "Company Name": "AI Multiple",
+      "Description": "AI research and analysis platform covering use cases, tools, hardware, and market trends. Includes GPU pricing index and cloud GPU provider comparisons.",
+      "Primary Focus": "GPU Lease Pricing",
+      "Company Type": "Research Firm",
+      "Website": "https://aimultiple.com",
+      "LinkedIn": "https://www.linkedin.com/company/aimultiple",
+      "X (Twitter)": "https://x.com/aimultipleai",
+      "Themes": []
+    }
+  },
+  {
+    "fields": {
+      "Company Name": "United Compute",
+      "Description": "Free aggregator of compute pricing information. Status: Launching soon.",
+      "Primary Focus": "AI Tools & Hardware Analysis",
+      "Company Type": "Marketplace/Comparison",
+      "Website": "https://unitedcompute.com",
+      "Themes": [
+        "recL8qNIY2DXgYOkt"
+      ]
+    }
+  },
+  {
+    "fields": {
+      "Company Name": "Arena AI",
+      "Description": "Official AI ranking and LLM leaderboard platform for comparing and evaluating AI models. Provides comprehensive benchmarks and performance metrics for AI systems.",
+      "Primary Focus": "AI Model Rankings & LLM Evaluation",
+      "Company Type": "Research Firm",
+      "Website": "https://arena.ai/",
+      "LinkedIn": "https://www.linkedin.com/company/arenaai/",
+      "X (Twitter)": "https://x.com/arena",
+      "Tags": "Model Evaluation",
+      "Themes": [
+        "recbeTp4pOiPyKZsT"
+      ]
+    }
+  },
+  {
+    "fields": {
+      "Company Name": "Compute Desk",
+      "Description": "Independent third-party aggregator combining rental price offers and private transactions into single values representing the cost of compute per accelerator.",
+      "Primary Focus": "GPU Compute Pricing",
+      "Company Type": "Index Provider",
+      "Website": "https://computedesk.com",
+      "Tags": "Market Intelligence, Pricing & Indices",
+      "Themes": [
+        "recL8qNIY2DXgYOkt"
+      ]
+    }
+  }
+]
