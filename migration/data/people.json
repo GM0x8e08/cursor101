@@ -1,0 +1,240 @@
+[
+  {
+    "fields": {
+      "Name": "Brett Harrison",
+      "Current Title": "Founder & CEO",
+      "Role": "Founder",
+      "Primary Company": [
+        "Architect"
+      ],
+      "X (Twitter)": "https://x.com/BrettHarrison"
+    }
+  },
+  {
+    "fields": {
+      "Name": "Carmen Li",
+      "Current Title": "Founder & CEO",
+      "Role": "Founder",
+      "Primary Company": [
+        "Silicon Data"
+      ]
+    }
+  },
+  {
+    "fields": {
+      "Name": "Dylan Patel",
+      "Current Title": "Lead Analyst",
+      "Role": "Researcher",
+      "Primary Company": [
+        "SemiAnalysis"
+      ],
+      "LinkedIn": "https://www.linkedin.com/in/dylan-patel-semianalysis",
+      "X (Twitter)": "https://x.com/dylan522p"
+    }
+  },
+  {
+    "fields": {
+      "Name": "Daniel Nishball",
+      "Current Title": "Analyst",
+      "Role": "Researcher",
+      "Primary Company": [
+        "SemiAnalysis"
+      ]
+    }
+  },
+  {
+    "fields": {
+      "Name": "Ray Wang",
+      "Role": "Researcher",
+      "Primary Company": [
+        "SemiAnalysis"
+      ]
+    }
+  },
+  {
+    "fields": {
+      "Name": "Myron Xie",
+      "Role": "Researcher",
+      "Primary Company": [
+        "SemiAnalysis"
+      ]
+    }
+  },
+  {
+    "fields": {
+      "Name": "Theodora Diamandis",
+      "Role": "Researcher",
+      "Primary Company": [
+        "Anagram"
+      ],
+      "LinkedIn": "https://www.linkedin.com/in/theodora-diamandis"
+    }
+  },
+  {
+    "fields": {
+      "Name": "Platon Slynko",
+      "Role": "Researcher",
+      "Primary Company": [
+        "Silicon Data"
+      ]
+    }
+  },
+  {
+    "fields": {
+      "Name": "Jason Cornick",
+      "Role": "Researcher",
+      "Primary Company": [
+        "Silicon Data"
+      ]
+    }
+  },
+  {
+    "fields": {
+      "Name": "Benjamin Cornick",
+      "Role": "Researcher",
+      "Primary Company": [
+        "Silicon Data"
+      ]
+    }
+  },
+  {
+    "fields": {
+      "Name": "Jay Lu",
+      "Role": "Researcher",
+      "Primary Company": [
+        "Silicon Data"
+      ]
+    }
+  },
+  {
+    "fields": {
+      "Name": "Laksh Sharma",
+      "Role": "Researcher",
+      "Primary Company": [
+        "Silicon Data"
+      ]
+    }
+  },
+  {
+    "fields": {
+      "Name": "Shou-Kai Cheng",
+      "Role": "Researcher",
+      "Primary Company": [
+        "Silicon Data"
+      ]
+    }
+  },
+  {
+    "fields": {
+      "Name": "Arthur O. Dias dos Santos",
+      "Role": "Researcher",
+      "Primary Company": [
+        "Silicon Data"
+      ]
+    }
+  },
+  {
+    "fields": {
+      "Name": "Caique Sobral",
+      "Role": "Researcher",
+      "Primary Company": [
+        "Silicon Data"
+      ]
+    }
+  },
+  {
+    "fields": {
+      "Name": "Daoxuan Xu",
+      "Role": "Researcher",
+      "Primary Company": [
+        "Silicon Data"
+      ]
+    }
+  },
+  {
+    "fields": {
+      "Name": "Xinxin Mei",
+      "Role": "Researcher",
+      "Primary Company": [
+        "Silicon Data"
+      ]
+    }
+  },
+  {
+    "fields": {
+      "Name": "Yifan Sun",
+      "Role": "Researcher",
+      "Primary Company": [
+        "Silicon Data"
+      ]
+    }
+  },
+  {
+    "fields": {
+      "Name": "Matthew Sigel",
+      "Current Title": "Head of Digital Assets Research",
+      "Role": "Analyst",
+      "Primary Company": [
+        "VanEck"
+      ]
+    }
+  },
+  {
+    "fields": {
+      "Name": "Caleb Shack",
+      "Role": "Investor",
+      "Primary Company": [
+        "Variant Fund"
+      ],
+      "LinkedIn": "https://www.linkedin.com/in/caleb-shack",
+      "X (Twitter)": "https://x.com/firstc0in"
+    }
+  },
+  {
+    "fields": {
+      "Name": "Alana Levin",
+      "Role": "Investor",
+      "Primary Company": [
+        "Variant Fund"
+      ],
+      "LinkedIn": "https://www.linkedin.com/in/alana-levin",
+      "X (Twitter)": "https://x.com/AlanaDLevin"
+    }
+  },
+  {
+    "fields": {
+      "Name": "Ronit Jain",
+      "Role": "Independent",
+      "LinkedIn": "https://www.linkedin.com/in/ronitjain"
+    }
+  },
+  {
+    "fields": {
+      "Name": "Dave Friedman",
+      "Role": "Independent",
+      "LinkedIn": "https://www.linkedin.com/in/dave-friedman-5b5b5b5b",
+      "X (Twitter)": "https://x.com/frieddave"
+    }
+  },
+  {
+    "fields": {
+      "Name": "Conor Moore",
+      "Role": "Independent",
+      "X (Twitter)": "https://x.com/_ConorMoore"
+    }
+  },
+  {
+    "fields": {
+      "Name": "0xturbanurban",
+      "Role": "Independent",
+      "X (Twitter)": "https://x.com/0xturbanurban"
+    }
+  },
+  {
+    "fields": {
+      "Name": "0xMetaLight",
+      "Role": "Independent",
+      "X (Twitter)": "https://x.com/0xMetaLight"
+    }
+  }
+]
