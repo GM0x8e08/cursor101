@@ -53,5 +53,18 @@ Contacts table: `tbl7HfGmVtR9TTIyi`
 ### Failures
 - None. All 10 Companies updates and 14 Contacts creations returned HTTP 200.
 
+### User feedback applied (after batch 1 review)
+
+- **Allie**: LinkedIn corrected to `https://www.linkedin.com/company/allieai` (user-confirmed; my original `allie-ai` slug was wrong).
+- **Arkham**: LinkedIn corrected to `https://www.linkedin.com/company/arkham-technologies` (my original `arkham-tech` was wrong); HQ City updated to "Palo Alto, CA (founders ex-Konfio, Mexico)"; Total Raised updated to "$7M" (per LinkedIn, was $4.5M).
+- **Avedian**: HQ City set to "Córdoba, Argentina (legal HQ: Tulsa, OK)" per user preference (user wants origin/team city, not legal HQ). LinkedIn `linkedin.com/company/avediantech` kept — verified correct per LinkedIn's own posts; if user still sees "unavailable" it may be a LinkedIn login-wall issue.
+- **Anastasia**: Headcount Band cleared to blank (was "Unknown") per user preference.
+- **Atlas**: Confirmed dropped from active pipeline (Status = Acquired; excluded from future batches by Status=Active filter).
+- **Bircle** (user referred to as "Perco"): Upgraded Tier 3 → Tier 2, Inference Low → Med per user direction ("high in variance"). 2 founder contacts added (Marcos Lozada Freytes, José Romero Victorica).
+
+### Manual-review count discussion
+- Batch 1 flagged 8/10 for manual review — user questioned whether this is acceptable.
+- Going forward, Agent B will flag only genuine blockers (dead links, wrong company match, status changes, missing critical data) and fold minor uncertainties into Classification Notes instead of flagging. Target: ≤3 flags per batch of 10.
+
 ### Next batch
 - Batch 2 will fetch the next 10 Active companies with empty Classification Date (sorted by Company Name), starting after "Bircle". Awaiting user confirmation.
