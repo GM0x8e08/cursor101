@@ -58,9 +58,14 @@ Contacts table: `tbl7HfGmVtR9TTIyi`
 - **Allie**: LinkedIn corrected to `https://www.linkedin.com/company/allieai` (user-confirmed; my original `allie-ai` slug was wrong).
 - **Arkham**: LinkedIn corrected to `https://www.linkedin.com/company/arkham-technologies` (my original `arkham-tech` was wrong); HQ City updated to "Palo Alto, CA (founders ex-Konfio, Mexico)"; Total Raised updated to "$7M" (per LinkedIn, was $4.5M).
 - **Avedian**: HQ City set to "Córdoba, Argentina (legal HQ: Tulsa, OK)" per user preference (user wants origin/team city, not legal HQ). LinkedIn `linkedin.com/company/avediantech` kept — verified correct per LinkedIn's own posts; if user still sees "unavailable" it may be a LinkedIn login-wall issue.
-- **Anastasia**: Headcount Band cleared to blank (was "Unknown") per user preference.
+- **Anastasia**: Headcount Band cleared to blank (was "Unknown") per user preference. Total Raised corrected to "$1.4M" (per LinkedIn, was "~$5M" estimate).
 - **Atlas**: Confirmed dropped from active pipeline (Status = Acquired; excluded from future batches by Status=Active filter).
 - **Bircle** (user referred to as "Perco"): Upgraded Tier 3 → Tier 2, Inference Low → Med per user direction ("high in variance"). 2 founder contacts added (Marcos Lozada Freytes, José Romero Victorica).
+
+### Proactive corrections (LinkedIn/headcount verification pass)
+- **Assis**: LinkedIn corrected to `linkedin.com/company/assis-app` (my `assis-ai` slug was a different, wrong education company).
+- **Bemagro**: Headcount Band corrected 11–50 → 51–200 (per LinkedIn, 80–90 employees); Inference Demand upgraded Med → High (now meets all three High criteria: $10M+, 50+ headcount, imaging). Tier stays 2 (Low latency/residency).
+- Verified correct (no change): Anastasia (`anastasia-ai`), AnyoneAI (`school/anyone-ai`), Aravita (`aravita`), Avedian (`avediantech`), Bemagro (`bemagroag`).
 
 ### Manual-review count discussion
 - Batch 1 flagged 8/10 for manual review — user questioned whether this is acceptable.
