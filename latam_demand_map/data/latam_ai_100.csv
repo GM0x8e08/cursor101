@@ -1,0 +1,100 @@
+Company,Sector,Country,Website,Description
+Avedian,Healthcare,Argentina,https://avedian.com,AI platform for pharma clinical operations and regulatory workflows.
+ViewMind,Healthcare,Argentina,https://viewmind.ai,AI eye-tracking diagnostics for early detection of neurological diseases.
+Liti,Healthcare,Brazil,https://liti.com.br,AI-driven personalized weight-loss and metabolic health program.
+Munai,Healthcare,Brazil,https://munai.ai,AI platform for radiology and medical image analysis to accelerate diagnostics.
+NeuralMed,Healthcare,Brazil,https://neuralmed.ai,AI platform for medical imaging diagnostics and radiology workflow automation.
+Telepatia,Healthcare,Brazil,https://telepatia.ai,AI scribe that turns patient consultations into structured clinical notes.
+Tivita,Healthcare,Brazil,https://tivita.com.br,AI clinical assistant that automates medical records and consultation notes.
+Crook,Healthcare,Mexico,https://crookhealth.com,AI health assistant that connects patients with doctors and manages medical records.
+Leona,Healthcare,Mexico,https://leonahealth.com,AI-powered women's health platform focused on hormonal and reproductive care.
+SaludNow,Healthcare,Mexico,https://saludnow.mx,Digital primary-care platform combining AI triage with in-person clinics.
+Yana,Healthcare,Mexico,https://www.yana.com,AI-powered mental health chatbot providing emotional support in Spanish.
+Igual,Legal & Compliance,Brazil,https://igual.com.br,AI-powered legal operations platform automating repetitive lawyer tasks.
+Lexter,Legal & Compliance,Brazil,https://lexter.ai,"AI assistant for lawyers that drafts petitions, contracts, and legal research."
+Monico,Legal & Compliance,Mexico,https://monico.ai,AI compliance and KYC/AML automation for financial institutions.
+Flipzen,Legal & Compliance,Uruguay,https://flipzen.com,AI contract review and management platform for legal teams.
+Kua,Finance,Argentina,https://kua.com.ar,AI credit-scoring and lending automation for LatAm.
+Moonflow,Finance,Argentina,https://moonflow.io,AI-driven collections and receivables automation platform.
+Gaus,Finance,Brazil,https://gaus.com.br,AI platform for automated financial and treasury operations.
+Jota,Finance,Brazil,https://jota.ai,AI copilot automating accounting and back-office finance.
+Magie,Finance,Brazil,https://magie.ai,AI-powered personal finance banking assistant via WhatsApp.
+Menlo,Finance,Brazil,https://menlo.finance,AI-powered investment research and portfolio-management platform.
+Cenit,Finance,Chile,https://cenit.ai,AI infrastructure for banks and fintechs to build financial products.
+Shinkansen,Finance,Chile,https://shinkansen.finance,AI-driven payments infrastructure connecting LatAm banks in real time.
+Arkham,Finance,Mexico,https://arkham.mx,AI credit-underwriting engine for lenders in emerging markets.
+Finia,Finance,Mexico,https://finia.ai,AI-driven personal-finance and budgeting app.
+GOW,Finance,Mexico,https://gow.mx,AI-powered SME lending and financial-services platform.
+Picaio,Finance,Mexico,https://picaio.com,AI platform automating financial workflows and reconciliation.
+PathPilot,Finance,Peru,https://pathpilot.io,AI copilot for financial advisors and wealth managers.
+Quash,Finance,Venezuela,https://quash.io,AI-powered QA and testing for financial applications.
+AnyoneAI,Education,Argentina,https://anyoneai.com,AI-focused talent-training bootcamp connecting LatAm engineers to global jobs.
+Egg,Education,Argentina,https://egg.live,AI-powered collaborative learning platform for corporate and higher education.
+dio.,Education,Brazil,https://www.dio.me,Online tech-education platform offering AI-powered developer bootcamps.
+Teachy,Education,Brazil,https://teachy.app,AI teaching assistant that automates lesson planning and grading for K-12 teachers.
+Yuna,Education,Brazil,https://yuna.ai,AI tutor and study assistant for students preparing for exams.
+Poliglota,Education,Chile,https://www.poliglota.com,AI-driven language-learning platform for professionals across LatAm.
+Bircle,Sales & Customer Support,Argentina,https://bircle.ai,AI-powered customer support automation with conversational agents.
+FieldData,Sales & Customer Support,Argentina,https://fielddata.ai,AI platform automating field-sales operations and reporting.
+Numia,Sales & Customer Support,Argentina,https://numia.ai,AI-powered data-analytics platform for e-commerce and sales teams.
+Patagon AI,Sales & Customer Support,Argentina,https://patagon.ai,AI-powered sales-outreach and lead-generation platform.
+Winclap,Sales & Customer Support,Argentina,https://winclap.com,AI-powered mobile user-acquisition and creative-optimization platform.
+Assis,Sales & Customer Support,Brazil,https://assis.ai,AI voice and chat agents for customer service in Portuguese.
+Carecode,Sales & Customer Support,Brazil,https://carecode.ai,AI voice agents for healthcare patient support and scheduling.
+Fintalk,Sales & Customer Support,Brazil,https://fintalk.io,Conversational-AI platform for financial-services customer engagement.
+Nuvia,Sales & Customer Support,Brazil,https://nuvia.ai,AI sales assistant that automates lead qualification and follow-ups.
+Turn2C,Sales & Customer Support,Brazil,https://turn2c.com,AI-driven B2C conversion and sales-automation platform.
+diio,Sales & Customer Support,Chile,https://diio.ai,AI-powered conversation intelligence and sales-coaching platform.
+Vambe,Sales & Customer Support,Chile,https://vambe.ai,AI sales agents that handle WhatsApp conversations end-to-end.
+Dapta,Sales & Customer Support,Colombia,https://dapta.ai,AI workflow-automation platform for sales and revenue teams.
+Vozy,Sales & Customer Support,Colombia,https://vozy.co,Conversational AI voice assistants for enterprise contact centers.
+WeKall,Sales & Customer Support,Colombia,https://wekall.com,AI cloud contact-center platform with intelligent call routing and analytics.
+Leadsales,Sales & Customer Support,Mexico,https://leadsales.io,WhatsApp CRM with AI-powered sales automation for SMBs.
+Ximple,Sales & Customer Support,Mexico,https://ximple.ai,AI customer-support automation for retail and e-commerce.
+Zonora AI,Sales & Customer Support,Mexico,https://zonora.ai,AI voice agents for sales and customer support in Spanish and Portuguese.
+Yavendió,Sales & Customer Support,Peru,https://yavendio.com,WhatsApp sales-automation platform with AI chat assistants.
+Melian,Retail & Ecommerce,Argentina,https://melian.ai,AI platform for e-commerce merchandising and product-catalog optimization.
+Morada AI,Retail & Ecommerce,Brazil,https://morada.ai,Conversational AI agents for real-estate and retail sales.
+Trinio,Retail & Ecommerce,Brazil,https://trinio.ai,AI-powered product-content generation for e-commerce catalogs.
+Jelou,Retail & Ecommerce,Ecuador,https://jelou.ai,Conversational-commerce platform with AI agents for retail brands.
+Felz,Retail & Ecommerce,Mexico,https://felz.ai,AI-driven personalization and customer-engagement platform for retail.
+Verve Market,Retail & Ecommerce,Mexico,https://vervemarket.com,AI-powered marketplace-management platform for online sellers.
+VOKS,Retail & Ecommerce,Mexico,https://voks.ai,AI-driven retail-media and advertising-optimization platform.
+Cedalio,General Data Analysis & Business Automation,Argentina,https://cedalio.com,AI-powered no-code back-end platform for building business apps.
+Kapso AI,General Data Analysis & Business Automation,Brazil,https://kapso.ai,AI agents for enterprise back-office automation.
+Upflux,General Data Analysis & Business Automation,Brazil,https://upflux.ai,AI process-mining and workflow-optimization platform for enterprises.
+Perhaps,General Data Analysis & Business Automation,Chile,https://perhaps.ai,AI-powered analytics assistant for data-driven decision-making.
+Allie,General Data Analysis & Business Automation,Mexico,https://allie.ai,AI copilot that automates administrative and knowledge-work tasks.
+Pitz,General Data Analysis & Business Automation,Mexico,https://pitz.ai,AI-driven data-analytics and reporting platform for SMBs.
+Senzai,General Data Analysis & Business Automation,Mexico,https://senzai.ai,AI platform for enterprise process automation and business intelligence.
+Horizon,General Data Analysis & Business Automation,Uruguay,https://horizon.ai,AI platform for automating enterprise data analysis and reporting.
+Aravita,Sustainability & Agro,Brazil,https://aravita.com,AI supply-chain forecasting to reduce food waste in retail.
+Bemagro,Sustainability & Agro,Brazil,https://bemagro.com,AI-powered agricultural-operations platform for large farms.
+SmartBreeder,Sustainability & Agro,Brazil,https://smartbreeder.com,AI genetics and breeding-optimization platform for livestock.
+Instacrops,Sustainability & Agro,Chile,https://instacrops.com,IoT + AI precision-agriculture platform for crop monitoring.
+Atlas,Talent & Workforce Management,Argentina,https://atlas.co,AI-powered global hiring and workforce-management platform.
+Lara,Talent & Workforce Management,Argentina,https://lara.ai,AI HR assistant that manages employee engagement and communication.
+Cloud Humans,Talent & Workforce Management,Brazil,https://cloudhumans.com,AI + human-in-the-loop customer-support workforce platform.
+Comp,Talent & Workforce Management,Brazil,https://comp.ai,AI-powered compensation-benchmarking and equity-management platform.
+Mappa,Talent & Workforce Management,Brazil,https://mappa.ai,AI workforce-analytics and people-management platform.
+Refer,Talent & Workforce Management,Brazil,https://refer.com.br,AI-driven employee-referral and talent-acquisition platform.
+Start Carreiras,Talent & Workforce Management,Brazil,https://startcarreiras.com.br,AI-powered career-development and job-training platform.
+Hunty,Talent & Workforce Management,Colombia,https://hunty.com,AI-driven job-matching platform connecting talent with employers.
+Chambas AI,Talent & Workforce Management,Mexico,https://chambas.ai,AI recruiting platform for blue-collar and hourly workers.
+Hitch,Talent & Workforce Management,Mexico,https://hitch.works,AI internal-mobility platform matching employees to projects and roles.
+Selenios,Talent & Workforce Management,Mexico,https://selenios.com,AI HR-tech platform for talent analytics and workforce planning.
+Simpleto,Talent & Workforce Management,Mexico,https://simpleto.ai,AI HR platform automating recruiting and onboarding workflows.
+Skills tech,Talent & Workforce Management,Mexico,https://skills.tech,AI-powered skills-assessment and technical-hiring platform.
+Territorium,Talent & Workforce Management,Mexico,https://territorium.com,AI-powered learning and credentialing platform for workforce development.
+Time to Hire,Talent & Workforce Management,Mexico,https://timetohire.ai,AI recruiting-automation platform for high-volume hiring.
+Hubi,"Logistics, Mobility & Ops",Brazil,https://hubi.com.br,AI-powered used-car marketplace and dealer-management platform.
+Anastasia,"Logistics, Mobility & Ops",Chile,https://anastasia.ai,AI-powered demand-forecasting and inventory-optimization platform.
+Birdie,"Logistics, Mobility & Ops",Mexico,https://birdie.ai,AI-powered customer-feedback and product-analytics platform.
+Desteia,"Logistics, Mobility & Ops",Mexico,https://desteia.com,AI supply-chain visibility and logistics-optimization platform.
+Kuona,"Logistics, Mobility & Ops",Mexico,https://kuona.ai,AI-driven pricing and revenue-management platform for retail and CPG.
+Trebu,"Logistics, Mobility & Ops",Mexico,https://trebu.com,AI last-mile delivery and logistics-automation platform.
+Darwin Ai,General AI Platforms,Brazil,https://darwinai.com.br,Enterprise AI assistants and workflow-automation platform.
+Inner AI,General AI Platforms,Brazil,https://inner.ai,"All-in-one AI productivity suite for content, images, and video."
+Saptiva,General AI Platforms,Mexico,https://saptiva.com,Sovereign AI platform providing LLM infrastructure for Latin America.
+ZeroEval,General AI Platforms,Mexico,https://zeroeval.com,AI evaluation and observability platform for LLM applications.
+Zapia,General AI Platforms,Uruguay,https://zapia.ai,Consumer AI super-assistant for Spanish-speaking users in LatAm.
