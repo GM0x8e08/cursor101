@@ -72,11 +72,33 @@ The Zapier connection's token lacks permission to create new select options, and
    - Bittensor (`rectI7ASFWkyUSlNV`) → `DePIN`
    - Barkr (`recfCSq0KIUEiGOiK`) → `Insurance/Valuation`
 
+### Manual UI fixes — COMPLETED by user (Jul 23, 2026)
+Verified via API re-fetch of the live base:
+1. **3 new Company Type options added:** `DePIN` (`seloUbXcKBG8WPXMK`), `AI Lab` (`sel3q05FT6yaQTNUN`), `Insurance` (`selOeuM2014Yi0KQU`). Note: user named the third option `Insurance` (not `Insurance/Valuation` as originally recommended) — functionally equivalent.
+2. **Bare `Marketplace` option removed** from Company Type.
+3. **"Table 1" deleted** — base now contains only the 4 intended tables (Themes, Articles, People, Companies).
+4. **5 companies backfilled** with Company Type (all verified):
+   - DeepSeek (`recDMkyS2UyLtcnnC`) → `AI Lab`
+   - xAI (`reciSPltuUfzNAPiw`) → `AI Lab`
+   - Virtuals Protocol (`recLyjRFAlTYVrsoM`) → `DePIN`
+   - Bittensor (`rectI7ASFWkyUSlNV`) → `DePIN`
+   - Barkr (`recfCSq0KIUEiGOiK`) → `Insurance`
+5. **Ornn** Company Type further simplified by user to `["Index Provider"]` (was `["Index Provider","Exchange","Marketplace/Comparison"]` after the API fix).
+
+### Items left as-is by user decision (Jul 23, 2026)
+- **@0xMetaLight stub** (`recHex4GaGfmXOoKk`) — placeholder Key Takeaways left as-is; user confirmed no action needed.
+- **Mercatus title typo** — user confirmed there is no typo; nothing to fix.
+- **"Overview of the Energy Economy" publisher** (`reciDCQkTIXkhsldS`) — left as "Substack" (generic) since the URL (`substack.com/home/post/p-204196486`) doesn't resolve to a specific publication.
+
 ### Explanations for user questions
 - **Marketplace vs Marketplace/Comparison duplicate (point 3):** Two separate options existed in the Company Type field — bare "Marketplace" and "Marketplace/Comparison". Ornn was the only record using the bare one. Fix: Ornn updated to "Marketplace/Comparison"; the bare option should be manually removed from the field config.
 - **Backfill company type (point 5):** 5 company records have no Company Type value because no existing option fits them (DeepSeek/xAI are AI labs; Virtuals Protocol/Bittensor are DePIN; Barkr is a valuation/insurance provider). The new options must be created first, then the records can be tagged.
-- **@0xMetaLight stub (point 7):** Article `recHex4GaGfmXOoKk` ("Post by @0xMetaLight on Compute Markets") has placeholder Key Takeaways because the X/Twitter post could not be scraped (403 Forbidden from X). Options: re-attempt scraping later, replace with a manually-written summary, or delete the record if the source isn't valuable.
+- **@0xMetaLight stub (point 7):** Article `recHex4GaGfmXOoKk` ("Post by @0xMetaLight on Compute Markets") has placeholder Key Takeaways because the X/Twitter post could not be scraped (403 Forbidden from X). Left as-is per user decision.
 - **Poe Zhao / Hello China Tech (point 8):** Hello China Tech is NOT in the Companies table — it only appears as the Publisher (free text) of article `reckBhy0RFESHJMe0` ("Who Owns China's Token Factories?"). This is correct: publishers are free text, not linked company records. Poe Zhao (`recRtPR97AYjDi1ED`) is the author, with Role "Researcher". No action needed unless the user wants to reclassify him as "Journalist".
 - **Mercatus author:** Mercatus articles (`recMDwrXJjIEQYxbO`, `recZ5hU4L2OsaAL4u`, `recm8hCWiTfFm7szk`) don't list individual authors on their website. Author(s) field is left empty for these — acceptable per the schema (Author is optional).
-- **Mercatus title typo (point E):** Reviewed all 3 Mercatus article titles; no obvious typo found. Need user clarification on which title/field has the typo.
-- **"Overview of the Energy Economy" publisher:** Article `reciDCQkTIXkhsldS` has a generic Substack URL (`substack.com/home/post/p-204196486`) that doesn't identify the specific publication. Publisher is "Substack" (generic) — can't be refined without accessing the article behind the redirect.
+- **Mercatus title typo (point E):** Reviewed all 3 Mercatus article titles; no typo found. User confirmed nothing to fix.
+- **"Overview of the Energy Economy" publisher:** Article `reciDCQkTIXkhsldS` has a generic Substack URL that doesn't identify the specific publication. Publisher left as "Substack" (generic) per user decision.
+
+## Status: ALL DATA-QUALITY FIXES COMPLETE
+
+All API-applied fixes, manual UI fixes, and user decisions are reflected in the live Compute Finance Research v2 base. The base is clean (4 tables, no duplicates, no empty tables) and ready for the next phase (intake agent + dashboards).
