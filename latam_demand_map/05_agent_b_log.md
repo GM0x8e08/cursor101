@@ -73,3 +73,62 @@ Contacts table: `tbl7HfGmVtR9TTIyi`
 
 ### Next batch
 - Batch 2 will fetch the next 10 Active companies with empty Classification Date (sorted by Company Name), starting after "Bircle". Awaiting user confirmation.
+
+---
+
+## Batch 2 — completed 2026-07-23
+
+### Companies processed (10)
+| # | Company | Country | Sector | Status | Priority Tier | Inference | Latency | Residency | Self-Host | Growth | Contacts |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | Birdie | Mexico (CSV) / Palo Alto (actual) | Logistics Mobility & Ops (CSV) / CX Analytics (actual) | Active | Tier 2 | Med | Low | Med | Unknown | Med | 2 |
+| 2 | Carecode | Brazil | Sales & Customer Support | Active | **Tier 1** | Med | High | High | Unknown | High | 2 |
+| 3 | Cedalio | Argentina | General Data Analysis & Business Automation | Active | Tier 2 | Med | Low | Med | Unknown | Med | 2 |
+| 4 | Cenit | Chile | Finance | Active | Tier 2 | Med | Med | High | Unknown | High | 2 |
+| 5 | Chambas AI | Mexico | Talent & Workforce Management | Active | Tier 3 | Low | Med | Med | Unknown | High | 0 |
+| 6 | Cloud Humans | Brazil | Talent & Workforce Management | Active | Tier 2 | Med | High | Med | Unknown | Med | 3 |
+| 7 | Comp | Brazil | Talent & Workforce Management | Active | Tier 2 | High | Med | Med | Unknown | High | 2 |
+| 8 | Crook | Mexico | Healthcare | Active (unverified) | Tier 3 | Low | Low | Med | Unknown | Low | 0 |
+| 9 | Dapta | Colombia | Sales & Customer Support | Active | **Tier 1** | High | High | Low | Unknown | High | 1 |
+| 10 | Darwin Ai | Brazil | General AI Platforms | Active | **Tier 1** | High | High | Med | Unknown | High | 2 |
+
+### Tier 1 count so far: 4 (Assis from batch 1 + Carecode, Dapta, Darwin Ai from batch 2)
+
+### Contacts created: 16
+- Birdie: Alexandre Hadade (Founder), Everton Cherman (CTO)
+- Carecode: Thomaz Srougi (Founder), Pedro Magalhães (CTO)
+- Cedalio: Luciana Reznik (Founder), Guido Marucci Blas (CTO)
+- Cenit: Andrés Liberman (Founder), Ronny González (Founder/CPO)
+- Cloud Humans: Ian Kraskoff (Founder), Bruno Cecatto (Founder), Felipe Serra (Founder)
+- Comp: Christophe Gerlach (Founder), Pedro Bobrow (Founder)
+- Dapta: Nicolas Rojas Niño (Founder — High confidence, found on LinkedIn)
+- Darwin Ai: Lautaro Schiaffino (Founder), Ezequiel Sculli (Founder)
+
+### Companies needing manual review (3 — within target ≤3)
+
+1. **Birdie** — CSV tags Country=Mexico, Sector=Logistics Mobility & Ops, but website `birdie.ai` and description match the **Palo Alto/Brazil CX analytics company** (founded 2018 by Alexandre Hadade, Patrícia Osorio, Rodrigo Pantigas, Everton Cherman; SoftBank LatAm Fund backed). There IS a separate Mexico-based Birdie (founded 2023, supply chain traceability) but its website is NOT `birdie.ai`. User should confirm which company is intended and correct Country/Sector if needed.
+2. **Cenit** — CSV description ("AI infrastructure for banks and fintechs to build financial products") does NOT match the actual product on `cenit.ai` (AI mobile app for tax management for freelancers/SMEs in Chile, founded by ex-Betterfly team, Hi Ventures led $1.8M seed Nov 2025). User should confirm description should be updated.
+3. **Crook** — CANNOT VERIFY. Website `crookhealth.com` returns 403 Forbidden. No matching company found in Crunchbase, news, or LinkedIn searches. CSV description ("AI health assistant that connects patients with doctors and manages medical records") suggests healthcare AI but no public presence exists. User should confirm company exists or provide correct name/website.
+
+### Deviations / notes
+- All company LinkedIn URLs are best-guess patterns (`linkedin.com/company/<slug>`) verified where possible via web search. User should verify before outreach.
+- Individual contact LinkedIn URLs are best-guess slugs (`linkedin.com/in/<firstname lastname>`), except Nicolas Rojas Niño (`/in/nicolasimagine`) which was found directly on his LinkedIn profile (High confidence).
+- No emails guessed (per rules).
+- Only 1 contact marked Confidence = High (Nicolas Rojas Niño, Dapta — found directly on LinkedIn). All others Med (found via press/web search).
+- Layer 3 (interview) fields untouched.
+- Airtable raw PATCH/POST required `Content-Type: application/json` header AND body passed as JSON string (not object) — earlier attempt with object body failed validation.
+
+### Classification reasoning highlights
+- **Carecode (Tier 1)**: Med Inference + High Latency (voice) + High Residency (healthcare/LGPD) + High Growth. Meets Tier 1 rule "Med Inference AND Latency=High AND Residency=High". Backed by a16z + QED.
+- **Dapta (Tier 1)**: High Inference (voice AI at scale — 30,000+ companies across 37 countries) + High Latency (voice) + High Growth (12x revenue). Meets Tier 1 rule "High Inference AND (Latency=High OR Residency=High)".
+- **Darwin Ai (Tier 1)**: High Inference ($7M funding, voice AI at scale — 300+ clients, $2M+ ARR) + High Latency (voice) + High Growth. Meets Tier 1 rule "High Inference AND (Latency=High OR Residency=High)".
+- **Comp (Tier 2, not Tier 1)**: High Inference ($17.25M Series A, AI-native HR product) but Med Latency + Med Residency. Does NOT meet Tier 1 rule "High Inference AND (Latency=High OR Residency=High)". Classified Tier 2 — one High signal without scale.
+- **Cenit (Tier 2)**: Med Inference + Med Latency + High Residency (tax data) + High Growth. One High signal (Residency) without scale (Med Inference) → Tier 2.
+- **Chambas AI (Tier 3)**: Low Inference (pre-seed $500K, <11 headcount, AI chatbot is a feature). Per rules, Inference=Low → Tier 3.
+- **Crook (Tier 3)**: Cannot verify — marked Low/Unknown across all signals, Tier 3.
+
+### Failures
+- None. All 10 Companies updates (3 PATCH calls) and 16 Contacts creations (2 POST calls) returned HTTP 200.
+
+### Next batch
+- Batch 3 will fetch the next 10 Active companies with empty Classification Date (sorted by Company Name), starting after "Darwin Ai". Awaiting user confirmation.
