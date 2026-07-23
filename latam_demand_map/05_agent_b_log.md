@@ -132,3 +132,65 @@ Contacts table: `tbl7HfGmVtR9TTIyi`
 
 ### Next batch
 - Batch 3 will fetch the next 10 Active companies with empty Classification Date (sorted by Company Name), starting after "Darwin Ai". Awaiting user confirmation.
+
+---
+
+## Batch 2 — user feedback applied (2026-07-23)
+
+### Corrections made per user feedback
+
+1. **Birdie** — User confirmed CSV refers to the **Mexico-based Birdie** (birdie.mx), NOT the Palo Alto/Brazil CX analytics company (birdie.ai). CSV had wrong website and description (both belonged to the Palo Alto Birdie). Updated:
+   - Website: `birdie.ai` → `birdie.mx`
+   - HQ City: "Palo Alto, CA" → "Mexico City, Mexico"
+   - LinkedIn: `linkedin.com/company/usebirdie` → `linkedin.com/company/birdietech`
+   - Founded Year: 2018 → 2022
+   - Headcount Band: 11–50 (unchanged)
+   - Total Raised: "$7-10M" → "$500K"
+   - Last Round: "Seed" → "Pre-Seed"
+   - Last Round Date: 2022-09-01 → 2023-01-01
+   - Last Round Investor: SoftBank LatAm Fund → "Sente Ventures, 500 LATAM, Techstars, BuenTrip Ventures, 500 Global"
+   - Product Type: Batch → Hybrid
+   - Inference Workload: Text → Text, Image
+   - Notable Customers: "P&G, Samsung" → "Import companies in MX, CO, CL, PE (200K+ customs docs processed)"
+   - Inference Demand Scale: Med → Low (pre-seed $500K, AI is a feature for document validation)
+   - Latency Sensitivity: Low → Med (real-time tracking + batch document validation)
+   - Priority Tier: **Tier 2 → Tier 3** (Low Inference per rules)
+   - Deleted 2 wrong contacts: Alexandre Hadade (Founder), Everton Cherman (CTO) — these belong to the Palo Alto Birdie, not the Mexico Birdie.
+   - No new contacts created (Tier 3 = no contacts per rules).
+
+2. **Cenit** — User requested description update. Updated Description from "AI infrastructure for banks and fintechs to build financial products" to "AI-powered mobile app for tax management (SII integration) for freelancers and SMEs in Chile and Mexico. Calculates, declares, and pays taxes with one click; tracks income, expenses, invoices in real time." (Description is normally Agent A's field, but user explicitly requested this correction.)
+
+3. **Crook → Rook** — User identified that the CSV name "Crook" is wrong; the correct company is **Rook** (tryrook.io). Updated:
+   - Company Name: "Crook" → "Rook"
+   - Website: `crookhealth.com` → `tryrook.io`
+   - Description: Updated to "B2B SaaS API and SDK platform for integrating wearable and health data from 400+ devices into applications. Rebranded from RookMotion to ROOK in 2023."
+   - HQ City: blank → "Spring, TX (with Mexico team presence)"
+   - LinkedIn: blank → `linkedin.com/company/tryrookio`
+   - Founded Year: blank → 2019
+   - Headcount Band: blank → 11–50
+   - Total Raised: blank → "$1.7M"
+   - Last Round: blank → "Pre-Seed"
+   - Last Round Date: blank → 2023-03-16
+   - Last Round Investor: blank → "NuFund Venture Group (lead), AlliedVC, CrossOceanFund, Harvard Business Fund, Hilltop Venture Partners, InstaVC, IrieVC, IQ Ventures, Liebenthal, Mana Ventures, MCMA VC, Stadia Ventures, Techstars, TheSageHouse, Pankaj Kedia"
+   - Product Type: blank → Batch
+   - Inference Workload: blank → Text, Embeddings
+   - Notable Customers: blank → "Trainingym, Gentherm, PEAR Health Labs, NASM, Novos Lab, Physmodo, Advanta Health Solutions"
+   - Inference Demand Scale: Low → Med (data transformation API, $1.7M funding)
+   - Latency Sensitivity: Low → Med (API calls)
+   - Data Residency Likelihood: Med → High (health data, HIPAA-type regulation)
+   - Growth Trajectory: Low → Med (last funding March 2023)
+   - Priority Tier: **Tier 3 → Tier 2** (Med Inference + High Residency without scale)
+   - Created 2 new contacts: Marco Benitez (Founder/CEO), Daniel Martinez Aguilar (CTO)
+
+### Updated Batch 2 totals after corrections
+- **Tier 1: 3** (Carecode, Dapta, Darwin Ai) — unchanged
+- **Tier 2: 5** (Cedalio, Cenit, Cloud Humans, Comp, **Rook**) — Birdie dropped to Tier 3, Rook added from Tier 3
+- **Tier 3: 2** (Chambas AI, **Birdie**) — Crook→Rook upgraded to Tier 2, Birdie downgraded from Tier 2
+- **Contacts: 16** (unchanged net: -2 Birdie Palo Alto contacts deleted, +2 Rook contacts added)
+
+### Tier 1 count so far (cumulative across batches): 4
+- Batch 1: Assis
+- Batch 2: Carecode, Dapta, Darwin Ai
+
+### Note on Birdie CSV discrepancy
+The CSV entry for Birdie had Country=Mexico and Sector=Logistics Mobility & Ops (which match the Mexico Birdie), but Website=birdie.ai and Description="AI-powered customer-feedback and product-analytics platform" (which match the Palo Alto/Brazil Birdie). This was a CSV data-entry error where the wrong website/description was paired with the correct country/sector. User confirmed the Mexico Birdie (birdie.mx, supply chain) is the intended company. Website and Description updated accordingly.
