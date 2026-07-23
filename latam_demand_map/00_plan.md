@@ -36,15 +36,18 @@ This base is **independent** from the supply-side base "Compute Finance Research
 - `02_classification.md` — the 5 signals + Priority Tier + scoring rules + contact role priority
 - `03_agent_prompts.md` — Agent A prompt + Agent B prompt + the bootstrap prompt for the new chat
 
-## Workflow for the user
-1. Merge the PR for this branch into main (so the new agent can read the files from main).
-2. Open a new chat in Cursor.
-3. Paste the bootstrap prompt from `03_agent_prompts.md` into the new chat.
-4. The new agent reads the files and executes Agent A, then Agent B.
+## Workflow for the user (two separate chats, manual handoff)
+1. Merge the PR for this branch into main (so the new agents can read the files from main).
+2. Open chat 1 in Cursor. Paste the "PROMPT FOR AGENT A CHAT" from `03_agent_prompts.md`. Agent A builds the base + populates layer 1, then stops and reports the base ID.
+3. Verify Agent A's base in Airtable (tables, fields, 99 records loaded).
+4. Open chat 2 in Cursor (separate from chat 1). Paste the "PROMPT FOR AGENT B CHAT" from `03_agent_prompts.md`, with the base ID from Agent A's report pasted into the placeholder. Agent B runs in batches of 10, pausing for your verification between batches.
 5. User curates contacts (layer 2) and conducts interviews (layer 3).
 
+The two chats are independent. The only thing carried from chat 1 to chat 2 is the Airtable base ID. Everything else both agents read from the repo files.
+
 ## Source data
-- Input spreadsheet: `/home/ubuntu/.cursor/projects/workspace/uploads/AI_100_LatAm_2025_cf1d36e4_4fa9.xlsx`
+- Input CSV (committed to repo): `/workspace/latam_demand_map/data/latam_ai_100.csv`
+- Original spreadsheet (not in repo; lives in the cloud agent uploads folder of the chat that received it): `AI_100_LatAm_2025_cf1d36e4_4fa9.xlsx`
 - 99 rows, 5 columns: Company, Sector, Country, Website, Description
 - Source: Hi Ventures — Venture-backed AI startups with $1M–10M in funding
 - Distribution: Brazil 34, Mexico 31, Argentina 15, Chile 8, Colombia 4, Uruguay 3, Peru 2, Venezuela 1, Ecuador 1
