@@ -194,3 +194,65 @@ Contacts table: `tbl7HfGmVtR9TTIyi`
 
 ### Note on Birdie CSV discrepancy
 The CSV entry for Birdie had Country=Mexico and Sector=Logistics Mobility & Ops (which match the Mexico Birdie), but Website=birdie.ai and Description="AI-powered customer-feedback and product-analytics platform" (which match the Palo Alto/Brazil Birdie). This was a CSV data-entry error where the wrong website/description was paired with the correct country/sector. User confirmed the Mexico Birdie (birdie.mx, supply chain) is the intended company. Website and Description updated accordingly.
+
+---
+
+## Batch 3 — completed 2026-07-23
+
+### Companies processed (10)
+| # | Company | Country | Sector | Status | Priority Tier | Inference | Latency | Residency | Self-Host | Growth | Contacts |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | Desteia | Mexico | Logistics Mobility & Ops | Active | **Tier 1** | High | Med | High | Unknown | High | 3 |
+| 2 | diio | Chile | Sales & Customer Support | Active | Tier 2 | Med | Med | Med | Unknown | High | 2 |
+| 3 | dio. | Brazil | Education | Active | Tier 3 | Med | Low | Low | Unknown | Med | 0 |
+| 4 | Egg | Argentina | Education | Active | Tier 2 | Med | Med | Low | Unknown | Med | 1 |
+| 5 | Felz | Mexico | Retail & Ecommerce | Active | Tier 3 | Low | Low | Low | Unknown | High | 0 |
+| 6 | FieldData | Argentina | Sales & Customer Support (CSV) / Agro (actual) | Active | Tier 3 | Low | Med | Low | Unknown | High | 0 |
+| 7 | Finia | Mexico | Finance | Active | Tier 2 | Med | Low | High | Unknown | High | 2 |
+| 8 | Fintalk | Brazil | Sales & Customer Support | Active | **Tier 1** | Med | High | High | Unknown | High | 2 |
+| 9 | Flipzen | Uruguay | Legal & Compliance | Active | Tier 2 | Med | Med | High | Unknown | High | 2 |
+| 10 | Gaus | Brazil (CSV) / US (actual) | Finance | Active | Tier 3 | Low | Med | Med | Unknown | High | 0 |
+
+### Tier 1 count so far (cumulative): 6
+- Batch 1: Assis
+- Batch 2: Carecode, Dapta, Darwin Ai
+- Batch 3: Desteia, Fintalk
+
+### Contacts created: 12
+- Desteia: Françoise Lavertu Stevens (Founder/co-CEO), Diego Solorzano (Founder/co-CEO), Austin Poore (CTO)
+- diio: Paolo Colonnello (Founder/CEO — High confidence, found on LinkedIn), Nicolás Kipreos de la Fuente (CTO/co-founder)
+- Egg: Ignacio Gomez Portillo (Founder/CEO — High confidence, found on LinkedIn)
+- Finia: Uri Pomerantz (Founder/CEO — High confidence, found on LinkedIn), Nicolas S. Bergengruen (Co-founder — High confidence, found on LinkedIn)
+- Flipzen: Maia Brenner (Founder/CEO), Ramiro Durini (Co-founder & CRO)
+- Fintalk: Luiz Lobo (Founder/CEO — High confidence, found on LinkedIn), Carlos Ambrósio (Co-founder)
+
+### Companies needing manual review (3 — within target ≤3)
+
+1. **FieldData** — CSV description ("AI platform automating field-sales operations and reporting") does NOT match actual product (AI-powered ranch/farm management via WhatsApp for livestock operations). Website corrected `fielddata.ai` → `fielddata.ag` (.ag = agriculture TLD). Sector may also need updating (Sales & Customer Support → Sustainability & Agro). User should confirm.
+2. **Finia** — CSV description ("AI-driven personal-finance and budgeting app") does NOT match actual product (AI-powered credit cards and installment loans for micro-businesses, formerly Grupago). Website corrected `finia.ai` → `finia.mx`. Description updated. User should confirm.
+3. **Gaus** — CSV description ("AI platform for automated financial and treasury operations") does NOT match actual product (AI personal investment analyst for retail investors, YC S25). Website corrected `gaus.com.br` → `joingaus.com`. Country tagged Brazil but company is San Francisco-based (founders are Brazilian). User should confirm country and description.
+
+### Additional website correction (no flag needed)
+- **Fintalk** — Website corrected `fintalk.io` → `fintalk.ai` (the actual live website per search results and company LinkedIn). Minor correction, noted in Classification Notes.
+
+### Deviations / notes
+- 4 companies had CSV description/website mismatches (FieldData, Finia, Fintalk, Gaus) — all corrected with notes in Classification Notes. This is a higher rate than batches 1-2; may indicate CSV data quality issues for lesser-known companies.
+- All company LinkedIn URLs are best-guess patterns verified where possible. Individual contact LinkedIn URLs are best-guess slugs, except 4 marked High confidence (found directly on LinkedIn): Paolo Colonnello (diio), Ignacio Gomez Portillo (Egg), Uri Pomerantz (Finia), Nicolas Bergengruen (Finia), Luiz Lobo (Fintalk).
+- No emails guessed (per rules).
+- Layer 3 (interview) fields untouched.
+
+### Classification reasoning highlights
+- **Desteia (Tier 1)**: High Inference ($11.5M funding >$5M, AI-native document processing) + High Residency (customs/government data, VUCEM integration). Meets Tier 1 rule "High Inference AND (High Latency OR High Residency)".
+- **Fintalk (Tier 1)**: Med Inference + High Latency (voice) + High Residency (financial/debt collection data). Meets Tier 1 rule "Med Inference AND Latency=High AND Residency=High".
+- **Finia (Tier 2)**: Med Inference + High Residency (fintech regulation) but Low Latency (batch underwriting). One High signal without scale → Tier 2.
+- **Flipzen (Tier 2)**: Med Inference + High Residency (compliance/banking regulation) but Med Latency. One High signal without scale → Tier 2.
+- **dio. (Tier 3)**: EdTech, AI is a feature (gamification/content), no latency/residency pain, no High signals. Tier 3.
+- **Felz (Tier 3)**: Low Inference (pre-seed, 1-10 headcount, AI/ML is a feature for retail ops). Tier 3 per Inference=Low rule.
+- **FieldData (Tier 3)**: Low Inference (pre-seed, <11 headcount) despite AI-native voice/text product. Tier 3 per pre-seed rule.
+- **Gaus (Tier 3)**: Low Inference (pre-seed $500K YC, 2 headcount). Tier 3 per pre-seed rule.
+
+### Failures
+- None. All 10 Companies updates (3 PATCH calls) and 12 Contacts creations (2 POST calls) returned HTTP 200.
+
+### Next batch
+- Batch 4 will fetch the next 10 Active companies with empty Classification Date (sorted by Company Name), starting after "Gaus". Awaiting user confirmation.
