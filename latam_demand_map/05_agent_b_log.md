@@ -266,3 +266,53 @@ The CSV entry for Birdie had Country=Mexico and Sector=Logistics Mobility & Ops 
 1. **FieldData** — User confirmed website correction (fielddata.ag) and requested sector update. Updated Sector from "Sales & Customer Support" → **"Sustainability & Agro"** (matches actual product: AI-powered ranch/farm management). Note: the schema doc rendered the option as "Sustainability and agro" but the actual Airtable single-select option uses "&" (ampersand); first attempt with "and" failed with "Insufficient permissions to create new select option".
 
 2. **Gaus** — User confirmed: "San Francisco, but they are Brazilian. Let's live as Brazilians." Country kept as **Brazil** (no change — was already Brazil). HQ City note already reflects "San Francisco, CA (founders from São Paulo, Brazil)". User accepts the Brazilian-founder framing despite US legal HQ.
+
+## Batch 4 — completed 2026-07-24
+
+### Companies processed (10)
+| # | Company | Country | Sector | Status | Priority Tier | Inference | Latency | Residency | Self-Host | Growth | Contacts |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | GOW | Mexico | Finance | Active | Tier 2 | Med | Med | High | Unknown | Low | 1 |
+| 2 | Hitch | Mexico | Talent & Workforce Mgmt | Active | Tier 2 | Med | Low | Med | No | Low | 2 |
+| 3 | Horizon | Uruguay | General Data Analysis & Business Automation | Active | Tier 1 | High | Med | High | Yes | High | 2 |
+| 4 | Hubbi | Brazil | Logistics Mobility & Ops | Active | Tier 2 | Med | Med | Low | Yes | Med | 1 |
+| 5 | Hunty | Colombia | Talent & Workforce Mgmt | Active | Tier 2 | High | Med | Med | No | Med | 2 |
+| 6 | Igual | Brazil | Legal & Compliance | Active | Tier 2 | Med | Low | High | No | Med | 0 |
+| 7 | Inner AI | Brazil | General AI Platforms | Active | Tier 1 | High | Med | Med | No | High | 2 |
+| 8 | Instacrops | Chile | Sustainability & Agro | Active | Tier 2 | Med | Med | Med | Yes | Med | 1 |
+| 9 | Jelou | Ecuador | Retail & Ecommerce | Active | Tier 1 | High | High | High | Yes | High | 2 |
+| 10 | Jota | Brazil | Finance | Active | Tier 1 | High | High | High | Unknown | High | 1 |
+
+### Tier 1 this batch (4)
+- **Horizon** — AI enterprise discovery; census-scale AI employee interviews + Context Graph. High inference + High residency (banks, SOC 2) + High growth ($3.5M seed Jan 2026, NXTP lead; customers MercadoLibre/Itaú/Nubank).
+- **Inner AI** — AI-native productivity platform (50+ models) + Squad.com autonomous agents. High inference (1M+ users) + High growth ($30M seed Apr 2026, R$500M val).
+- **Jelou** — Transactional AI on WhatsApp (payments, KYC, e-signature). High inference (40M+ conversations) + High latency + High residency (ISO 27001/PCI-DSS) + High growth ($10M Series A Jan 2026).
+- **Jota** — AI conversational banking for entrepreneurs (WhatsApp). High inference + High latency + High residency (BC-regulated) + High growth ($30M Series A Jun 2026, $185M val, Haun Ventures).
+
+**Tier 1 count so far: 10** (Assis, Carecode, Dapta, Darwin Ai, Desteia, Fintalk + Horizon, Inner AI, Jelou, Jota)
+
+### Contacts drafted (14)
+- GOW: Brigitte Brousset (CEO/Co-founder)
+- Hitch: Gabriela Ceballos (CEO/Co-founder), Daniel Pardo (Co-founder)
+- Horizon: Nicolás Scopesi (CEO/Co-founder), Miguel Langone (CTO/Co-founder)
+- Hubbi: Igor Mesquita (CEO/Founder)
+- Hunty: Sebastián Caro (CEO/Co-founder), Francisco Camacho (CTO/Co-founder)
+- Inner AI: Pedro Salles Leite (CEO/Co-founder), Eduardo Mitelman (Co-founder)
+- Instacrops: Mario Bustamante (CEO/Founder)
+- Jelou: Luis Loaiza (CEO/Co-founder), Alberto Vera (Co-founder)
+- Jota: Davi Holanda (Founder/CEO)
+- Igual: 0 (founders not identified in public sources — flagged for manual lookup)
+
+### Companies flagged for manual review (6)
+1. **GOW** — CSV website `gow.mx` → actual `gowcredit.com`. Updated; verify domain intent.
+2. **Hitch** — CSV description "AI internal-mobility" is WRONG (actual = external recruitment for SMBs); updated description. Also `hitch.works` website currently unavailable (domain for sale) — verify company still active.
+3. **Hubbi** — CSV name "Hubi"/website `hubi.com.br`/description "AI used-car marketplace" all mismatch actual "Hubbi Parts"/`hubbi.app`/"AI auto-parts marketplace". Updated name/website/description. Sector left as "Logistics Mobility & Ops" (automotive-adjacent) but could be "Retail & Ecommerce" — confirm.
+4. **Igual** — CSV website `igual.com.br` → actual `igual.com`. Founders not identified in public sources (Renato Ramos = finance/CFO, not founder) — needs manual founder lookup.
+5. **Horizon** — Official HQ San Francisco but origin/engineering in Montevideo, Uruguay. Kept Country=Uruguay + HQ City=Montevideo per "origin" preference (Avedian/Gaus precedent). Confirm. CSV website `horizon.ai` → `usehorizon.ai`.
+6. **Inner AI** — CSV website `inner.ai` → actual `innerai.com`. Updated; verify.
+
+### Notes
+- Layer 3 (interview) fields untouched per rules.
+- Hunty classified Tier 2 (High inference but only Med latency + Med residency — no High pairing per composite rule).
+- GOW classified Tier 2 (one High signal = residency, but pre-seed/2 employees/very early).
+- Several LinkedIn company slugs (Hitch, Horizon, Hunty, Instacrops, Jelou, Jota) are best-effort guesses from search — recommend verifying before outreach.
