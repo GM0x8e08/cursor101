@@ -316,3 +316,24 @@ The CSV entry for Birdie had Country=Mexico and Sector=Logistics Mobility & Ops 
 - Hunty classified Tier 2 (High inference but only Med latency + Med residency — no High pairing per composite rule).
 - GOW classified Tier 2 (one High signal = residency, but pre-seed/2 employees/very early).
 - Several LinkedIn company slugs (Hitch, Horizon, Hunty, Instacrops, Jelou, Jota) are best-effort guesses from search — recommend verifying before outreach.
+
+### Corrections made per user feedback (batch 4)
+
+1. **Hitch** — User found PitchBook listing showing the company is OUT OF BUSINESS. Marked Status = **Dead** (functional removal from active pipeline; record retained for traceability rather than hard-deleted). Updated LinkedIn to `linkedin.com/company/hitch-technology` (user-provided). Deleted both drafted contacts (Gabriela Ceballos, Daniel Pardo). hitch.works domain was already unavailable (for sale), consistent with out-of-business status.
+
+2. **Hubbi** — User confirmed: leave Sector as **Logistics Mobility & Ops** (no change).
+
+3. **Igual** — User provided LinkedIn people page (`linkedin.com/company/igualparatodos/people/`) and asked to add only the CEO. Identified CEO via search: **André Boaventura** (Co-Founder & CEO, `linkedin.com/in/andreboaventura2`). Added 1 contact (Confidence: High, Source: LinkedIn, Outreach Status: To verify). Note: Igual has 3 co-founders — André Boaventura (CEO), Jacqueline Jianoti (COO), Ariel Patschiki (CTO) — but per user instruction only the CEO was added.
+
+4. **Horizon** — User confirmed: "That's perfect, leave it like that." No change. Added Nicolás Scopesi's personal LinkedIn (`linkedin.com/in/scopesinicolas`) to his contact record (found during verification).
+
+### LinkedIn verification (user updated LinkedIn fields; verified via web search)
+- **Horizon** `linkedin.com/company/horizonaiprocess` — ✓ CORRECT (confirmed official Horizon LinkedIn; Nicolás Scopesi's profile links to it).
+- **Hunty** `linkedin.com/school/huntyjobs` — ✓ CORRECT (Hunty genuinely uses a LinkedIn "school" page, not a "company" page; confirmed via employee profiles linking to it).
+- **Jelou** `linkedin.com/company/jelou-ai` (Ecuador subdomain) — ✓ Looks correct (consistent with jelou.ai site).
+- **Jota** `linkedin.com/company/jota` — ⚠️ Plausible but could not independently confirm the exact slug resolves to the fintech (jota.ai); "company/jota" is generic. Recommend double-checking it lands on the Jota fintech and not an unrelated "Jota" company.
+- GOW, Igual, Inner AI, Instacrops, Hubbi LinkedIn values unchanged from my entries (all matched research).
+
+### Additional findings (flagged for user awareness, not changed)
+- **Hunty** has REBRANDED to **"Ana AI"** (hunty.com now reads "Hunty ahora es Ana AI"). Record name kept as "Hunty" pending user decision. One source (employee profile) cites ~$9.3M total funding vs CB Insights' $4.37M — possible additional rounds; left at $4.37M (conservative) pending confirmation.
+- **Jota** had a prior seed round (led by MAYA Capital, with HOF Capital/Big Bets/Alter Global/North Ventures) before the $30M Series A, so total raised is >$30M; Total Raised field currently shows "$30M" (Series A only). Can update to "$30M+ (Seed + Series A)" if desired.
