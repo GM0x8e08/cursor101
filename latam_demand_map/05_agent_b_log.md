@@ -348,3 +348,52 @@ The CSV entry for Birdie had Country=Mexico and Sector=Logistics Mobility & Ops 
 6. **Hunty → Ana AI** — User confirmed rebrand. Renamed Company Name to **"Ana AI"**, updated Description and Classification Notes to reflect rebrand (hunty.com now reads "Hunty ahora es Ana AI"). Contacts (Sebastián Caro, Francisco Camacho) retained via record-ID links.
 
 7. **Jota** — User confirmed. Updated Total Raised from "$30M" to **"$30M+ (Seed + Series A; seed led by MAYA Capital)"** to reflect the prior seed round (MAYA Capital lead, with HOF Capital/Big Bets/Alter Global/North Ventures) before the $30M Series A.
+
+## Batch 5 — completed 2026-07-24
+
+### Companies processed (10)
+| # | Company | Country | Sector | Status | Priority Tier | Inference | Latency | Residency | Self-Host | Growth | Contacts |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | Kapso AI | Chile (was Brazil) | General AI Platforms | Active | Tier 3 | Low | Med | Med | No | Med | 0 |
+| 2 | Kua | Argentina | Finance | Active | Tier 3 | — | — | — | — | — | 0 |
+| 3 | Kuona | Mexico | Retail & Ecommerce (was Logistics) | Active | Tier 2 | Med | Low | Med | No | Med | 2 |
+| 4 | Lara | Argentina | Talent & Workforce Mgmt | Acquired | Tier 3 | Med | High | Med | No | Low | 0 |
+| 5 | Leadsales | Mexico | Sales & Customer Support | Active | Tier 2 | Med | High | Med | No | Med | 2 |
+| 6 | Leona | Mexico | Healthcare | Active | Tier 1 | High | High | High | Unknown | High | 2 |
+| 7 | Lexter | Brazil | Legal & Compliance | Active | Tier 1 | High | Med | High | Yes | Med | 1 |
+| 8 | Liti | Brazil | Healthcare | Active | Tier 2 | Med | Med | High | No | Med | 2 |
+| 9 | Magie | Brazil | Finance | Active | Tier 1 | High | High | High | No | High | 2 |
+| 10 | Mappa | Brazil | Talent & Workforce Mgmt | Active | Tier 1 | High | Med | High | No | High | 2 |
+
+### Tier 1 this batch (4)
+- **Leona** — AI co-pilot for doctors on WhatsApp; High inference + High latency + High residency (health data) + High growth ($14M seed led by a16z, Dec 2025).
+- **Lexter** — AI legal assistant building proprietary LLMs for Brazilian law; High inference (own LLMs) + High residency (legal data) + self-hosting.
+- **Magie** — AI conversational finance on WhatsApp (Pix/banking); High inference + High latency + High residency (banking) + High growth ($10M+, Lux Capital).
+- **Mappa** — Voice-AI behavioral hiring; High inference (audio neural net at scale) + High residency (biometric voice data) + High growth/scale (Draper, $4M+ ARR).
+
+**Tier 1 count so far: 14** (prior 10 + Leona, Lexter, Magie, Mappa)
+
+### Contacts drafted (13)
+- Kuona: Chema Sanroman (CEO/Co-founder), Agustín Magaña (Co-founder)
+- Leadsales: Roberto Peñacastro (CEO/Co-founder), David Villa Cañez (CTO/Co-founder)
+- Leona: Caroline Merin (CEO/Co-founder), Tom Chokel (Co-founder)
+- Lexter: Pedro Jahara (CEO/Co-founder)
+- Liti: Fernando Vilela (Co-founder), Dr. Eduardo Rauen (Co-founder)
+- Magie: Luiz Ramalho (CEO/Co-founder), João Camargo (Co-founder)
+- Mappa: Sarah Lucena (CEO/Co-founder), Daniel Moretti (Co-founder & AI Engineer)
+- Kapso AI, Kua, Lara: 0 (Tier 3 / unverifiable / acquired)
+
+### Companies flagged for manual review (6)
+1. **Kapso AI** — CSV Country was "Brazil" but Kapso is Chilean (solo founder Andrés Matte in Chile). Updated to Chile; verify CSV didn't intend a different company. Also moved Sector General Data Analysis → General AI Platforms (WhatsApp dev infra). Tier 3 (API-only passthrough, no own inference).
+2. **Kua** — UNVERIFIABLE. kua.com.ar returns 503 (unavailable); no public info for an Argentine fintech named "Kua". Closest matches (QUUAN, Kuenta, Kamina) don't match. Needs user confirmation of correct company/website. Left as Tier 3 placeholder with enrichment blank.
+3. **Kuona** — Sector Logistics Mobility & Ops → Retail & Ecommerce (actual CPG/retail pricing). HQ officially Los Angeles but origin Monterrey; kept Country=Mexico, HQ City=Monterrey per origin preference.
+4. **Lara** — ACQUIRED BY VISMA (April 2025). Marked Status=Acquired, Tier 3, 0 contacts. CSV Status was Active; website lara.ai → meetlara.ai.
+5. **Leona** — CSV description "AI women's health/hormonal" is WRONG (actual = AI co-pilot for doctors via WhatsApp); updated. Website leonahealth.com → leona.health. HQ also SF; kept Mexico/Mexico City per origin.
+6. **Mappa** — CSV description "workforce-analytics/people-management" imprecise (actual = voice-AI behavioral hiring); updated. HQ officially Dover/Miami US but founders Brazilian; kept Country=Brazil per precedent, HQ City blank.
+
+### Notes
+- Layer 3 (interview) fields untouched per rules.
+- Several LinkedIn company slugs (Leadsales, Leona, Lexter, Liti, Magie, Mappa) are best-effort guesses — recommend verifying before outreach.
+- Kapso AI classified Tier 3 (API-only infra, customers bring own AI — not a direct inference buyer).
+- Leadsales classified Tier 2 (High latency but Med inference/residency, no High pairing).
+- Liti classified Tier 2 (High residency/health but Med inference, no High pairing).
