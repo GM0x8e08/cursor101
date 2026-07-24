@@ -256,3 +256,13 @@ The CSV entry for Birdie had Country=Mexico and Sector=Logistics Mobility & Ops 
 
 ### Next batch
 - Batch 4 will fetch the next 10 Active companies with empty Classification Date (sorted by Company Name), starting after "Gaus". Awaiting user confirmation.
+
+---
+
+## Batch 3 — user feedback applied (2026-07-24)
+
+### Corrections made per user feedback
+
+1. **FieldData** — User confirmed website correction (fielddata.ag) and requested sector update. Updated Sector from "Sales & Customer Support" → **"Sustainability & Agro"** (matches actual product: AI-powered ranch/farm management). Note: the schema doc rendered the option as "Sustainability and agro" but the actual Airtable single-select option uses "&" (ampersand); first attempt with "and" failed with "Insufficient permissions to create new select option".
+
+2. **Gaus** — User confirmed: "San Francisco, but they are Brazilian. Let's live as Brazilians." Country kept as **Brazil** (no change — was already Brazil). HQ City note already reflects "San Francisco, CA (founders from São Paulo, Brazil)". User accepts the Brazilian-founder framing despite US legal HQ.
