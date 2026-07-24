@@ -337,3 +337,14 @@ The CSV entry for Birdie had Country=Mexico and Sector=Logistics Mobility & Ops 
 ### Additional findings (flagged for user awareness, not changed)
 - **Hunty** has REBRANDED to **"Ana AI"** (hunty.com now reads "Hunty ahora es Ana AI"). Record name kept as "Hunty" pending user decision. One source (employee profile) cites ~$9.3M total funding vs CB Insights' $4.37M — possible additional rounds; left at $4.37M (conservative) pending confirmation.
 - **Jota** had a prior seed round (led by MAYA Capital, with HOF Capital/Big Bets/Alter Global/North Ventures) before the $30M Series A, so total raised is >$30M; Total Raised field currently shows "$30M" (Series A only). Can update to "$30M+ (Seed + Series A)" if desired.
+
+### Additional corrections per user follow-up (batch 4)
+
+5. **Igual** — User asked to add the other 2 co-founders. Added:
+   - Jacqueline Jianoti (Co-Founder & COO, `linkedin.com/in/jacqueline-jianoti`, High confidence)
+   - Ariel Patschiki (Co-Founder & CTO, Med confidence, no personal LinkedIn found)
+   Igual now has 3 contacts total (André Boaventura CEO + Jacqueline Jianoti COO + Ariel Patschiki CTO).
+
+6. **Hunty → Ana AI** — User confirmed rebrand. Renamed Company Name to **"Ana AI"**, updated Description and Classification Notes to reflect rebrand (hunty.com now reads "Hunty ahora es Ana AI"). Contacts (Sebastián Caro, Francisco Camacho) retained via record-ID links.
+
+7. **Jota** — User confirmed. Updated Total Raised from "$30M" to **"$30M+ (Seed + Series A; seed led by MAYA Capital)"** to reflect the prior seed round (MAYA Capital lead, with HOF Capital/Big Bets/Alter Global/North Ventures) before the $30M Series A.
