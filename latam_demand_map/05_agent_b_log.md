@@ -397,3 +397,46 @@ The CSV entry for Birdie had Country=Mexico and Sector=Logistics Mobility & Ops 
 - Kapso AI classified Tier 3 (API-only infra, customers bring own AI — not a direct inference buyer).
 - Leadsales classified Tier 2 (High latency but Med inference/residency, no High pairing).
 - Liti classified Tier 2 (High residency/health but Med inference, no High pairing).
+
+## Batch 5 follow-up — Akua (was "Kua") — completed 2026-07-24
+
+User provided the correct site: `https://akua.la/en`. Re-research confirmed the CSV entry "Kua, Argentina, kua.com.ar" was actually **Akua** (akua.la), an AI-native payment-infrastructure / Acquiring-as-a-Service fintech.
+
+### Company record updated (recNwQgG0oRkZN67q)
+- Renamed Kua → **Akua**; Country Argentina → **Colombia**; Website → `https://akua.la`; LinkedIn → `https://www.linkedin.com/company/akua`.
+- HQ City → **Medellín** (CEO Carlos Marín based in Medellín, Antioquia; corrected from earlier Bogotá guess).
+- Headcount Band → **51–200** (~60–70 employees, +150% YoY per LinkedIn).
+- Total Raised → **$12.8M** (seed, Oct 2025; investors Flourish Ventures, Cathay Latam, Propel, HTwenty, Krealo, Plug and Play).
+- Founded 2024; Product Type Real-time; Inference Workload Text, Multimodal.
+- Classification: Inference High (30+ AI agents at 50M+ daily txns) + Latency High (real-time payments/fraud) + Data Residency High (financial, regulated) + Growth High → **Tier 1**.
+- Classification Notes cleaned up (removed "verify with user" flag; user confirmed via akua.la site; CSV description "credit-scoring/lending" → actual "payment infrastructure/acquiring").
+
+### Contacts created (3) — linked to Akua
+| Name | Role | Current Title | LinkedIn | Confidence | Source |
+|---|---|---|---|---|---|
+| Carlos Mario Marín Arroyave | Founder | CEO & Co-Founder | /in/carlos-marin-arroyave | High | LinkedIn |
+| Juan José Behrend | CTO | CTO & Co-Founder | /in/juanjosebehrend | High | LinkedIn |
+| Rodrigo Rodrigues | Founder | COO & Co-Founder | /in/rodrigo-rodrigues3 | High | LinkedIn |
+
+Note: Rodrigo's day job is COO (ops), which is normally skipped, but as a co-founder he is classified under the higher-priority "Founder" role (Current Title preserves "COO & Co-Founder"), consistent with the Igual handling.
+
+## Magie verification — 2026-07-24
+- Website = `https://magie.com.br/` ✓ and LinkedIn = `https://www.linkedin.com/company/magiebr/` ✓ (both set per user-provided links).
+- Tier 1, 2 contacts (Luiz Ramalho — CEO/Co-founder; João Camargo — Co-founder). All well.
+
+## OVERALL TIER REVIEW — after 5 batches (50 companies)
+
+**Tier 1 (15):** Akua, Assis, Carecode, Dapta, Darwin Ai, Desteia, Fintalk, Horizon, Inner AI, Jelou, Jota, Leona, Lexter, Magie, Mappa
+**Tier 2 (25):** Allie, Ana AI, Anastasia, Aravita, Arkham, Avedian, Bemagro, Bircle, Cedalio, Cenit, Cloud Humans, Comp, diio, Egg, Finia, Flipzen, GOW, Hitch, Hubbi, Igual, Instacrops, Kuona, Leadsales, Liti, Rook
+**Tier 3 (10):** AnyoneAI, Atlas, Birdie, Chambas AI, dio., Felz, FieldData, Gaus, Kapso AI, Lara
+
+Status flags: Atlas (Acquired), Lara (Acquired), Hitch (Dead) — retained in DB but not active pipeline targets.
+
+**Tier 1 share: 15/50 = 30%.** All Tier 1 entries satisfy the composite rule (≥1 High signal paired correctly: High Inference+High Latency, or High Inference+High Residency, or Med Inference+High Latency+High Residency).
+
+### Summary of work done
+- 50 companies enriched (layer 2 fields: HQ City, LinkedIn, Founded Year, Headcount Band, Total Raised, Last Round/Date/Investor, Product Type, Inference Workload, Tech Hiring Signal, Notable Customers) and classified into Priority Tier via the 5-signal composite rules.
+- ~80+ contacts drafted (1–3 per active company, role-priority rules applied; ops/marketing/sales/HR/product titles skipped unless co-founder). No emails guessed.
+- Numerous CSV data-quality issues caught and corrected (wrong company names: Crook→Rook, Hunty→Ana AI, Kua→Akua, Hubi→Hubbi; wrong websites; wrong countries; wrong sectors; wrong descriptions) — each flagged to the user with the correction applied.
+- Layer 3 (interview) fields left untouched per rules.
+- Remaining ~50 companies in the CSV still queued for batches 6+.
