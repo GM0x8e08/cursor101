@@ -440,3 +440,52 @@ Status flags: Atlas (Acquired), Lara (Acquired), Hitch (Dead) — retained in DB
 - Numerous CSV data-quality issues caught and corrected (wrong company names: Crook→Rook, Hunty→Ana AI, Kua→Akua, Hubi→Hubbi; wrong websites; wrong countries; wrong sectors; wrong descriptions) — each flagged to the user with the correction applied.
 - Layer 3 (interview) fields left untouched per rules.
 - Remaining ~50 companies in the CSV still queued for batches 6+.
+
+## Batch 6 — completed 2026-07-26
+
+### Companies processed (10) — alphabetical M–P (continuing after Mappa)
+| # | Company | Country | Sector | Status | Priority Tier | Inference | Latency | Residency | Self-Host | Growth | Contacts |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | Melian | Argentina | Retail & Ecommerce | Active | Tier 2 | Med | Med | Low | Unknown | High | 2 |
+| 2 | Monico | Mexico | Legal & Compliance | Active | Tier 2 | Med | Med | High | No | Med | 3 |
+| 3 | Moonflow | Argentina | Finance | Active | Tier 1 | Med | High | High | Unknown | High | 3 |
+| 4 | Morada AI | Brazil | Sales & Customer Support (was Retail) | Active | Tier 1 | High | High | Med | Unknown | High | 2 |
+| 5 | Munai | Brazil | Healthcare | Active | Tier 1 | High | High | High | Unknown | Med | 2 |
+| 6 | NeuralMed | Brazil | Healthcare | Active | Tier 2 | Med | Med | High | Unknown | Med | 3 |
+| 7 | Numia | Argentina | Sales & Customer Support | Active | Tier 2 | Med | Med | High | Unknown | High | 3 |
+| 8 | Nuvia | Brazil | Sales & Customer Support | Active | Tier 2 | Med | High | Med | Unknown | High | 3 |
+| 9 | Patagon AI | Argentina | Sales & Customer Support | Active | Tier 2 | Med | High | Med | Unknown | High | 3 |
+| 10 | PathPilot | Peru | Finance | Active | Tier 2 | Med | Med | High | Unknown | High | 3 |
+
+### Tier 1 this batch (3)
+- **Moonflow** — AI collections/receivables via voice+text agents (real-time debt collection, 25 countries); Med inference + High latency (voice) + High residency (financial). $4M+ raised.
+- **Morada AI** — Generative AI agents for real estate sales (MIA chat + voice, 24/7 WhatsApp); High inference ($5.3M, 50-60 hc) + High latency. ~200 developers, 3M+ conversations.
+- **Munai** — AI clinical intelligence for hospitals (deterioration prediction, antibiotic optimization, generative AI copilot); High inference (50+ hc, healthcare) + High latency (real-time) + High residency. Gates Foundation-backed.
+
+**Tier 1 count so far: 18** (prior 15 + Moonflow, Morada AI, Munai)
+
+### Contacts drafted (27)
+- Melian: Santiago Ruberto (CEO/Co-founder), Valentin Ratti (CTO/Co-founder)
+- Monico: Antonio Alfeiran, Diego Villasenor, Christian Galicia (all Co-founders)
+- Moonflow: Facundo Turconi (CEO/Co-founder), John Mc Kevin Rodriguez Mendoza (CTO/Co-founder), Matias Fernandez (Co-founder)
+- Morada AI: Ramon Azevedo (Founder/CEO), Luis Veloso (Co-founder/CRO)
+- Munai: Cristian Rocha (CEO/Co-founder), Hugo Morales (Co-founder/Infectologist)
+- NeuralMed: Mariana Gaspers (CEO), Anthony Eigier (Co-founder, former CEO), Andre Castilla (Co-founder/CMO)
+- Numia: Gustavo Lauria (CEO/Co-founder), Nicolas Demner, Joaquin Zoilo (Co-founders)
+- Nuvia: John Paz (CEO/Co-founder), Arthur Sorelli (CRO/Co-founder), Jader Campos (Co-founder)
+- Patagon AI: David Grandes (Founder/CEO), Cristian Adamo (CTO/Co-founder), Michel Pauzner (Head of Software Eng)
+- PathPilot: Victor Laguna (Founder/CEO), David Altman (Head of AI/Co-founder), Sebastian Silva (Co-founder)
+
+### Companies flagged for manual review (5)
+1. **Melian** — Very early (3 founders + 1 employee, ~4 people); rebranded Sirvana->Melian; relocating Buenos Aires->San Francisco. Country kept Argentina (origin) but operations moving to US. Inference Med (AI-native search but pre-seed scale). Company LinkedIn not found (left blank).
+2. **Monico** — CSV description "KYC/AML for financial institutions" is WRONG (actual = AI workspace for government procurement & public-tender compliance); updated. CSV website monico.ai -> monicoai.com. Very early/pre-seed (Semilla Ventures). Uses Azure OpenAI (API-based).
+3. **NeuralMed** — REBRAND: NeuralMed rebranded to **Level (Level AI)**, levelai.com.br; new CEO Mariana Gaspers (joined 2024). Kept record name "NeuralMed" pending user confirmation to rename (precedent: Hunty->Ana AI was renamed only after user confirmation). CSV website neuralmed.ai -> levelai.com.br. Product evolved from radiology imaging to clinical+financial intelligence.
+4. **Numia** — Headcount Band left blank (no reliable public data; 10-yr-old profitable company, 400+ clients, ~$5M ARR — likely 51-200 but unconfirmed). CSV website numia.ai -> numia.co.
+5. **PathPilot** — HQ San Francisco (US-incorporated); founder Victor Laguna Peruvian (Peru SV community). Country kept Peru (origin per CSV) but actual HQ is US — confirm with user. CSV website pathpilot.io -> getpathpilot.com. Very early (team of 2-3, pre-seed).
+
+### Notes
+- Layer 3 (interview) fields untouched per rules.
+- Sector change: Morada AI Retail & Ecommerce -> Sales & Customer Support (actual = AI sales agents for real estate, not e-commerce merchandising).
+- Several company LinkedIn slugs (Melian, Monico, NeuralMed/Level, Numia, Nuvia) not found in public sources — left blank for user to fill manually (as done in prior batches).
+- Moonflow classified Tier 1 via Med inference + High latency + High residency composite rule (consistent with Fintalk); $4M funding / 40-50 hc just under the High inference bars but voice AI at scale across 25 countries.
+- Patagon AI / Nuvia classified Tier 2 (Med inference + High latency, but Med residency — no High residency to reach Tier 1; consistent with Leadsales/Cloud Humans).
