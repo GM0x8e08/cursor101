@@ -489,3 +489,48 @@ Status flags: Atlas (Acquired), Lara (Acquired), Hitch (Dead) — retained in DB
 - Several company LinkedIn slugs (Melian, Monico, NeuralMed/Level, Numia, Nuvia) not found in public sources — left blank for user to fill manually (as done in prior batches).
 - Moonflow classified Tier 1 via Med inference + High latency + High residency composite rule (consistent with Fintalk); $4M funding / 40-50 hc just under the High inference bars but voice AI at scale across 25 countries.
 - Patagon AI / Nuvia classified Tier 2 (Med inference + High latency, but Med residency — no High residency to reach Tier 1; consistent with Leadsales/Cloud Humans).
+
+## Batch 6 follow-up — user-provided LinkedIn + site verification (5 companies) — completed 2026-07-26
+
+User provided missing company LinkedIn URLs for 5 Batch-6 companies and asked to verify sites work + gather extra details. All 5 sites verified live; LinkedIn + website fields updated in Airtable (single PATCH, HTTP 200).
+
+### 1. Melian (recyx85llGV3rE9Hs)
+- Website: `https://melian.ai` → **`https://melian.com`** (live; "Discover and shop curated fashion from your favorite stores"; footer "© 2026 Sirvana, Inc." confirms Sirvana→Melian rebrand).
+- LinkedIn: blank → **`https://www.linkedin.com/company/meliandotcom`**.
+- The old `melian.ai` redirects to "Querelo" (an **unrelated** dead domain — not the same company); noted in Classification Notes. Live site is `melian.com`.
+- Total Raised kept at **$2.7M** (confirmed: $615K pre-seed 2024 + $2.1M seed May 2025 led by Hi Ventures, per Hi Ventures press release / Bloomberg Linea / Valentin Ratti's own LinkedIn post). An earlier "$4.1M" figure was NOT corroborated by reliable sources — discarded.
+- Extra detail captured: rebrand named after the Belgrano (Buenos Aires) street of their hacker house; legal entity still Sirvana, Inc.; relocating BA→San Francisco hacker house; now curated fashion discovery; Argentina's 3rd most downloaded shopping app.
+- Tier unchanged: Tier 2 (Med inference, no High pairing).
+
+### 2. Monico (recuutlMPYqOoX4Bi)
+- Website: `https://monico.ai` → **`https://monicoai.com`** (live; tagline "Agentic Infrastructure for Government Procurement").
+- LinkedIn: blank → **`https://www.linkedin.com/company/monicoai`**.
+- Site confirms product: multi-agent workspace for public-tender compliance (opportunity search, bid analysis, document control, clarification review, proposal assembly; source trace, permissions, evidence trail, human approval, governance checks).
+- Tier unchanged: Tier 2 (Med inference + High residency, no High latency).
+
+### 3. NeuralMed (recQA15PxnEgEv8A1)
+- Website: `https://neuralmed.ai` → **`https://levelai.com.br`** (live; redirects to www; "Level AI — camada de inteligência" for hospitals/operators/diagnostic networks).
+- LinkedIn: blank → **`https://www.linkedin.com/company/levelai-com-br`**.
+- Site CONFIRMS rebrand NeuralMed → **Level (Level AI)**. Current team page: CEO Mariana Gaspers (CEO & Co-Fundadora), **CTO Gustavo Barizon** (newly identified — was not in prior research), CMO & Co-Fundador André Castilla. Anthony Eigier (former CEO/founder) now advisory.
+- Extra detail: +200 integrations in production (Tasy, MV, RIS, PACS); LGPD-compliant; "level One" product (reads imaging & pathology reports, 120+ clinical triggers, ROI-documented); 97% clinical accuracy, 40% faster than manual; HQ São Paulo (Jardins, R. Padre João Manuel 1212).
+- Record NAME kept as "NeuralMed" pending explicit user confirmation to rename (precedent: Hunty→Ana AI renamed only after explicit confirmation). FLAG raised in Classification Notes.
+- Tier unchanged: Tier 2 (Med inference + High residency, no High latency).
+
+### 4. Numia (reczqZK7rrvnWaOi5)
+- Website: `https://numia.ai` → **`https://numia.co`** (live; "Plataforma de gestión inteligente de sucursales con IA").
+- LinkedIn: blank → **`https://www.linkedin.com/company/somosnumia`**.
+- Site confirms product: intelligent branch management + customer journey orchestration; 3 tiers (Manage/Optimize/Transform); verticals Finance/Retail/Health/Government/Insurance; -35% wait times; Banco Macro customer testimonial (Andrea Illescas).
+- Extra detail: **Forrester-recognized in Customer Journey Orchestration Platforms Landscape Q2 2026**.
+- Tier unchanged: Tier 2 (Med inference + High residency, no High latency).
+
+### 5. PathPilot (recF3sRcZjYDCqoZ1)
+- Website: `https://pathpilot.io` → **`https://getpathpilot.com`** (live; redirects to www; "AI Agents for Lending Operations", Y Combinator S24).
+- LinkedIn: blank → **`https://www.linkedin.com/company/getpathpilot`** (confirmed via Victor Laguna's own LinkedIn launch post).
+- Extra detail: workforce distributed across **US, Ecuador, Peru** (confirms Peru origin for Country field); Victor Laguna ex-Meta Engineering Manager (Facebook Videos/Reels/Watch), ex-Yahoo, based Los Gatos CA, prev startup Reclutec; agents handle 60–80% of high-volume operational workflows; proprietary harness connecting AI models to lender workflows/systems/policies/data.
+- Tier unchanged: Tier 2 (Med inference + High residency, no High latency).
+
+### Notes
+- All 5 records' `Last Verified` set to 2026-07-26.
+- No contacts added/removed (user only asked for LinkedIn + site verification + extra details; all 5 already had 2–3 contacts within the 1–3 cap).
+- NeuralMed rename to "Level" still pending explicit user confirmation — flagged.
+- Layer 3 (interview) fields untouched per rules.
