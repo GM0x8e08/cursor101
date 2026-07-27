@@ -708,3 +708,89 @@ All deletes returned HTTP 200 (deleted:true).
 - **Tier 1 count unchanged: 21** (neither removed was Tier 1).
 - Contacts table: 131 → **129** (Territorium's 2 contacts removed).
 - Remaining unclassified for batches 9+: **19** (unchanged — Simpleto/Territorium were already classified in Batch 8; their removal doesn't add new unclassified companies; the next batch starts at Tivita).
+
+## Batch 9 (FINAL) — completed 2026-07-28 — all remaining 19 unclassified companies in one pass
+
+Per user request ("can you do all the remaining unclassified companies?"), processed all 19 remaining companies (T–Z) in a single pass.
+
+### Companies processed (19) — alphabetical T–Z
+| # | Company | Country | Sector | Status | Priority Tier | Inference | Latency | Residency | Self-Host | Growth | Contacts |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | Tivita | Brazil | Healthcare | Active | Tier 2 | Med | Med | High | No | High | 1 |
+| 2 | Trebu | Mexico | Logistics Mobility & Ops | Active | Tier 2 | Med | Med | Low | No | Med | 3 |
+| 3 | Trinio | Brazil | Retail & Ecommerce | Active | Tier 2 | Med | Med | Med | No | High | 2 |
+| 4 | Turn2C | Brazil | Finance (was Sales & CS) | Active | Tier 2 | Med | Med | High | No | High | 3 |
+| 5 | Upflux | Brazil | General Data Analysis & Business Automation | Active | Tier 2 | Med | Med | Med | No | High | 2 |
+| 6 | Vambe | Chile | Sales & Customer Support | Active | **Tier 1** | High | High | Med | No | High | 2 |
+| 7 | Verve Market | Mexico (CSV) / US (actual) | Retail & Ecommerce | Active | Tier 3 | Low | Low | Low | No | Med | 3 |
+| 8 | ViewMind | Argentina (origin) / US-Lux | Healthcare | Active | Tier 2 | Med | Med | High | No | Med | 2 |
+| 9 | VOKS | Mexico | Retail & Ecommerce | Active | Tier 3 | Low | High | Low | No | Med | 2 |
+| 10 | Vozy | Colombia (origin) / Miami | Sales & Customer Support | Active | **Tier 1** | High | High | Med | No | High | 3 |
+| 11 | WeKall | Colombia | Sales & Customer Support | Active | Tier 2 | Med | High | Med | No | Med | 2 |
+| 12 | Winclap | Argentina | Sales & Customer Support | Active | Tier 3 | Med | Low | Low | No | Med | 2 |
+| 13 | Ximple | Mexico | Finance (was Sales & CS) | Active | Tier 2 | Med | Med | High | No | Med | 3 |
+| 14 | Yana | Mexico | Healthcare | Active | Tier 2 | Med | Med | High | No | Med | 2 |
+| 15 | Yavendió | Peru | Sales & Customer Support | Active | Tier 2 | Med | High | Med | No | High | 3 |
+| 16 | Yuna | Brazil | Education | Active | Tier 3 | Low | Low | Low | No | Med | 1 |
+| 17 | Zapia | Uruguay | General AI Platforms | Active | Tier 2 | High | Med | Med | No | High | 3 |
+| 18 | ZeroEval | Mexico (CSV) / SF (actual) | General AI Platforms | Active | Tier 3 | Low | Low | Med | No | Med | 2 |
+| 19 | Zonora AI | Mexico | Sales & Customer Support | Active | Tier 2 | Med | High | High | No | Med | 3 |
+
+### Tier 1 this batch (2)
+- **Vambe** — AI-native conversational commerce platform; multi-agent AI automates end-to-end B2C ops (demand gen, sales, payments, scheduling, retention) via WhatsApp/Instagram. Founded 2023 by Nicolás Camhi (CEO), Matías Pérez, Diego Chahuán (CTO). Santiago, Chile. $18.4M total ($3.85M seed Dec 2024; $14M Series A Dec 2025, Monashees lead + Cathay Latam/Atlantico/Tekton/Chile Ventures/SkyDeck Berkeley/Nazca/M13). 80 employees. $1M ARR (5x), 17% MoM growth, 1,700+ implementations, millions of interactions. **Tier 1: High Inference AND High Latency** (real-time WhatsApp conversational + AI-native multi-agent at scale).
+- **Vozy** — Conversational AI voice platform for enterprise contact centers; Lili virtual agents (generative AI, first-contact resolution), Speech Analytics, Voice Biometrics, Lili Recover (collections). Founded 2015/2017 by Humberto Pertuz, Ricardo Marin, Helmuth Corzo, Alejandro Lopez. Medellín, Colombia; HQ Miami. $8.1M total (GoHub lead; Arash Ferdowsi/Dropbox; Globant). 150+ companies, 16 countries. **Tier 1: High Inference AND High Latency** (real-time voice contact center at scale).
+
+**Tier 1 count so far: 23** (prior 21 + Vambe, Vozy)
+
+### Contacts drafted (44)
+- Tivita: Claudio Franco (Co-founder & CEO)
+- Trebu: Daniel Akle Carranza (Co-founder & CEO), Antonio Longoria (Co-founder), Fran Guzman (Co-founder)
+- Trinio: Theo Ribeiro (Co-founder & CEO), Pablo Staubli (Co-founder)
+- Turn2C: Bruno Pinheiro (Co-founder & CEO), Tatiana Anderson (Co-founder), Thiago Ramos (Co-founder)
+- Upflux: Alex Meincheim (Founder & CEO), Flavio Kannenberg (Engineering Director)
+- Vambe: Nicolás Camhi (Co-founder & CEO), Diego Chahuán (Co-founder & CTO)
+- Verve Market: Andrés Ornelas Vargas (Co-founder & CEO), Jason Kim (Co-founder), Anthony Prats (Co-founder)
+- ViewMind: Gerardo Fernandez (Co-founder & CSO, PhD), Mark Edwards (Co-founder & CEO)
+- VOKS: Valeria Perez Rios (Co-founder & CEO), John Parker (Co-founder & CTO)
+- Vozy: Humberto Pertuz (Co-founder), Ricardo Marin (Co-founder), Helmuth Corzo (Co-founder)
+- WeKall: Felipe Sánchez (Co-founder & CEO), Julián Sánchez (Co-founder & CTO)
+- Winclap: Mariano Sáenz (Co-founder & CEO), Gonzalo Olmedo (Co-founder)
+- Ximple: Daniel Sujo (Co-founder & CEO), João Vitor Soares Ramos (Co-founder & CTO), Rodrigo Aparicio (Co-founder)
+- Yana: Andrea Campos (Founder & CEO), Fernando Rios (CTO)
+- Yavendió: David Tafur (Co-founder & CEO), Terry Cruz (Co-founder), Sebastian Gonzalez (Co-founder)
+- Yuna: Louis Markham (Founder & CEO)
+- Zapia: Juan Pablo Pereira (Co-founder & CEO), Nicolás Loeff (Co-founder & CTO), Martín Alcalá Rubí (Co-founder)
+- ZeroEval: Sebastian Crossa (Co-founder), Jonathan Chávez (Co-founder)
+- Zonora AI: Nicolas Fernandez Talice (Co-founder & CEO), Sérgio Samuel Furlaneto (CTO), Fernando Barragán (Co-founder)
+
+All contacts set to Outreach Status = "To verify", Confidence Med (High where personal LinkedIn confirmed), Source Web search/Press/LinkedIn. No emails guessed.
+
+### Companies flagged for manual review (8)
+1. **Tivita** — CSV desc "AI clinical assistant automates medical records and consultation notes" is WRONG (actual = fintech for medical clinics' FINANCIAL/admin management — back-office automation, not clinical AI scribe). Sector kept Healthcare (serves medical clinics) but product is financial/admin. $6M seed (FinTech Collective lead). Tier 2 (Med inference + High residency, no High latency).
+2. **Turn2C** — CSV desc "AI-driven B2C conversion and sales-automation" is WRONG (actual = fintech infrastructure for Brazilian CONSORTIUM/consórcio market). Sector changed Sales & Customer Support → Finance — confirm. Tier 2.
+3. **Verve Market** — CSV desc "AI marketplace-management platform for online sellers" is WRONG (actual = online GROCERY for US consumers with dietary needs). FLAG: CSV Country=Mexico but Verve Market is San Francisco-based US online grocery company; only LatAm links are Hi Ventures investment + Mexican founder Ornelas + workforce in Mexico/Chile — likely CSV country error, confirm. Tier 3.
+4. **ViewMind** — Country kept Argentina (origin) but HQ US (New York)/Luxembourg — confirm. $6M seed. Tier 2 (Med inference + High residency, no High latency).
+5. **VOKS** — CSV desc "AI-driven retail-media and advertising-optimization" is WRONG (actual = no-code AI voice/chat assistants for PHYSICAL retail). AI-native voice, very early (founded 2025, first paying customers) — Tier 3 now but could upgrade to Tier 2 with scale. FLAG.
+6. **Vozy** — Country kept Colombia (origin) but HQ Miami — confirm. Tier 1.
+7. **Ximple** — CSV desc "AI customer-support automation for retail and e-commerce" is WRONG (actual = AI-driven CREDIT/working-capital fintech for Mexican SMEs & direct sellers). Sector changed Sales & Customer Support → Finance — confirm. $35.2M total but ~$5M equity + $30M debt facility. Tier 2.
+8. **Yuna** — CSV desc "AI tutor and study assistant for students preparing for exams" is WRONG (actual = AI interactive personalized CHILDREN'S BOOKS/stories for reading habits, ages 1-12). Sector Education kept — confirm. Tier 3.
+9. **ZeroEval** — CSV Country=Mexico but HQ San Francisco (Mexican founders) — confirm. YC S25, $500K pre-seed. Tier 3.
+
+### Notes
+- Layer 3 (interview) fields untouched per rules.
+- Zapia classified Tier 2 (High inference + High growth but Med latency + Med residency — no High pairing; needs High Inference AND High Latency, OR High Residency AND scale). $19.3M, 6-7M users, Prosus-backed.
+- Zonora AI classified Tier 2 (Med inference + High latency + High residency, but no High pairing; very early, raising seed, 14 hc). Could upgrade to Tier 1 with scale (High inference + High latency) or scale signal (High residency + scale).
+- Winclap classified Tier 3 (Med inference but Low latency + Low residency; adtech/services, AI-as-feature for marketing). $2.3M funding but $4.9M revenue, 330 hc, mature.
+- Yavendió classified Tier 2 (Med inference + High latency, no High pairing; $1.1M pre-seed but 900+ brands, $50M generated, 800% projected growth).
+- WeKall classified Tier 2 (Med inference + High latency, no High pairing; $3.4M, 8K users — smaller scale than Vambe/Vozy).
+
+### Failures
+- None. All 19 Companies updates (4 PATCH calls + 1 correction PATCH) and 44 Contacts creations (5 POST calls) returned HTTP 200. One PATCH and one POST timed out on the MCP response but were verified to have applied successfully (no duplicates).
+
+### Updated database totals (after Batch 9 — FINAL)
+- Companies table: **94 records** (unchanged — no additions/removals this batch).
+- Classified: 75 → **94** (ALL 94 companies now classified — pipeline complete).
+- Active pipeline: ~91 Active (unchanged).
+- **Tier 1 count: 21 → 23** (+ Vambe, Vozy).
+- Contacts table: 129 → **173** (+44).
+- **Remaining unclassified: 0** — the entire Companies table is now enriched, classified, and contact-drafted.
