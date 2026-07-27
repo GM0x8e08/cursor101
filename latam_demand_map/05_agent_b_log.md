@@ -622,3 +622,63 @@ All deletes returned HTTP 200 (deleted:true).
 - **Tier 1 count unchanged: 19** (none of the removed were Tier 1).
 - Contacts table: 114 → **111** (Perhaps's 3 contacts removed).
 - Remaining unclassified for batches 8+: 29 (unchanged — Quash/SaludNow/Perhaps were already counted in batch 7; their removal doesn't add new unclassified companies; the next batch starts at Senzai).
+
+## Batch 8 — completed 2026-07-27
+
+### Companies processed (10) — alphabetical S–T (continuing after Selenios)
+| # | Company | Country | Sector | Status | Priority Tier | Inference | Latency | Residency | Self-Host | Growth | Contacts |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | Senzai | Mexico | General Data Analysis & Business Automation | Active | Tier 2 | Med | Med | Med | Unknown | Low | 2 |
+| 2 | Shinkansen | Chile | Finance | Active | **Tier 1** | Med | High | High | No | High | 3 |
+| 3 | Simpleto | Mexico | Talent & Workforce Mgmt | Active | Tier 3 | Low | Low | Med | No | Low | 0 |
+| 4 | Skills tech | Mexico (Berkeley incorp.) | Education (was Talent) | Active | Tier 3 | Low | Low | Low | No | Med | 3 |
+| 5 | SmartBreeder | Brazil | Sustainability & Agro | Active | Tier 2 | Med | Low | Low | No | Med | 1 |
+| 6 | Start Carreiras | Brazil | Talent & Workforce Mgmt | Active | Tier 2 | Med | Low | Med | No | High | 3 |
+| 7 | Teachy | Brazil | Education | Active | Tier 2 | High | Med | Med | No | High | 2 |
+| 8 | Telepatia | Brazil | Healthcare | Active | **Tier 1** | High | High | High | No | High | 1 |
+| 9 | Territorium | Mexico (San Antonio HQ) | Talent & Workforce Mgmt | Active | Tier 3 | Low | Low | Med | No | Med | 2 |
+| 10 | Time to Hire | Mexico (San Francisco HQ) | Talent & Workforce Mgmt | Active | Tier 2 | Med | High | Med | No | High | 3 |
+
+### Tier 1 this batch (2)
+- **Shinkansen** — AI-powered financial infrastructure for treasury & automated payment operations; single API to multiple banks (no RPAs), AI-driven reconciliation; Chile/Mexico/Peru/Colombia; ISO 27001. Med inference (AI reconciliation; core is banking-API connectivity) + High latency (real-time payments/treasury) + High residency (banking, regulated) + High growth (4 countries, 40+ bank/fintech customers). Tier 1 via High Residency + High Growth (scale signal). $3M seed (ALLVP lead).
+- **Telepatia** — AI-native clinical platform for LatAm (real-time AI medical scribe + clinical decision copilot + EHR integrator + clinical BI); 25+ hospital systems, 14M patients, 5 countries; free for private-practice doctors. High inference ($42M, a16z-led, real-time transcription + clinical copilot + AI healthcare employees) + High latency (real-time during consultations) + High residency (healthcare/medical, regulated) + High growth (14M patients in <1yr). Textbook Tier 1.
+
+**Tier 1 count so far: 21** (prior 19 + Shinkansen, Telepatia)
+
+### Contacts drafted (20)
+- Senzai: Julián López-Portillo (Co-founder & CEO), Darren Timmins (Co-founder)
+- Shinkansen: Leo Soto (Co-founder & CEO), Ubaldo Taladriz (Co-founder & CTO), Francisco Larraín (Co-founder)
+- Skills tech: Ricardo Cevada (Co-founder), Zuriel Cevada (Co-founder), Jesús Valdiviezo (Co-founder)
+- SmartBreeder: Éder Giglioti (Founder & CEO)
+- Start Carreiras: José André Nunes (Co-founder & CEO), Gabriel Albuquerque (Co-founder), Alexandre Bernat (Co-founder)
+- Teachy: Pedro Siciliano (Co-founder & CEO), Fábio Baldissera (Co-founder)
+- Telepatia: Nicolás Abad (Founder & CEO)
+- Territorium: Guillermo Elizondo (Co-founder & CEO), Gerardo Saenz (Co-founder & CTO)
+- Time to Hire: Pablo Estevez (Co-founder & CEO), Daniel Zenteno (Co-founder & CTO), Miguel Silva Trujillo (Co-founder)
+- Simpleto: 0 (founders/funding not publicly disclosed — appears bootstrapped)
+
+### Companies flagged for manual review (6)
+1. **Senzai** — Headcount collapsed to ~2 employees (-55% YoY per LinkedIn) despite $2M pre-seed (Hi Ventures/ALLVP) and AI-native causal-AI product. Concerning viability — verify company is still actively operating. CSV desc "enterprise process automation & BI" is partial (actual = AI campaign copilot for B2C sales/retention/collections).
+2. **Simpleto** — Founders & funding NOT publicly disclosed; appears bootstrapped SMB SaaS. Could not identify any contacts. AI-native HR for LatAm SMBs (8 modules, freemium <50 employees). Tier 3 (Low inference, AI-as-feature). Company LinkedIn not found (left blank).
+3. **Skills tech** — Sector changed Talent & Workforce Mgmt → Education (actual = AI-as-a-Service for hyper-personalized corporate LEARNING/training, edtech) — confirm. HQ Berkeley, US (incorporated, SkyDeck) but Mexican founders (EXATEC Ricardo Cevada) — kept Country=Mexico per origin — confirm. Pre-seed $575K, Google for Startups AI First LatAm. Company LinkedIn is a "school" page (linkedin.com/school/skillstechai).
+4. **Start Carreiras** — REBRAND + PIVOT to **Vetto** (vetto.ai): now connects LatAm researchers/specialists to global AI-lab projects (data curation, model eval, AI safety, red-teaming), paid per project (up to R$600/hr). Record NAME kept as "Start Carreiras" pending user confirmation to rename (precedent: Hunty→Ana AI, NeuralMed→Level renamed only after explicit confirmation). Website updated to vetto.ai. FLAG: rename to "Vetto"?
+5. **Territorium** — HQ San Antonio, Texas (US) with Mexico ops (Monterrey); Mexican founders. Kept Country=Mexico (founders/Mexico ops) per origin precedent, but actual HQ is US — confirm (could be US). Mature (founded 2012), 12M users, $4.5M, Fortune 100 clients. Tier 3 (digital credentialing infrastructure; AI-as-feature).
+6. **Time to Hire** — HQ San Francisco (US) with Mexico/LatAm ops; founded 2025. Kept Country=Mexico (CSV, Mexico-focused ops) per origin precedent, but actual HQ is US — confirm. AI-native conversational interviewer MIA; $50K MRR in months, 500+ companies, 4 countries. Tier 2 (Med inference + High latency, no High residency — like Vambe).
+
+### Notes
+- Layer 3 (interview) fields untouched per rules.
+- Teachy classified Tier 2 (High inference — $7M Series A, 1M teachers, multi-model GPT/Claude/Gemini — but Med latency + Med residency, no High pairing; consistent with Comp). Website teachy.app → teachy.com.br.
+- SmartBreeder classified Tier 2 (Med inference — AI/ML crop management at scale, 25K farms — but Low latency + Low residency, no High pairing; consistent with Aravata/Bemagro agro Tier2). CSV desc "livestock genetics/breeding" is WRONG (actual = CROP agronomy — sugarcane/corn/soy/cotton). Website smartbreeder.com → smartbreeder.com.br.
+- Time to Hire classified Tier 2 (Med inference + High latency, Med residency — no High residency to reach Tier 1; consistent with Vambe/Patagon AI/Nuvia).
+- Tivita was fetched but held for Batch 9 to keep batches at 10.
+
+### Failures
+- None. All 10 Companies updates (2 PATCH calls) and 20 Contacts creations (2 POST calls) returned HTTP 200.
+
+### Updated database totals (after Batch 8)
+- Companies table: 96 records (unchanged — no additions/removals this batch).
+- Classified: 67 → **77** (10 new classifications).
+- Active pipeline: ~93 Active (unchanged).
+- **Tier 1 count: 19 → 21** (+ Shinkansen, Telepatia).
+- Contacts table: 111 → **131** (+20).
+- Remaining unclassified for batches 9+: 19 (Tivita, Trebu, Trinio, Turn2C, Upflux, Vambe, Verve Market, ViewMind, VOKS, Vozy, WeKall, Winclap, Ximple, Yana, Yavendió, Yuna, Zapia, ZeroEval, Zonora AI).
