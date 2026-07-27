@@ -598,3 +598,27 @@ Remaining 39 companies (next batches, alphabetical): Menlo, Perhaps, Picaio, Pit
 - Refer classified Tier 2 (Med inference, AI-native reverse-recruiter, $10M, but Low latency + Low residency — no High pairing).
 - Poliglota classified Tier 3 (PoliAI is a feature augmenting human coaches, not the core; education; no High signals).
 - Saptiva funding/headcount undisclosed (founders bootstrapped Quiubas previously); Inference=High based on product nature (national-scale sovereign LLM infrastructure) per the inference-heavy-product criterion.
+
+## Batch 7 follow-up — user decisions applied 2026-07-27
+
+User confirmed Batch 7 review and issued the following decisions:
+
+### Removed from Airtable (3 companies deleted)
+1. **Quash** (recPLf3MvJasOmERH) — deleted. CSV mismatch (quash.io is a Bengaluru, India mobile-QA startup, not a Venezuelan fintech-QA company); could not verify the intended company. No contacts existed (Tier 3).
+2. **SaludNow** (recTWWcmbpivvDnRT) — deleted. PitchBook "Out of Business"; founder moved to Hola Salud. No contacts existed (Tier 3).
+3. **Perhaps** (rechyuFeJQkGh7P39) — deleted. Also deleted its 3 orphaned contacts (Gonzalo Enei recrh59UKmto3djyJ, Joaquín Ossandón recaSTkj3bFcQguXu, Ignacio Soffia recCknxhU4MGfw1Zo) to avoid orphan records.
+
+All deletes returned HTTP 200 (deleted:true).
+
+### Confirmed (no further change needed; confirm-flags cleaned up in notes)
+- **Pitz** — sector change to Logistics Mobility & Ops confirmed. Note updated ("confirmed by user 2026-07-27").
+- **Selenios** — country change to Argentina confirmed. Note updated ("confirmed by user 2026-07-27").
+- **Menlo** — corrections (description, website menlopagamentos.com.br) accepted as-is.
+
+### Updated database totals (after removals)
+- Companies table: 99 → **96 records** (3 removed).
+- Classified: 70 → **67** (Perhaps was classified; Quash/SaludNow were Tier-3 placeholders).
+- Active pipeline: ~93 Active (Atlas, Lara acquired; Hitch dead; Quash/SaludNow/Perhaps removed).
+- **Tier 1 count unchanged: 19** (none of the removed were Tier 1).
+- Contacts table: 114 → **111** (Perhaps's 3 contacts removed).
+- Remaining unclassified for batches 8+: 29 (unchanged — Quash/SaludNow/Perhaps were already counted in batch 7; their removal doesn't add new unclassified companies; the next batch starts at Senzai).
