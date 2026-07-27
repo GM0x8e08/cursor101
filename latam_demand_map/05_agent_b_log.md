@@ -534,3 +534,20 @@ User provided missing company LinkedIn URLs for 5 Batch-6 companies and asked to
 - No contacts added/removed (user only asked for LinkedIn + site verification + extra details; all 5 already had 2–3 contacts within the 1–3 cap).
 - NeuralMed rename to "Level" still pending explicit user confirmation — flagged.
 - Layer 3 (interview) fields untouched per rules.
+
+## NeuralMed → Level rename — completed 2026-07-27
+
+Per user confirmation, renamed Company Name "NeuralMed" → **"Level"** (recQA15PxnEgEv8A1). Updated Classification Notes to "REBRAND COMPLETE" (removed the pending-confirmation flag); Last Verified → 2026-07-27. Website (levelai.com.br), LinkedIn (levelai-com-br), and the 3 linked contacts (Mariana Gaspers, Anthony Eigier, Andre Castilla) retained via record-ID links. Tier unchanged (Tier 2).
+
+## DATABASE STATUS SNAPSHOT — 2026-07-27
+
+Companies table (99 records total):
+- Status: 96 Active, 2 Acquired (Atlas, Lara), 1 Dead (Hitch)
+- Classified (have Classification Date): 60 (batches 1–6)
+- Remaining unclassified: 39 (queued for batches 7+)
+- Priority Tier distribution (classified only): Tier 1 = 18, Tier 2 = 32, Tier 3 = 10
+- Tier 1 share of classified = 18/60 = 30%
+
+Contacts table: 100 contacts drafted across the classified active companies (all Outreach Status = "To verify"; no emails guessed).
+
+Remaining 39 companies (next batches, alphabetical): Menlo, Perhaps, Picaio, Pitz, Poliglota, Quash, Refer, SaludNow, Saptiva, Selenios, Senzai, Shinkansen, Simpleto, Skills tech, SmartBreeder, Start Carreiras, Teachy, Telepatia, Territorium, Time to Hire, Tivita, Trebu, Trinio, Turn2C, Upflux, Vambe, Verve Market, ViewMind, VOKS, Vozy, WeKall, Winclap, Ximple, Yana, Yavendió, Yuna, Zapia, ZeroEval, Zonora AI.
