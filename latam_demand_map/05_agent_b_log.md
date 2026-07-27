@@ -682,3 +682,29 @@ All deletes returned HTTP 200 (deleted:true).
 - **Tier 1 count: 19 → 21** (+ Shinkansen, Telepatia).
 - Contacts table: 111 → **131** (+20).
 - Remaining unclassified for batches 9+: 19 (Tivita, Trebu, Trinio, Turn2C, Upflux, Vambe, Verve Market, ViewMind, VOKS, Vozy, WeKall, Winclap, Ximple, Yana, Yavendió, Yuna, Zapia, ZeroEval, Zonora AI).
+
+## Batch 8 follow-up — user decisions applied 2026-07-28
+
+User confirmed Batch 8 review and issued the following decisions:
+
+### Removed from Airtable (2 companies deleted)
+1. **Simpleto** (recy01vH9uYd8Icla) — deleted. Founders/funding not publicly disclosed; appears bootstrapped SMB SaaS; 0 contacts existed (Tier 3).
+2. **Territorium** (reckMuUxYOTSjjsr4) — deleted. Also deleted its 2 orphaned contacts (Guillermo Elizondo recDArohZFBD8KlXB, Gerardo Saenz recZDWKCH0rAPf114) to avoid orphan records. (Tier 3; HQ San Antonio, TX — user opted to remove rather than keep as US.)
+
+All deletes returned HTTP 200 (deleted:true).
+
+### Renamed (1)
+- **Start Carreiras → Vetto** (recQzd5W0lvm7pJTu) — Company Name renamed to "Vetto" per user confirmation. Classification Notes updated to "REBRAND COMPLETE" (removed the pending-confirmation flag). Website (vetto.ai), LinkedIn, and the 3 linked contacts (José André Nunes, Gabriel Albuquerque, Alexandre Bernat) retained via record-ID links. Tier unchanged (Tier 2).
+
+### Confirmed (no further change needed; confirm-flags cleaned up in notes)
+- **Senzai** — user confirmed company is still actively operating despite small headcount (~2, -55% YoY). Note updated ("User confirmed 2026-07-28 company is still actively operating despite small headcount").
+- **Skills tech** — sector change to Education (corporate learning/edtech) confirmed; Country=Mexico (Mexican founders, Berkeley-incorporated) confirmed. Note updated ("confirmed by user 2026-07-28").
+- **Time to Hire** — Country=Mexico confirmed (Mexico-focused ops; HQ San Francisco). Note updated ("Country=Mexico confirmed by user 2026-07-28").
+
+### Updated database totals (after Batch 8 follow-up)
+- Companies table: 96 → **94 records** (Simpleto + Territorium removed).
+- Classified: 77 → **75** (both removed were classified Tier-3).
+- Active pipeline: ~91 Active (Atlas, Lara acquired; Hitch dead; Quash/SaludNow/Perhaps/Simpleto/Territorium removed).
+- **Tier 1 count unchanged: 21** (neither removed was Tier 1).
+- Contacts table: 131 → **129** (Territorium's 2 contacts removed).
+- Remaining unclassified for batches 9+: **19** (unchanged — Simpleto/Territorium were already classified in Batch 8; their removal doesn't add new unclassified companies; the next batch starts at Tivita).
