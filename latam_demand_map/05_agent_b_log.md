@@ -551,3 +551,50 @@ Companies table (99 records total):
 Contacts table: 100 contacts drafted across the classified active companies (all Outreach Status = "To verify"; no emails guessed).
 
 Remaining 39 companies (next batches, alphabetical): Menlo, Perhaps, Picaio, Pitz, Poliglota, Quash, Refer, SaludNow, Saptiva, Selenios, Senzai, Shinkansen, Simpleto, Skills tech, SmartBreeder, Start Carreiras, Teachy, Telepatia, Territorium, Time to Hire, Tivita, Trebu, Trinio, Turn2C, Upflux, Vambe, Verve Market, ViewMind, VOKS, Vozy, WeKall, Winclap, Ximple, Yana, Yavendió, Yuna, Zapia, ZeroEval, Zonora AI.
+
+## Batch 7 — completed 2026-07-27
+
+### Companies processed (10) — alphabetical M–S (continuing after PathPilot)
+| # | Company | Country | Sector | Status | Priority Tier | Inference | Latency | Residency | Self-Host | Growth | Contacts |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | Menlo | Brazil | Finance | Active | Tier 2 | Med | Med | High | Unknown | Med | 1 |
+| 2 | Perhaps | Chile | General Data Analysis & Business Automation | Active | Tier 2 | Med | Med | Low | Unknown | Med | 3 |
+| 3 | Picaio | Mexico | Finance | Active | Tier 2 | Med | Med | High | No | Med | 2 |
+| 4 | Pitz | Mexico | Logistics Mobility & Ops (was General Data Analysis) | Active | Tier 2 | Med | Med | Low | No | High | 1 |
+| 5 | Poliglota | Chile | Education | Active | Tier 3 | Low | Med | Low | No | Med | 0 |
+| 6 | Quash | Venezuela (CSV; likely wrong) | Finance (CSV; likely wrong) | Active | Tier 3 | Low | Low | Med | Unknown | Low | 0 |
+| 7 | Refer | Brazil | Talent & Workforce Mgmt | Active | Tier 2 | Med | Low | Low | No | High | 2 |
+| 8 | SaludNow | Mexico | Healthcare | Active (likely Dead) | Tier 3 | Low | Med | High | Unknown | Low | 0 |
+| 9 | Saptiva | Mexico | General AI Platforms | Active | **Tier 1** | High | Med | High | Yes | High | 2 |
+| 10 | Selenios | Argentina (was Mexico) | Talent & Workforce Mgmt | Active | Tier 2 | Med | Med | Med | No | High | 3 |
+
+### Tier 1 this batch (1)
+- **Saptiva** — Control plane / AI infrastructure layer for regulated enterprises & governments in LatAm (sovereign, air-gapped, on-prem AI deployments). Founded by Angel & Jesus Cisneros (ex-Quiubas Mobile, acquired by Twilio 2020). Runs KAL (Mexico's first national-scale sovereign LLM, with Mexican government + NVIDIA), Universidad Iberoamericana, tier-1 Central American bank. High inference (national-scale sovereign LLM + production AI) + High residency (regulated/gov/banking, air-gapped) + Self-Hosting=Yes. Prime sovereign-AI/neocloud target.
+
+**Tier 1 count so far: 19** (prior 18 + Saptiva)
+
+### Contacts drafted (14)
+- Menlo: Bruno Rosa (Founder & CEO)
+- Perhaps: Gonzalo Enei (Co-founder & CEO), Joaquín Ossandón (Co-founder), Ignacio Soffia (Co-founder & CPO)
+- Picaio: Alfredo José Cabral Hinojosa (Co-founder & CEO), Jose Maria Ruiz de Velasco (Co-founder)
+- Pitz: Natalia Salcedo Franco (Founder & CEO)
+- Refer: Andre Hamra (Founder & CEO), Adriano Soares (Co-founder)
+- Saptiva: Angel Cisneros (Co-founder & CEO), Jesus Cisneros (Co-founder & CTO)
+- Selenios: Esteban Zecler, Julian Bender, Jonathan Muszkat (Co-founders)
+- Poliglota, Quash, SaludNow: 0 (Tier 3 / unverifiable / likely dead)
+
+### Companies flagged for manual review (6)
+1. **Quash** — UNVERIFIABLE / CSV MISMATCH. Public sources show quash.io is a Bengaluru, **India**-based startup (autonomous AI agents for mobile app testing), founded 2023 by Ayush Shrivastava et al.; $635K pre-seed. Does NOT match CSV (Venezuela, "QA for financial applications"). Could not find a Venezuelan fintech-QA company named Quash. Likely CSV data error. Left CSV fields as-is; enrichment blank. **User: confirm intended company.**
+2. **SaludNow** — LIKELY DEAD. PitchBook lists "Out of Business"; founder Benjamin Pettigrew moved to Hola Salud (different venture). saludnow.com still up but zombie. Tracxn desc (diabetes mgmt) differs from CSV (primary-care AI triage + clinics). ~2 employees, unfunded. Kept Status=Active pending user confirmation (precedent: Hitch marked Dead only after explicit confirmation). **User: confirm active vs Dead.**
+3. **Pitz** — CSV desc "data-analytics/reporting for SMBs" is WRONG (actual = AI OS for auto repair shops). Sector changed General Data Analysis → Logistics Mobility & Ops (automotive aftermarket). **User: confirm sector.** Website pitz.ai → pitz.com.mx.
+4. **Selenios** — CSV Country=Mexico but investor Fen Ventures lists origin as Argentina; company "llega a México" (expanding into Mexico). Updated Country to Argentina (origin per precedent). **User: confirm Argentina vs Mexico.**
+5. **Perhaps** — Very early (3 founders, closed beta, $1.75M pre-seed). HQ San Francisco (ops), origin Santiago, Chile (kept Country=Chile). Company LinkedIn not found (left blank).
+6. **Menlo** — CSV desc "investment research/portfolio-management" is WRONG (actual = AI collection/AR agents for brands & franchising). Website menlo.finance → menlopagamentos.com.br. Headcount declining -40% YoY (concerning) — noted in Classification Notes.
+
+### Notes
+- Layer 3 (interview) fields untouched per rules.
+- Saptiva is the standout Tier 1 of the batch (sovereign AI infrastructure, self-hosting=Yes, national-scale LLM with gov+NVIDIA) — strong neocloud/sovereign-AI target.
+- Picaio classified Tier 2 (Med inference + High residency, no High latency; consistent with Cenit/Numia).
+- Refer classified Tier 2 (Med inference, AI-native reverse-recruiter, $10M, but Low latency + Low residency — no High pairing).
+- Poliglota classified Tier 3 (PoliAI is a feature augmenting human coaches, not the core; education; no High signals).
+- Saptiva funding/headcount undisclosed (founders bootstrapped Quiubas previously); Inference=High based on product nature (national-scale sovereign LLM infrastructure) per the inference-heavy-product criterion.
