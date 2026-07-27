@@ -794,3 +794,34 @@ All contacts set to Outreach Status = "To verify", Confidence Med (High where pe
 - **Tier 1 count: 21 → 23** (+ Vambe, Vozy).
 - Contacts table: 129 → **173** (+44).
 - **Remaining unclassified: 0** — the entire Companies table is now enriched, classified, and contact-drafted.
+
+## Batch 9 follow-up — user decisions applied 2026-07-28
+
+User reviewed Batch 9 and issued the following decisions:
+
+### Removed from Airtable (2 companies deleted)
+1. **Ximple** (recWq6qp5HP8Iitu1) — deleted, plus its 3 orphaned contacts (Daniel Sujo rec5peUrwUg8eSeoN, João Vitor Soares Ramos recceksdPf5aoAJoJ, Rodrigo Aparicio recEAPPpj7sIuEBZ7). (Tier 2 fintech; CSV desc was wrong — actual = SME credit, not customer support — user opted to remove.)
+2. **Verve Market** (rec7K6CogvxJkbhJe) — deleted, plus its 3 orphaned contacts (Andrés Ornelas Vargas recMA8B5N0e0vg2GL, Jason Kim recYA3mPfR62AUCeV, Anthony Prats reccDHYIv6IMmbkTI). (Tier 3; San Francisco-based US online grocery — CSV country error; user opted to remove.)
+
+All deletes returned HTTP 200 (deleted:true).
+
+### Updated (1)
+- **Tivita** (recIliTEpmp3kIW9h) — viewed tivita.com per user request and updated. Site confirms product = financial/admin automation for clinics ("Sua clínica no piloto automático" — billing/cobranças, document issuance, patient records/prontuários, scheduling, insurance/convenios; digital agents Júlia & Tais; 1,000+ clinics; LGPD), NOT a clinical scribe. LinkedIn confirmed from site footer = linkedin.com/company/tivita. Description/notes refined; flag cleaned ("confirmed by viewing tivita.com 2026-07-28"). Tier unchanged (Tier 2).
+
+### Pivoted (1)
+- **ZeroEval** (recwJM5z8oa1s58Tq) — user reported pivot to https://llm-stats.com. Website updated zeroeval.com -> llm-stats.com; Description + Classification Notes updated to reflect pivot (now an independent LLM benchmarks/analytics leaderboard, 60K MAU, 1/3M uniques). 2 co-founders (Sebastian Crossa recW01t9UaRercNEz, Jonathan Chávez recJ2RuaRey0hfYU1) confirmed linked as contacts. Tier unchanged (Tier 3). Country=Mexico (origin; HQ San Francisco) confirmed by user.
+
+### Confirmed (no further change needed; confirm-flags cleaned up in notes)
+- **Turn2C** — sector change Sales & Customer Support -> Finance (Brazilian consortium/consórcio fintech) confirmed by user 2026-07-28.
+- **ViewMind** — Country=Argentina confirmed by user 2026-07-28 (keep origin; HQ US/Luxembourg noted).
+- **VOKS** — correction (physical-retail voice assistants, not retail-media) confirmed; keep as-is (Tier 3) per user 2026-07-28.
+- **Vozy** — Country=Colombia (origin; HQ Miami) confirmed by user 2026-07-28. Tier 1 unchanged.
+- **Yuna** — correction (children's interactive books, not exam tutor) confirmed; Sector=Education confirmed by user 2026-07-28. Tier 3 unchanged.
+
+### Updated database totals (after Batch 9 follow-up)
+- Companies table: 94 → **92 records** (Ximple + Verve Market removed).
+- Classified: 94 → **92** (both removed were classified; ALL 92 remaining companies still classified — pipeline complete).
+- Active pipeline: ~89 Active (Ximple/Verve Market removed; Ximple was Mexico credit fintech, Verve Market was US online grocery).
+- **Tier 1 count unchanged: 23** (neither removed was Tier 1).
+- Contacts table: 173 → **167** (6 contacts removed: 3 Ximple + 3 Verve Market).
+- **Remaining unclassified: 0** — pipeline complete.
