@@ -825,3 +825,68 @@ All deletes returned HTTP 200 (deleted:true).
 - **Tier 1 count unchanged: 23** (neither removed was Tier 1).
 - Contacts table: 173 → **167** (6 contacts removed: 3 Ximple + 3 Verve Market).
 - **Remaining unclassified: 0** — pipeline complete.
+
+## Outreach selection task — completed 2026-07-29
+
+User provided 14 LinkedIn profile URLs of people they want to contact first, and asked to: (1) ensure each is in the Contacts table under the correct company (create or update), (2) add a company-level `Outreach Status` field to mark initially-selected companies so Tier-1 filtering doesn't show them repeated, and (3) default all other companies to "Not started".
+
+### New field created (1)
+- **Outreach Status** (singleSelect) on Companies table (`fldkjcEs1Shjqo1UE`) — choices: Not started · Selected · In progress · Contacted · Responded · Interviewed · Declined · Paused. (Contacts table already had its own Outreach Status: Not started · To verify · Verified · Contacted · Responded · Interviewed · Declined.)
+
+### Matching (14 people → 11 companies)
+Per user instruction ("if u can't match a person ask me"), 2 needed clarification:
+- **Zé Dias** (`/in/zedias`) — current role = Founding Partner at KANOA Capital (a VC fund, not an AI company). User said: **associate with Assis**.
+- **Hector Monarrez** (`/in/hecmonn`) — currently Co-founder & CEO at a stealth ag-robotics startup; previously Co-founder & CTO at Arkham (where Mau Sepulveda, also selected, is CEO). User said: **associate with Arkham**.
+
+The 3 companies initially "not found" were actually in the base under different names: Leona Health → "Leona"; Morada.ai → "Morada AI"; Darwin AI → "Darwin Ai".
+
+| # | Person | LinkedIn | Role / Current Title | Company (Airtable) |
+|---|---|---|---|---|
+| 1 | Tom Chokel | /in/tom-chokel | Co-founder & CTO | Leona |
+| 2 | Herval Freire | /in/hervalfreire | CTO | Telepatia |
+| 3 | Danilo Assunção | /in/danilo-assuncao | AI Engineer | Magie |
+| 4 | Juan José Behrend | /in/juanjosebehrend | CTO & Co-founder | Akua |
+| 5 | Luis Loaiza | /in/luisloaiza | CEO & Co-founder | Jelou |
+| 6 | Gabriel Maracaípe | /in/maracaipe | Co-founder & CTO | Morada AI |
+| 7 | Vagner Dutra | /in/vagner-dutra | Co-founder & Tech Lead / CTO | Assis |
+| 8 | Zé Dias | /in/zedias | Founding Partner, KANOA Capital | Assis (per user) |
+| 9 | Ezequiel Sculli | /in/ezequielsculli | Co-founder & CPO/CTO | Darwin Ai |
+| 10 | Juan I. Gesino | /in/juangesino | COO & Dir. Data & AI | Darwin Ai |
+| 11 | Hector Monarrez | /in/hecmonn | Co-founder & CTO (prior) | Arkham (per user) |
+| 12 | Mau Sepulveda | /in/mau-sepulveda | Co-founder & CEO | Arkham |
+| 13 | Ricardo Marín | /in/rmarinv | Co-founder & CPO (ex-CTO) | Vozy |
+| 14 | Matías Pérez Pefaur | /in/matías-pérez-pefaur | Co-founder & Chief AI Officer | Vambe |
+
+### Contacts — updated to "Verified" (8 existing)
+- Tom Chokel (recxPf1TVMJz1seif, Leona) — LinkedIn already present.
+- Juan José Behrend (recP65sasZCSqMtUv, Akua) — LinkedIn already present.
+- Luis Loaiza (reciBx8qFp82fdqxN, Jelou) — LinkedIn added (/in/luisloaiza).
+- Vagner Dutra (recyW8nCbw2Z28F7u, Assis) — LinkedIn added (/in/vagner-dutra).
+- Ezequiel Sculli (recbBh7W25czgxh97, Darwin Ai) — LinkedIn already present.
+- Mau Sepulveda (recRucpSllbmTHP10, Arkham) — LinkedIn already present.
+- Hector Monárrez (recwOOl54AV8h7UFy, Arkham) — LinkedIn already present.
+- Ricardo Marín (rec7ZUHyQRyDZa6qt, Vozy) — LinkedIn already present.
+
+### Contacts — created as "Verified" (6 new)
+- Herval Freire (recChyYVTqZb7AkRS) → Telepatia — Role CTO.
+- Danilo Assunção (recE152ks3TFKwaEB) → Magie — Role Other (AI Engineer).
+- Gabriel Maracaípe (recyHiGz7yQOME0S5) → Morada AI — Role CTO.
+- Zé Dias (recECIdEGhdwuEBep) → Assis — Role Other (Founding Partner, KANOA Capital); note: associated with Assis per user request, primary role is VC partner not Assis employee.
+- Juan I. Gesino (recAzYovwAO3QZxvE) → Darwin Ai — Role COO.
+- Matías Pérez Pefaur (recjRO9U03HTk8Ixk) → Vambe — Role Head of AI/ML (Chief AI Officer).
+
+All new contacts: Confidence High, Source LinkedIn, Outreach Status Verified.
+
+### Companies — Outreach Status set (92 total)
+- **Selected (11):** Leona, Telepatia, Magie, Akua, Jelou, Morada AI, Assis, Darwin Ai, Arkham, Vozy, Vambe.
+- **Not started (81):** all other companies (defaulted).
+
+### Failures
+- None. All contact PATCH (8 records) and POST (6 records) returned HTTP 200. The 11-company "Selected" PATCH timed out on the MCP response but was verified applied (10 of 11 confirmed Selected; Vambe was outside the timed-out batch and set separately). The 81-company "Not started" default applied in 9 batches of 10 (8×10 + 1×1), all HTTP 200.
+
+### Updated database totals (after outreach selection)
+- Companies table: **92 records** (unchanged).
+- Contacts table: 167 → **173** (+6 new; 8 existing updated to Verified).
+- **Tier 1 count unchanged: 23.**
+- Outreach Status now populated on ALL 92 companies (11 Selected + 81 Not started) and on the 14 selected contacts (Verified).
+- **Remaining unclassified: 0** — pipeline complete.
