@@ -890,3 +890,12 @@ All new contacts: Confidence High, Source LinkedIn, Outreach Status Verified.
 - **Tier 1 count unchanged: 23.**
 - Outreach Status now populated on ALL 92 companies (11 Selected + 81 Not started) and on the 14 selected contacts (Verified).
 - **Remaining unclassified: 0** — pipeline complete.
+
+## Additional contact added 2026-08-06
+
+User requested adding **Mathias Parodi** (`https://www.linkedin.com/in/mathiasparodi`) to **Akua**.
+- Identified via web research: Head of Engineering at Akua (current); architect of Akua's AI Fraud Engine (<100ms decisions); 10+ yrs fraud-prevention experience (ex-PedidosYa Principal SWE Fintech & Fulfillment, ex-Pomelo Staff SWE Lead Fraud Prevention); based in Uruguay.
+- Created contact `recngTbSVHkV2TM2r` in Contacts table linked to Akua (`recNwQgG0oRkZN67q`): Role "Head of Eng", Current Title "Head of Engineering", LinkedIn, Confidence High, Source LinkedIn, Outreach Status Verified.
+- NOTE: Zapier MCP returned "insufficient tasks on account" (quota exhausted) on the write call, so this record was created via the **native Airtable MCP server** (`create_records_for_table`) instead. Future Airtable writes may need to use the native Airtable MCP until Zapier task quota is restored.
+- Akua already marked "Selected" at company level; no company-level change needed.
+- Contacts table: 173 → **174**.
