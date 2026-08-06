@@ -899,3 +899,13 @@ User requested adding **Mathias Parodi** (`https://www.linkedin.com/in/mathiaspa
 - NOTE: Zapier MCP returned "insufficient tasks on account" (quota exhausted) on the write call, so this record was created via the **native Airtable MCP server** (`create_records_for_table`) instead. Future Airtable writes may need to use the native Airtable MCP until Zapier task quota is restored.
 - Akua already marked "Selected" at company level; no company-level change needed.
 - Contacts table: 173 → **174**.
+
+## Additional contact added 2026-08-06 (Alberto Mayoral → Vambe)
+
+User requested adding **Alberto Mayoral** (`https://www.linkedin.com/in/albertomayoralq/`) to the database (company not specified by user).
+- Identified via web research: **Operations Engineer at Vambe** (current) — orchestrates/deploy AI agents for clients; previously Technology Operations Specialist/Analyst at Konfront (~2 yrs), Frontend Developer at Habil Mx; based in Mexico City. (Note: distinct from the chemicals-sector "Alberto Mayoral" that also appears in search results.)
+- Vambe is already in the base (`recrql8DpdyryCQdn`, already "Selected") → associated the contact with Vambe.
+- Created contact `rectcdOOz39QK3m2h` in Contacts table linked to Vambe: Role "Other", Current Title "Operations Engineer", LinkedIn, Confidence High, Source LinkedIn, Outreach Status Verified.
+- Created via **native Airtable MCP** (`create_records_for_table`) — Zapier MCP still returning "insufficient tasks on account" (quota exhausted).
+- Vambe already marked "Selected" at company level; no company-level change needed.
+- Contacts table: 174 → **175**.
