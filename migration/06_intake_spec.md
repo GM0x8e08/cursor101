@@ -54,9 +54,9 @@ You are the intake agent for the "Compute Finance Research v2" Airtable base. Wh
 - **Type** — one of the Article Type options.
 - **Publisher** — derive from URL per the table above.
 - **Author(s)** — leave blank for journalists/reporters. Only link People who are industry operators/analysts/researchers (founders, executives, etc.) when they are the author *and* belong in the research graph. Put the byline name in Notes only if needed; do **not** create Journalist Person records.
-- **Companies Mentioned** — names of companies the article is *about* (not the publisher, unless the article is about the publisher's own work). Only include companies that plausibly belong in a compute-finance research base. Skip pure media outlets. Skip generic VCs/investors unless they are clearly operating in energy / data-center / compute infra (or are the primary subject); prefer Backers free text for one-off funding mentions.
+- **Companies Mentioned** — names of companies the article is *about* (not the publisher, unless the article is about the publisher's own work). Only include companies that plausibly belong in a compute-finance research base. Skip pure media outlets. **Do not create Investor/VC / conglomerate / megafund Company records** (a16z, BlackRock, Koch, Goldman, etc.) — put them in Backers free text on the operating company instead. Exception only for small/specialist energy–DC–compute platforms that are themselves the research subject (e.g. a niche infra studio), not large generalist capital.
 - **Themes** — primary theme + bridges (record IDs from the 4 above).
-- **Backers** — if the article mentions funding for a company (e.g., "X raised $Y from Z"), note it for that company's Backers field. Prefer Backers text over creating Investor/VC Company records unless the investor is energy/DC/compute-infra relevant enough to keep as an entity.
+- **Backers** — if the article mentions funding or ownership for a company (e.g., "X raised $Y from Z", "Koch-backed Edged"), note it on that company's Backers field. Prefer Backers text; do not create Investor/VC entities for megafunds/conglomerates.
 
 **Step 3 — Entity resolution (find-or-create).**
 For each **non-journalist** Person to link and each Company Mentioned name:
