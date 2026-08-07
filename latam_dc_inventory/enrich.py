@@ -1,0 +1,197 @@
+#!/usr/bin/env python3
+"""Enrichment pass (runs after Wave A facilities exist).
+
+For operators with relevance >=4 OR facility_count >=3:
+  - scrape their DataCenterMap operator page (/c/<slug>/) for real website,
+    parent, global DC count and AI/wholesale text;
+  - find + scrape their datacenters.com profile for AI/wholesale claims.
+For priority metros (Sao Paulo, Queretaro, Bogota) only:
+  - find + scrape the Cloudscene market page and rate carrier/IX density.
+
+Writes data/enrichment.json consumed by build_tables.py. Everything cached.
+"""
+import os
+import re
+import json
+import subprocess
+import csv
+from scraper import scrape, slug_for
+
+ROOT = os.path.dirname(os.path.abspath(__file__))
+DATA = os.path.join(ROOT, "data")
+ENR_DIR = os.path.join(ROOT, ".firecrawl", "enrich")
+
+AI_KEYWORDS = [
+    "artificial intelligence", "ai ", " ai", "gpu", "hpc",
+    "high-performance computing", "high performance computing", "machine learning",
+    "accelerated", "nvidia", "supercomput", "liquid cool", "inference", "training",
+]
+WHOLESALE_KEYWORDS = ["wholesale", "build-to-suit", "build to suit", "hyperscale"]
+
+
+def fc_search(query, limit=5):
+    out = os.path.join(ENR_DIR, "search__" + re.sub(r"[^a-z0-9]+", "_", query.lower())[:60] + ".json")
+    os.makedirs(ENR_DIR, exist_ok=True)
+    if not os.path.exists(out):
+        for attempt in range(4):
+            proc = subprocess.run(
+                ["firecrawl", "search", query, "--limit", str(limit), "-o", out, "--json"],
+                capture_output=True, text=True, timeout=120,
+            )
+            combined = (proc.stdout + proc.stderr).lower()
+            if os.path.exists(out) and "rate limit" not in combined and "429" not in combined:
+                break
+            import time
+            time.sleep(6 * (attempt + 1))
+    try:
+        d = json.load(open(out))
+    except Exception:
+        return []
+    urls = []
+    web = (d.get("data") or {}).get("web") or d.get("web") or []
+    for item in web:
+        u = item.get("url")
+        if u:
+            urls.append(u)
+    return urls
+
+
+def extract_ai_wholesale(text):
+    low = text.lower()
+    ai_terms = sorted({k.strip() for k in AI_KEYWORDS if k.strip() and k in low
+                       and k.strip() not in ("ai",)})
+    if re.search(r"\bai\b|a\.i\.", low):
+        ai_terms.append("AI")
+    wh = [k for k in WHOLESALE_KEYWORDS if k in low]
+    return sorted(set(ai_terms)), sorted(set(wh))
+
+
+def snippet(text, terms, n=260):
+    low = text.lower()
+    for t in terms:
+        i = low.find(t)
+        if i >= 0:
+            s = max(0, i - 80)
+            return re.sub(r"\s+", " ", text[s:s + n]).strip()
+    return ""
+
+
+def enrich_operators(qualifying):
+    ops = {}
+    for slug, name in qualifying:
+        entry = {}
+        # (a) DCM operator page
+        dcm_url = f"https://www.datacentermap.com/c/{slug}/"
+        dcm_out = os.path.join(ENR_DIR, "op__" + slug + ".md")
+        if scrape(dcm_url, dcm_out):
+            txt = open(dcm_out, encoding="utf-8", errors="replace").read()
+            m = re.search(r"\[Visit Website\]\((https?://[^)]+)\)", txt)
+            # DCM operator page external website (non-datacentermap)
+            for mm in re.finditer(r"\((https?://(?!www\.datacentermap\.com)[^)]+)\)", txt):
+                entry.setdefault("website", mm.group(1))
+                break
+            hq = re.search(r"Headquartered in\s+([^\n]+)", txt)
+            if hq:
+                entry["hq"] = hq.group(1).strip().rstrip(".")
+            ai_terms, wh = extract_ai_wholesale(txt)
+            if ai_terms:
+                entry["ai_terms"] = ai_terms
+            entry["dcm_operator_url"] = dcm_url
+        # (b) datacenters.com profile
+        urls = fc_search(f"{name} data center site:datacenters.com", limit=5)
+        dcom = next((u for u in urls if "datacenters.com" in u), None)
+        if dcom:
+            dcom_out = os.path.join(ENR_DIR, "dcom__" + slug_for(dcom.rstrip("/")) + ".md")
+            if scrape(dcom, dcom_out):
+                dtxt = open(dcom_out, encoding="utf-8", errors="replace").read()
+                entry["datacenters_com_url"] = dcom
+                ai_terms, wh = extract_ai_wholesale(dtxt)
+                claims = []
+                if ai_terms:
+                    claims.append("AI/GPU terms: " + ", ".join(ai_terms))
+                    entry["ai_terms"] = sorted(set(entry.get("ai_terms", [])) | set(ai_terms))
+                if wh:
+                    claims.append("wholesale/hyperscale terms: " + ", ".join(wh))
+                sn = snippet(dtxt, ["wholesale", "hyperscale", "artificial intelligence", "gpu", "colocation"]) 
+                if sn:
+                    claims.append("blurb: " + sn)
+                if claims:
+                    entry["claims"] = " | ".join(claims)
+        ops[slug] = entry
+        print(f"  enriched operator {slug}: {list(entry.keys())}", flush=True)
+    return ops
+
+
+def rate_density(text):
+    # crude qualitative rating from counts on a Cloudscene market page
+    def count(pat):
+        m = re.search(pat, text, re.I)
+        return int(m.group(1).replace(",", "")) if m else 0
+    providers = count(r"([\d,]+)\s+(?:network|service)\s+providers?")
+    fabrics = count(r"([\d,]+)\s+(?:cloud|fabric)")
+    dcs = count(r"([\d,]+)\s+data\s+cent")
+    score = providers + fabrics
+    if providers >= 80 or score >= 120:
+        level = "High"
+    elif providers >= 25 or score >= 40:
+        level = "Med"
+    elif providers > 0 or dcs > 0:
+        level = "Low"
+    else:
+        level = "Unknown"
+    detail = f"{providers} network/service providers, {dcs} data centers listed (Cloudscene)"
+    return level, detail
+
+
+def enrich_metros():
+    metros = {
+        "sao-paulo": "Sao Paulo Brazil",
+        "queretaro": "Queretaro Mexico",
+        "bogota": "Bogota Colombia",
+    }
+    out = {}
+    for slug, q in metros.items():
+        urls = fc_search(f"{q} data centers market site:cloudscene.com", limit=6)
+        cs = next((u for u in urls if "cloudscene.com" in u and "/data-centers/" not in u), None) \
+            or next((u for u in urls if "cloudscene.com" in u), None)
+        entry = {}
+        if cs:
+            cs_out = os.path.join(ENR_DIR, "cs__" + slug + ".md")
+            if scrape(cs, cs_out):
+                txt = open(cs_out, encoding="utf-8", errors="replace").read()
+                level, detail = rate_density(txt)
+                entry = {"cloudscene_url": cs, "connectivity": level, "connectivity_detail": detail}
+        out[slug] = entry
+        print(f"  enriched metro {slug}: {entry.get('connectivity','n/a')}", flush=True)
+    return out
+
+
+def main():
+    # qualifying operators from the roll-up
+    qualifying = []
+    op_csv = os.path.join(DATA, "operators_wave_A.csv")
+    slug_by_name = {}
+    with open(os.path.join(DATA, "facilities_raw.json"), encoding="utf-8") as f:
+        for r in json.load(f):
+            if r.get("operator_slug") and r.get("operator_name"):
+                slug_by_name.setdefault(r["operator_name"], r["operator_slug"])
+    with open(op_csv, encoding="utf-8") as f:
+        for o in csv.DictReader(f):
+            if int(o["max_relevance"]) >= 4 or int(o["facility_count_wave_A"]) >= 3:
+                slug = slug_by_name.get(o["operator_name"])
+                if slug:
+                    qualifying.append((slug, o["operator_name"]))
+    # dedupe
+    seen = set()
+    qualifying = [(s, n) for s, n in qualifying if not (s in seen or seen.add(s))]
+    print(f"Qualifying operators for enrichment: {len(qualifying)}")
+
+    ops = enrich_operators(qualifying)
+    metros = enrich_metros()
+    with open(os.path.join(DATA, "enrichment.json"), "w") as f:
+        json.dump({"operators": ops, "metros": metros}, f, indent=2, ensure_ascii=False)
+    print("Wrote enrichment.json")
+
+
+if __name__ == "__main__":
+    main()

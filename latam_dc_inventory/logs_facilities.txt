@@ -86,3 +86,315 @@
 [facility 74/343] (fetch) https://www.datacentermap.com/brazil/fortaleza/scala-data-centers-fortaleza-campus/
     [rate-limited] attempt 1/6 for https://www.datacentermap.com/brazil/fortaleza/scala-data-centers-fortaleza-campus/; backing off 4s
     [rate-limited] attempt 2/6 for https://www.datacentermap.com/brazil/fortaleza/scala-data-centers-fortaleza-campus/; backing off 8s
+[facility 75/343] (fetch) https://www.datacentermap.com/brazil/fortaleza/scala-data-centers-sforpf02/
+    [rate-limited] attempt 1/6 for https://www.datacentermap.com/brazil/fortaleza/scala-data-centers-sforpf02/; backing off 4s
+[facility 76/343] (fetch) https://www.datacentermap.com/brazil/fortaleza/scala-sforpf01/
+[facility 77/343] (fetch) https://www.datacentermap.com/brazil/fortaleza/vtal-big-lobster/
+[facility 78/343] (fetch) https://www.datacentermap.com/brazil/fortaleza/vtal-mega-lobster/
+[facility 79/343] (fetch) https://www.datacentermap.com/brazil/goiania/everest-digital-data-center/
+[facility 80/343] (fetch) https://www.datacentermap.com/brazil/goiania/pix-g8-goiania/
+[facility 81/343] (fetch) https://www.datacentermap.com/brazil/itauna/gox-dc/
+[facility 82/343] (fetch) https://www.datacentermap.com/brazil/joao-pessoa/hostdime-brazil/
+[facility 83/343] (fetch) https://www.datacentermap.com/brazil/joinville/armazem-dc-joinville/
+[facility 84/343] (fetch) https://www.datacentermap.com/brazil/joinville/avato-joinville/
+[facility 85/343] (fetch) https://www.datacentermap.com/brazil/lagoa-da-prata/wise-data/
+    [rate-limited] attempt 1/6 for https://www.datacentermap.com/brazil/lagoa-da-prata/wise-data/; backing off 4s
+[facility 86/343] (fetch) https://www.datacentermap.com/brazil/manaus/clickip-datacenters/
+[facility 87/343] (fetch) https://www.datacentermap.com/brazil/manaus/pix-g8-manaus/
+[facility 88/343] (fetch) https://www.datacentermap.com/brazil/maringa/getcard-data-center/
+[facility 89/343] (fetch) https://www.datacentermap.com/brazil/maringa/r4-data-center/
+[facility 90/343] (fetch) https://www.datacentermap.com/brazil/maringa/rgk4it-data-center/
+[facility 91/343] (fetch) https://www.datacentermap.com/brazil/muriae/tyna-host-data-center/
+[facility 92/343] (fetch) https://www.datacentermap.com/brazil/palmas/idx-data-centers-it-services/
+[facility 93/343] (fetch) https://www.datacentermap.com/brazil/palmas/to-host-data-centers/
+[facility 94/343] (fetch) https://www.datacentermap.com/brazil/parnaiba/enegix-piau/
+[facility 95/343] (fetch) https://www.datacentermap.com/brazil/porto-alegre/adentro/
+[facility 96/343] (fetch) https://www.datacentermap.com/brazil/porto-alegre/elea-digital-poa1/
+[facility 97/343] (fetch) https://www.datacentermap.com/brazil/porto-alegre/elea-digital-poa2/
+[facility 98/343] (fetch) https://www.datacentermap.com/brazil/porto-alegre/kinghost/
+    [rate-limited] attempt 1/6 for https://www.datacentermap.com/brazil/porto-alegre/kinghost/; backing off 4s
+[facility 99/343] (fetch) https://www.datacentermap.com/brazil/porto-alegre/maila-networks-dc1/
+[facility 100/343] (fetch) https://www.datacentermap.com/brazil/porto-alegre/maila-networks-dc2/
+[facility 101/343] (fetch) https://www.datacentermap.com/brazil/porto-alegre/parks-data-center-cachoeirinha/
+[facility 102/343] (fetch) https://www.datacentermap.com/brazil/porto-alegre/quantico-canoas/
+[facility 103/343] (fetch) https://www.datacentermap.com/brazil/porto-alegre/scala-ai-city/
+[facility 104/343] (fetch) https://www.datacentermap.com/brazil/porto-alegre/scala-spoapa01/
+[facility 105/343] (fetch) https://www.datacentermap.com/brazil/porto-alegre/teccloud-campo-bom/
+[facility 106/343] (fetch) https://www.datacentermap.com/brazil/porto-alegre/teccloud-porto-alegre/
+[facility 107/343] (fetch) https://www.datacentermap.com/brazil/porto-alegre/tecto-tpoa1/
+[facility 108/343] (fetch) https://www.datacentermap.com/brazil/porto-alegre/telium-data-center--poa/
+[facility 109/343] (fetch) https://www.datacentermap.com/brazil/porto-alegre/vtal-voa/
+[facility 110/343] (fetch) https://www.datacentermap.com/brazil/recife/hotlink-internet/
+[facility 111/343] (fetch) https://www.datacentermap.com/brazil/recife/recife1/
+[facility 112/343] (fetch) https://www.datacentermap.com/brazil/recife/surfix-data-center/
+[facility 113/343] (fetch) https://www.datacentermap.com/brazil/ribeirao-preto/convex-idc-rpo/
+[facility 114/343] (fetch) https://www.datacentermap.com/brazil/rio-de-janeiro/ada-rio-de-janeiro/
+    [rate-limited] attempt 1/6 for https://www.datacentermap.com/brazil/rio-de-janeiro/ada-rio-de-janeiro/; backing off 4s
+[facility 115/343] (fetch) https://www.datacentermap.com/brazil/rio-de-janeiro/aligned-rj-01/
+    [rate-limited] attempt 1/6 for https://www.datacentermap.com/brazil/rio-de-janeiro/aligned-rj-01/; backing off 4s
+[facility 116/343] (fetch) https://www.datacentermap.com/brazil/rio-de-janeiro/cirion-rio2/
+    [rate-limited] attempt 1/6 for https://www.datacentermap.com/brazil/rio-de-janeiro/cirion-rio2/; backing off 4s
+[facility 117/343] (fetch) https://www.datacentermap.com/brazil/rio-de-janeiro/cloudhq-gig1/
+[facility 118/343] (fetch) https://www.datacentermap.com/brazil/rio-de-janeiro/cope-s/
+[facility 119/343] (fetch) https://www.datacentermap.com/brazil/rio-de-janeiro/dc-ultranet-telecom1/
+[facility 120/343] (fetch) https://www.datacentermap.com/brazil/rio-de-janeiro/elea-digital-rjo1/
+[facility 121/343] (fetch) https://www.datacentermap.com/brazil/rio-de-janeiro/elea-rjo2/
+[facility 122/343] (fetch) https://www.datacentermap.com/brazil/rio-de-janeiro/elea-rjo3/
+[facility 123/343] (fetch) https://www.datacentermap.com/brazil/rio-de-janeiro/elea-rjo4/
+[facility 124/343] (fetch) https://www.datacentermap.com/brazil/rio-de-janeiro/equinix-rj1/
+[facility 125/343] (fetch) https://www.datacentermap.com/brazil/rio-de-janeiro/equinix-rj2/
+    [rate-limited] attempt 1/6 for https://www.datacentermap.com/brazil/rio-de-janeiro/equinix-rj2/; backing off 4s
+[facility 126/343] (fetch) https://www.datacentermap.com/brazil/rio-de-janeiro/equinix-rj3/
+[facility 127/343] (fetch) https://www.datacentermap.com/brazil/rio-de-janeiro/gblx-rio/
+[facility 128/343] (fetch) https://www.datacentermap.com/brazil/rio-de-janeiro/gvt-rio-de-janeiro/
+[facility 129/343] (fetch) https://www.datacentermap.com/brazil/rio-de-janeiro/hexam2/
+[facility 130/343] (fetch) https://www.datacentermap.com/brazil/rio-de-janeiro/ipxon-rio-de-janeiro/
+[facility 131/343] (fetch) https://www.datacentermap.com/brazil/rio-de-janeiro/r4c-networks/
+[facility 132/343] (fetch) https://www.datacentermap.com/brazil/rio-de-janeiro/rio-ai-city/
+[facility 133/343] (fetch) https://www.datacentermap.com/brazil/rio-de-janeiro/scala-data-centers-sgigsm02/
+[facility 134/343] (fetch) https://www.datacentermap.com/brazil/rio-de-janeiro/scala-data-centers-sgigsm03/
+    [rate-limited] attempt 1/6 for https://www.datacentermap.com/brazil/rio-de-janeiro/scala-data-centers-sgigsm03/; backing off 4s
+[facility 135/343] (fetch) https://www.datacentermap.com/brazil/rio-de-janeiro/scala-sgigsm01/
+    [rate-limited] attempt 1/6 for https://www.datacentermap.com/brazil/rio-de-janeiro/scala-sgigsm01/; backing off 4s
+[facility 136/343] (fetch) https://www.datacentermap.com/brazil/rio-de-janeiro/takoda-rio-de-janeiro-rj1/
+[facility 137/343] (fetch) https://www.datacentermap.com/brazil/rio-de-janeiro/teleporto-rj/
+[facility 138/343] (fetch) https://www.datacentermap.com/brazil/santa-maria/dc-coracao-do-rio-grande/
+[facility 139/343] (fetch) https://www.datacentermap.com/brazil/sao-jose-do-rio-preto/sjrp01/
+[facility 140/343] (fetch) https://www.datacentermap.com/brazil/sao-jose-dos-campos/tsdata/
+[facility 141/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/3rd-cta-sao-paulo-data-center/
+[facility 142/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/ada-sao-paulo/
+[facility 143/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/aligned-sp-01/
+[facility 144/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/aligned-sp-02/
+[facility 145/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/aligned-sp-03/
+[facility 146/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/asap-sp1/
+[facility 147/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/ascenty-jundiai1/
+[facility 148/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/ascenty-jundiai2/
+[facility 149/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/ascenty-sao-paulo-sp5/
+[facility 150/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/ascenty-sao-paulo-sp6/
+[facility 151/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/ascenty-sp4/
+[facility 152/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/av-roberto-pinto-sobrinho-350-1/
+[facility 153/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/av-roberto-pinto-sobrinho-350-2/
+[facility 154/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/av-roberto-pinto-sobrinho-350-3/
+[facility 155/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/b3-data-center/
+[facility 156/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/cdznet-data-center/
+[facility 157/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/claro-lapa/
+[facility 158/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/cma/
+[facility 159/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/connect-web/
+[facility 160/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/datacenter-locaweb-itapaiuna/
+[facility 161/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/datacenter-locaweb-jk/
+[facility 162/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/elea-digital-spo1/
+[facility 163/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/elea-digital-spo2/
+[facility 164/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/elea-digital-spo3/
+    [rate-limited] attempt 1/6 for https://www.datacentermap.com/brazil/sao-paulo/elea-digital-spo3/; backing off 4s
+[facility 165/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/equinix-sp1/
+[facility 166/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/equinix-sp2/
+[facility 167/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/equinix-sp3/
+[facility 168/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/equinix-sp4/
+    [rate-limited] attempt 1/6 for https://www.datacentermap.com/brazil/sao-paulo/equinix-sp4/; backing off 4s
+[facility 169/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/equinix-sp5x/
+[facility 170/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/equinix-sp6/
+[facility 171/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/equinix-sp7/
+[facility 172/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/gvt-sao-paulo/
+[facility 173/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/hostdime-so-paulo/
+[facility 174/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/ipxon-sao-paulo/
+[facility 175/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/kyndryl-dc-hortolandia/
+[facility 176/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/lumen-parque-sao-georgia/
+[facility 177/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/matrix/
+[facility 178/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/maxihost/
+    [rate-limited] attempt 1/6 for https://www.datacentermap.com/brazil/sao-paulo/maxihost/; backing off 4s
+[facility 179/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/microsoft-hortolandia/
+[facility 180/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/microsoft-sao-paulo/
+[facility 181/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/microsoft-taquara-branca/
+[facility 182/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/minidc-mcr1/
+[facility 183/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/nabiax-tambore/
+    [rate-limited] attempt 1/6 for https://www.datacentermap.com/brazil/sao-paulo/nabiax-tambore/; backing off 4s
+    [rate-limited] attempt 2/6 for https://www.datacentermap.com/brazil/sao-paulo/nabiax-tambore/; backing off 8s
+[facility 184/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/odata-sp02-dc1/
+[facility 185/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/odata-sp02-dc2/
+[facility 186/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/odata-sp04/
+[facility 187/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/pix-g8-sao-paulo/
+[facility 188/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/qnax-data-center/
+[facility 189/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/riverhook-village-18-campus/
+[facility 190/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/riverhook-village-18-dc1/
+[facility 191/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/riverhook-village-18-dc2/
+[facility 192/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/rpodc/
+[facility 193/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/scala-data-centers-sgrutb10/
+[facility 194/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/scala-data-centers-sgrutb11/
+[facility 195/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/scala-data-centers-sgrutb14/
+[facility 196/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/scala-data-centers-sgrutb15/
+[facility 197/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/scala-data-centers-svcpjd01/
+[facility 198/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/scala-data-centers-svcpjd02/
+[facility 199/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/scala-sgrusp02/
+[facility 200/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/serpro-so-paulo/
+[facility 201/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/takdoa-sao-paulo-sp1/
+[facility 202/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/takdoa-sao-paulo-sp2/
+[facility 203/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/takoda-sumare-campus/
+[facility 204/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/takoda-sumare-sp3/
+    [rate-limited] attempt 1/6 for https://www.datacentermap.com/brazil/sao-paulo/takoda-sumare-sp3/; backing off 4s
+[facility 205/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/takoda-sumare-sp4/
+[facility 206/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/takoda-sumare-sp5/
+[facility 207/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/tecto-so-paulo-1/
+[facility 208/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/telium-data-center--spo/
+[facility 209/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/ultranet-telecom/
+[facility 210/343] (fetch) https://www.datacentermap.com/brazil/sao-paulo/vivo-tambore-1-data-center/
+[facility 211/343] (fetch) https://www.datacentermap.com/brazil/tambore/scala-data-centers-sgrutb06/
+    [rate-limited] attempt 1/6 for https://www.datacentermap.com/brazil/tambore/scala-data-centers-sgrutb06/; backing off 4s
+[facility 212/343] (fetch) https://www.datacentermap.com/brazil/tambore/scala-data-centers-sgrutb07/
+[facility 213/343] (fetch) https://www.datacentermap.com/brazil/tambore/scala-data-centers-sgrutb08/
+[facility 214/343] (fetch) https://www.datacentermap.com/brazil/tambore/scala-data-centers-sgrutb09/
+[facility 215/343] (fetch) https://www.datacentermap.com/brazil/tambore/scala-data-centers-sgrutb12/
+    [rate-limited] attempt 1/6 for https://www.datacentermap.com/brazil/tambore/scala-data-centers-sgrutb12/; backing off 4s
+[facility 216/343] (fetch) https://www.datacentermap.com/brazil/tambore/scala-data-centers-tambore-campus/
+    [rate-limited] attempt 1/6 for https://www.datacentermap.com/brazil/tambore/scala-data-centers-tambore-campus/; backing off 4s
+    [rate-limited] attempt 2/6 for https://www.datacentermap.com/brazil/tambore/scala-data-centers-tambore-campus/; backing off 8s
+[facility 217/343] (fetch) https://www.datacentermap.com/brazil/tambore/scala-sgrutb01/
+[facility 218/343] (fetch) https://www.datacentermap.com/brazil/tambore/scala-sgrutb03/
+    [rate-limited] attempt 1/6 for https://www.datacentermap.com/brazil/tambore/scala-sgrutb03/; backing off 4s
+[facility 219/343] (fetch) https://www.datacentermap.com/brazil/tambore/scala-sgrutb04/
+    [rate-limited] attempt 1/6 for https://www.datacentermap.com/brazil/tambore/scala-sgrutb04/; backing off 4s
+[facility 220/343] (fetch) https://www.datacentermap.com/brazil/tambore/scala-sgrutb05/
+[facility 221/343] (fetch) https://www.datacentermap.com/brazil/tambore/sky-brasil-tambore/
+[facility 222/343] (fetch) https://www.datacentermap.com/brazil/teresina/piau-link-data-center/
+[facility 223/343] (fetch) https://www.datacentermap.com/brazil/uberlandia/algar-tech-uberlandia/
+[facility 224/343] (fetch) https://www.datacentermap.com/brazil/uberlandia/algar-tecnologia/
+[facility 225/343] (fetch) https://www.datacentermap.com/brazil/uberlandia/rt-one-uberlndia/
+[facility 226/343] (fetch) https://www.datacentermap.com/brazil/videira/brdrive-data-center/
+[facility 227/343] (fetch) https://www.datacentermap.com/brazil/videira/brdrive-sc-vda/
+[facility 228/343] (fetch) https://www.datacentermap.com/brazil/vitoria/nuv-datacenter-nuv1/
+[facility 229/343] (fetch) https://www.datacentermap.com/brazil/vitoria/nuv-datacenter-nuv2/
+    [rate-limited] attempt 1/6 for https://www.datacentermap.com/brazil/vitoria/nuv-datacenter-nuv2/; backing off 4s
+[facility 230/343] (fetch) https://www.datacentermap.com/brazil/vitoria/vix-datacenter/
+[facility 231/343] (fetch) https://www.datacentermap.com/brazil/xaxim/ferenz-networks/
+[facility 232/343] (fetch) https://www.datacentermap.com/brazil/xaxim/viso-datacenter/
+[facility 233/343] (fetch) https://www.datacentermap.com/colombia/barranquilla/csn-1-salgarbarranquilla/
+[facility 234/343] (fetch) https://www.datacentermap.com/colombia/barranquilla/vtal-chiva-1/
+    [rate-limited] attempt 1/6 for https://www.datacentermap.com/colombia/barranquilla/vtal-chiva-1/; backing off 4s
+[facility 235/343] (fetch) https://www.datacentermap.com/colombia/barranquilla/vtal-chiva-2/
+[facility 236/343] (fetch) https://www.datacentermap.com/colombia/bogota/aligned-bg-01/
+[facility 237/343] (fetch) https://www.datacentermap.com/colombia/bogota/ascenty-bogota-bog1/
+[facility 238/343] (fetch) https://www.datacentermap.com/colombia/bogota/ascenty-bogota-bog2/
+[facility 239/343] (fetch) https://www.datacentermap.com/colombia/bogota/cirion-bog1/
+    [rate-limited] attempt 1/6 for https://www.datacentermap.com/colombia/bogota/cirion-bog1/; backing off 4s
+[facility 240/343] (fetch) https://www.datacentermap.com/colombia/bogota/claro-data-center-triara/
+    [rate-limited] attempt 1/6 for https://www.datacentermap.com/colombia/bogota/claro-data-center-triara/; backing off 4s
+[facility 241/343] (fetch) https://www.datacentermap.com/colombia/bogota/dhamericas-bog-01/
+[facility 242/343] (fetch) https://www.datacentermap.com/colombia/bogota/dhamericas-bogota-campus/
+[facility 243/343] (fetch) https://www.datacentermap.com/colombia/bogota/equinix-bg1/
+[facility 244/343] (fetch) https://www.datacentermap.com/colombia/bogota/equinix-bg2/
+[facility 245/343] (fetch) https://www.datacentermap.com/colombia/bogota/faoba-dc/
+[facility 246/343] (fetch) https://www.datacentermap.com/colombia/bogota/hostdime-colombia/
+[facility 247/343] (fetch) https://www.datacentermap.com/colombia/bogota/ifx-jupiter1/
+[facility 248/343] (fetch) https://www.datacentermap.com/colombia/bogota/ifx-saturno/
+[facility 249/343] (fetch) https://www.datacentermap.com/colombia/bogota/ifx-wbp-i/
+[facility 250/343] (fetch) https://www.datacentermap.com/colombia/bogota/ifx-wbp-ii/
+[facility 251/343] (fetch) https://www.datacentermap.com/colombia/bogota/internexa-bogota/
+[facility 252/343] (fetch) https://www.datacentermap.com/colombia/bogota/ipxon/
+[facility 253/343] (fetch) https://www.datacentermap.com/colombia/bogota/kio-bogot/
+[facility 254/343] (fetch) https://www.datacentermap.com/colombia/bogota/lumen-bogota/
+[facility 255/343] (fetch) https://www.datacentermap.com/colombia/bogota/odata-bg02/
+[facility 256/343] (fetch) https://www.datacentermap.com/colombia/bogota/odata-bg03/
+[facility 257/343] (fetch) https://www.datacentermap.com/colombia/bogota/s3-heroes/
+[facility 258/343] (fetch) https://www.datacentermap.com/colombia/bogota/s3-san-martin/
+[facility 259/343] (fetch) https://www.datacentermap.com/colombia/bogota/scala-data-centers-bogota-campus/
+[facility 260/343] (fetch) https://www.datacentermap.com/colombia/bogota/scala-data-centers-sbogzb01/
+[facility 261/343] (fetch) https://www.datacentermap.com/colombia/bogota/scala-data-centers-sbogzb02/
+[facility 262/343] (fetch) https://www.datacentermap.com/colombia/bogota/scala-data-centers-sbogzm01/
+[facility 263/343] (fetch) https://www.datacentermap.com/colombia/bogota/scala-data-centers-sbogzt01/
+[facility 264/343] (fetch) https://www.datacentermap.com/colombia/bogota/sencinet-naos/
+[facility 265/343] (fetch) https://www.datacentermap.com/colombia/bogota/sencinet-nimbus/
+    [rate-limited] attempt 1/6 for https://www.datacentermap.com/colombia/bogota/sencinet-nimbus/; backing off 4s
+[facility 266/343] (fetch) https://www.datacentermap.com/colombia/bogota/takoda-bogot-colombia1/
+[facility 267/343] (fetch) https://www.datacentermap.com/colombia/bogota/tigo-dc-la-castellana/
+[facility 268/343] (fetch) https://www.datacentermap.com/colombia/bogota/tigo-une-titanium/
+[facility 269/343] (fetch) https://www.datacentermap.com/colombia/cali/cirion-cal1/
+[facility 270/343] (fetch) https://www.datacentermap.com/colombia/cali/netgroup-sa/
+    [rate-limited] attempt 1/6 for https://www.datacentermap.com/colombia/cali/netgroup-sa/; backing off 4s
+    [rate-limited] attempt 2/6 for https://www.datacentermap.com/colombia/cali/netgroup-sa/; backing off 8s
+[facility 271/343] (fetch) https://www.datacentermap.com/colombia/medellin/datamovilidad/
+[facility 272/343] (fetch) https://www.datacentermap.com/colombia/medellin/dataware-sistemas/
+[facility 273/343] (fetch) https://www.datacentermap.com/colombia/medellin/gtd-el-poblado/
+[facility 274/343] (fetch) https://www.datacentermap.com/colombia/medellin/internexa-medellin/
+    [rate-limited] attempt 1/6 for https://www.datacentermap.com/colombia/medellin/internexa-medellin/; backing off 4s
+[facility 275/343] (fetch) https://www.datacentermap.com/mexico/celaya/layer-9-project-falcon/
+[facility 276/343] (fetch) https://www.datacentermap.com/mexico/durango/fermaca-digital-city/
+[facility 277/343] (fetch) https://www.datacentermap.com/mexico/guadalajara/assetel-data-center/
+[facility 278/343] (fetch) https://www.datacentermap.com/mexico/guadalajara/c5-tlajomulco-data-center/
+[facility 279/343] (fetch) https://www.datacentermap.com/mexico/guadalajara/hostdime-mexico-2/
+[facility 280/343] (fetch) https://www.datacentermap.com/mexico/guadalajara/ipxon-guadalajara/
+    [rate-limited] attempt 1/6 for https://www.datacentermap.com/mexico/guadalajara/ipxon-guadalajara/; backing off 4s
+[facility 281/343] (fetch) https://www.datacentermap.com/mexico/guadalajara/kyndryl-dc-guadalajara/
+[facility 282/343] (fetch) https://www.datacentermap.com/mexico/guadalajara/marcatel-guadalajara/
+    [rate-limited] attempt 1/6 for https://www.datacentermap.com/mexico/guadalajara/marcatel-guadalajara/; backing off 4s
+[facility 283/343] (fetch) https://www.datacentermap.com/mexico/guadalajara/mega-data-center/
+[facility 284/343] (fetch) https://www.datacentermap.com/mexico/guadalajara/mexicogdl-dc2/
+[facility 285/343] (fetch) https://www.datacentermap.com/mexico/guadalajara/triara-guadalajara/
+[facility 286/343] (fetch) https://www.datacentermap.com/mexico/guanajato/odata-qr04/
+[facility 287/343] (fetch) https://www.datacentermap.com/mexico/guanajato/terranova-san-miguel-de-allende/
+[facility 288/343] (fetch) https://www.datacentermap.com/mexico/hermosillo/kio-hermosillo/
+[facility 289/343] (fetch) https://www.datacentermap.com/mexico/leon/mtp-edge-len/
+[facility 290/343] (fetch) https://www.datacentermap.com/mexico/manzanillo/hospedaje-servidores/
+    [rate-limited] attempt 1/6 for https://www.datacentermap.com/mexico/manzanillo/hospedaje-servidores/; backing off 4s
+[facility 291/343] (fetch) https://www.datacentermap.com/mexico/merida/aitelecom-data-center/
+[facility 292/343] (fetch) https://www.datacentermap.com/mexico/merida/kio-merida-1/
+[facility 293/343] (fetch) https://www.datacentermap.com/mexico/merida/kio-merida-2/
+[facility 294/343] (fetch) https://www.datacentermap.com/mexico/merida/mtp-edge-merida/
+[facility 295/343] (fetch) https://www.datacentermap.com/mexico/merida/triara-cancun/
+[facility 296/343] (fetch) https://www.datacentermap.com/mexico/mexico-city/cirion-mex1/
+[facility 297/343] (fetch) https://www.datacentermap.com/mexico/mexico-city/equinix-mx1/
+[facility 298/343] (fetch) https://www.datacentermap.com/mexico/mexico-city/equinix-mx2/
+[facility 299/343] (fetch) https://www.datacentermap.com/mexico/mexico-city/ipxon-mexico-df/
+    [rate-limited] attempt 1/6 for https://www.datacentermap.com/mexico/mexico-city/ipxon-mexico-df/; backing off 4s
+[facility 300/343] (fetch) https://www.datacentermap.com/mexico/mexico-city/kio-mexico-2/
+[facility 301/343] (fetch) https://www.datacentermap.com/mexico/mexico-city/kio-networks/
+[facility 302/343] (fetch) https://www.datacentermap.com/mexico/mexico-city/kio-santa-fe-4/
+[facility 303/343] (fetch) https://www.datacentermap.com/mexico/mexico-city/marcatel-mexico-city/
+[facility 304/343] (fetch) https://www.datacentermap.com/mexico/mexico-city/mtp-santa-fe/
+[facility 305/343] (fetch) https://www.datacentermap.com/mexico/mexico-city/pentafon-data-center/
+[facility 306/343] (fetch) https://www.datacentermap.com/mexico/mexico-city/reditdatapark/
+[facility 307/343] (fetch) https://www.datacentermap.com/mexico/mexico-city/scala-smextp01/
+    [invalid/empty] attempt 1/6 for https://www.datacentermap.com/mexico/mexico-city/scala-smextp01/; backing off 4s
+[facility 308/343] (fetch) https://www.datacentermap.com/mexico/mexico-city/sdr/
+[facility 309/343] (fetch) https://www.datacentermap.com/mexico/mexico-city/triara-mexico-city/
+[facility 310/343] (fetch) https://www.datacentermap.com/mexico/mexico-city/xertix-interlomas/
+[facility 311/343] (fetch) https://www.datacentermap.com/mexico/mexico-city/xertix/
+[facility 312/343] (fetch) https://www.datacentermap.com/mexico/monterrey/equinix-mo1/
+[facility 313/343] (fetch) https://www.datacentermap.com/mexico/monterrey/equinix-mo2/
+    [rate-limited] attempt 1/6 for https://www.datacentermap.com/mexico/monterrey/equinix-mo2/; backing off 4s
+[facility 314/343] (fetch) https://www.datacentermap.com/mexico/monterrey/marcatel-monterrey/
+[facility 315/343] (fetch) https://www.datacentermap.com/mexico/monterrey/nh-solutions-edc1/
+[facility 316/343] (fetch) https://www.datacentermap.com/mexico/monterrey/nh-solutions-edc2/
+[facility 317/343] (fetch) https://www.datacentermap.com/mexico/monterrey/triara-monterrey/
+[facility 318/343] (fetch) https://www.datacentermap.com/mexico/monterrey/xertix-monterrey/
+[facility 319/343] (fetch) https://www.datacentermap.com/mexico/nogales/ngx-networks-dc01/
+[facility 320/343] (fetch) https://www.datacentermap.com/mexico/queretaro/aligned-qr-01/
+[facility 321/343] (fetch) https://www.datacentermap.com/mexico/queretaro/aligned-qr-02/
+    [rate-limited] attempt 1/6 for https://www.datacentermap.com/mexico/queretaro/aligned-qr-02/; backing off 4s
+[facility 322/343] (fetch) https://www.datacentermap.com/mexico/queretaro/amazon-aws-qro-productividad/
+[facility 323/343] (fetch) https://www.datacentermap.com/mexico/queretaro/ascenty-queretaro-qro3/
+[facility 324/343] (fetch) https://www.datacentermap.com/mexico/queretaro/bleeding-edge-qro1/
+[facility 325/343] (fetch) https://www.datacentermap.com/mexico/queretaro/camino-a-nativitas-800-colon/
+[facility 326/343] (fetch) https://www.datacentermap.com/mexico/queretaro/carretera-estatal-100-colon/
+[facility 327/343] (fetch) https://www.datacentermap.com/mexico/queretaro/cloudhq-qro-campus/
+[facility 328/343] (fetch) https://www.datacentermap.com/mexico/queretaro/cloudhq-qro1/
+[facility 329/343] (fetch) https://www.datacentermap.com/mexico/queretaro/cloudhq-qro2/
+[facility 330/343] (fetch) https://www.datacentermap.com/mexico/queretaro/cloudhq-qro3/
+    [rate-limited] attempt 1/6 for https://www.datacentermap.com/mexico/queretaro/cloudhq-qro3/; backing off 4s
+[facility 331/343] (fetch) https://www.datacentermap.com/mexico/queretaro/cloudhq-qro4/
+[facility 332/343] (fetch) https://www.datacentermap.com/mexico/queretaro/cloudhq-qro5/
+    [rate-limited] attempt 1/6 for https://www.datacentermap.com/mexico/queretaro/cloudhq-qro5/; backing off 4s
+[facility 333/343] (fetch) https://www.datacentermap.com/mexico/queretaro/cloudhq-qro6/
+    [rate-limited] attempt 1/6 for https://www.datacentermap.com/mexico/queretaro/cloudhq-qro6/; backing off 4s
+[facility 334/343] (fetch) https://www.datacentermap.com/mexico/queretaro/equinix-mx3x/
+[facility 335/343] (fetch) https://www.datacentermap.com/mexico/queretaro/kio-networks2/
+    [rate-limited] attempt 1/6 for https://www.datacentermap.com/mexico/queretaro/kio-networks2/; backing off 4s
+[facility 336/343] (fetch) https://www.datacentermap.com/mexico/queretaro/kio-queretaro-2/
+[facility 337/343] (fetch) https://www.datacentermap.com/mexico/queretaro/marcatel-queretaro/
+[facility 338/343] (fetch) https://www.datacentermap.com/mexico/queretaro/odata-qr03/
+[facility 339/343] (fetch) https://www.datacentermap.com/mexico/queretaro/triara-queretaro/
+    [rate-limited] attempt 1/6 for https://www.datacentermap.com/mexico/queretaro/triara-queretaro/; backing off 4s
+[facility 340/343] (fetch) https://www.datacentermap.com/mexico/san-luis-potosi/mtp-edge-san-luis-potosi/
+[facility 341/343] (fetch) https://www.datacentermap.com/mexico/tijuana/mtp-edge-tijuana/
+[facility 342/343] (fetch) https://www.datacentermap.com/mexico/toluca/kio-toluca/
+[facility 343/343] (fetch) https://www.datacentermap.com/mexico/toluca/nabiax-ixtlahuaca/
+
+Facilities scraped OK: 343/343; failed: 0

@@ -26,8 +26,12 @@ KNOWN_MAJORS = {
     "equinix", "ascenty-data-centers", "ascenty", "odata-an-aligned-data-centers-company",
     "odata", "aligned", "scala-data-centers", "scala", "cirion", "elea-digital",
     "elea-data-centers", "nabiax", "edgeconnex", "digital-realty", "kio", "kio-networks",
-    "tecto", "hostdime", "vtal", "takoda", "angola-cables", "datacenter1",
-    "layer-9", "layer9", "sonda", "gorila", "cirion-technologies",
+    "tecto", "hostdime", "vtal", "v-tal", "takoda", "angola-cables", "datacenter1",
+    "layer-9", "layer9", "sonda", "gorila", "cirion-technologies", "cloudhq",
+    "ipxon", "ipxon-networks", "ascenty-data-centers", "riverhook", "microsoft",
+    "google", "amazon", "aws", "oracle", "huawei", "tencent", "z-tech", " z-tech",
+    "maxihost", "latitude-sh", "latitude", "birdie", "mdc-data-centers", "mdc",
+    "hostdime-brasil", "east-tech", "prime-datacenter",
 }
 # Telco operators (captive unless they clearly sell colo footprint).
 TELCO_NAMES = {
@@ -73,11 +77,31 @@ def market_slug_of(rec):
 
 
 def dedup_key(rec):
+    """Two rows are the same physical site only when the operator AND the exact
+    facility name match (campus siblings like SP1/SP2/SP3 have distinct names and
+    must stay separate). Site code, when present, disambiguates further."""
     op = rec.get("operator_slug") or norm(rec.get("operator_name"))
     sc = rec.get("site_code")
     if sc:
-        return (op, "sc:" + norm(sc))
-    return (op, "ad:" + norm(rec.get("address")))
+        return (op, "sc:" + norm(sc), norm(rec.get("facility_name")))
+    return (op, "nm:" + norm(rec.get("facility_name")))
+
+
+CAMPUS_RE = re.compile(r"\bcampus\b", re.I)
+
+
+def is_campus_umbrella(rec, same_op_addr):
+    """An umbrella 'X Campus' listing that duplicates individually-listed
+    buildings at the same operator+address."""
+    name = rec.get("facility_name") or ""
+    if not CAMPUS_RE.search(name):
+        return False
+    for other in same_op_addr:
+        if other is rec:
+            continue
+        if not CAMPUS_RE.search(other.get("facility_name") or ""):
+            return True
+    return False
 
 
 def derive_parent(rec):
@@ -120,6 +144,15 @@ def main():
             r["_dup_of"] = None
             r["_dupcount"] = 0
             seen[k] = r
+
+    # ---------- campus-umbrella detection (operator + address groups) ----------
+    by_op_addr = {}
+    for r in recs:
+        key = ((r.get("operator_slug") or norm(r.get("operator_name"))), norm(r.get("address")))
+        by_op_addr.setdefault(key, []).append(r)
+    for r in recs:
+        key = ((r.get("operator_slug") or norm(r.get("operator_name"))), norm(r.get("address")))
+        r["_campus_umbrella"] = is_campus_umbrella(r, by_op_addr[key]) and bool(norm(r.get("address")))
 
     # ---------- operator pre-aggregation (for multi-site signal) ----------
     op_facs = {}
@@ -182,39 +215,38 @@ def main():
         r["_leaseable"] = leaseable
 
         # relevance
+        commercial = colo or wholesale
         score, reason = 1, ""
         if r["_is_dup"]:
-            score, reason = 1, "Duplicate listing of an already-captured site (campus noise)."
+            score, reason = 1, "Duplicate listing of an already-captured site."
+        elif r["_campus_umbrella"]:
+            score, reason = 1, "Umbrella campus listing; individual buildings are captured separately."
         elif captive:
             score, reason = 1, ("Captive %s site with no public colocation footprint."
                                 % ("government/military" if gov else "telco"))
-        elif not colo and not wholesale:
-            # non-commercial / unclear leaseability
-            if priority and (known_big or ai_wholesale_player):
-                score, reason = 3, "In priority metro with major-operator/AI signal but colo footprint unclear."
-            else:
-                score, reason = 2 if priority else 1, (
-                    "Commercial status unclear; no public colo/wholesale signal"
-                    + ("." if priority else ", outside priority metro.")
-                )
+        elif commercial and priority and ms and (mw_known or colo):
+            score, reason = 5, "Multi-site LatAm colo/wholesale operator in a priority metro with clear commercial colo (MW known or colo footprint)."
+        elif commercial and priority and known_big:
+            score, reason = 4, "Major colo/IX-dense operator (Equinix-class) in a priority metro."
+        elif ai_wholesale_player and (known_big or priority):
+            score, reason = 4, "AI/wholesale player (%s) with major-operator or priority-metro standing." % (
+                ", ".join(r.get("ai_mentions") or []) or "wholesale/hyperscale")
+        elif commercial and priority:
+            score, reason = 3, "Mid-size commercial colocation in a priority metro."
+        elif commercial and known_big:
+            score, reason = 4, "Major colo/wholesale operator with commercial colo, outside a priority metro."
+        elif commercial and ms:
+            score, reason = 3, "Multi-site commercial colo operator outside priority metros."
+        elif commercial:
+            score, reason = 2, "Small/standalone commercial colo outside priority metros."
+        elif ai_wholesale_player:
+            score, reason = 3, "AI/wholesale signal present but colocation footprint unclear from public page."
+        elif known_big:
+            score, reason = 3, "Major operator, but this site's public page lists no colocation services (specs likely login-gated)."
+        elif priority:
+            score, reason = 2, "In a priority metro but commercial leaseability is unclear from the public page."
         else:
-            # commercial colo / wholesale present
-            if priority:
-                if ms and (mw_known or colo):
-                    score, reason = 5, "Multi-site LatAm colo/wholesale operator in a priority metro with known MW or clear commercial colo."
-                elif known_big:
-                    score, reason = 4, "Major colo/IX-dense operator (Equinix-class) in a priority metro."
-                elif ai_wholesale_player:
-                    score, reason = 4, "Known AI/wholesale player with commercial colo in a priority metro."
-                else:
-                    score, reason = 3, "Mid-size commercial colocation in a priority metro."
-            else:
-                if known_big or ai_wholesale_player:
-                    score, reason = 4, "Major or AI/wholesale colo operator (commercial colo) though outside a priority metro."
-                elif ms:
-                    score, reason = 3, "Multi-site commercial colo operator outside priority metros."
-                else:
-                    score, reason = 2, "Small/standalone commercial colo outside priority metros."
+            score, reason = 1, "No public colo/wholesale signal and outside priority metros."
         r["_score"] = score
         r["_reason"] = reason
         r["_exclude"] = score == 1
@@ -248,6 +280,8 @@ def main():
             notes.append(f"{r['_dupcount']} sibling listing(s) share operator+address (campus).")
         if r["_is_dup"]:
             notes.append(f"Duplicate of {r['_dup_of']}.")
+        if r.get("_campus_umbrella"):
+            notes.append("Umbrella campus entry; see individually-listed buildings at same address.")
         if r.get("operator_hq"):
             notes.append(f"Operator HQ: {r['operator_hq']}.")
         if r.get("operator_total_dc"):
