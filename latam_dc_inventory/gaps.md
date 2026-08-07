@@ -70,11 +70,11 @@ _Wave A = Brazil, Mexico, Colombia. Primary source: datacentermap.com (all publi
 
 - **datacenters.com:** no provider profile matched for 5 enriched operators: data-horizon-americas-dhamericas, megatelecom, riverhook-village-18, s3-simple-smart-speedy, ultranet-telecom. These need a manual datacenters.com / vendor-site lookup for AI/wholesale claims.
 - **Cloudscene connectivity (metro-level, qualitative):** sao-paulo=High (254 network/service providers, 85 data centers listed (Cloudscene)); queretaro=Med (42 network/service providers, 28 data centers listed (Cloudscene)); bogota=Med (45 network/service providers, 32 data centers listed (Cloudscene)).
-- Cloudscene was intentionally limited to São Paulo, Querétaro, and Bogotá per scope; other priority metros (Rio de Janeiro, Mexico City, Medellín) have no carrier/IX density rating yet.
+- Cloudscene was intentionally limited to São Paulo, Querétaro, Bogotá per scope; other priority metros (Rio de Janeiro, Mexico City, Medellín) have no carrier/IX density rating yet.
 
 ## Known caveats / suggested manual follow-ups
 
-- **MW is the biggest gap.** For a capacity-based partnership map, pull MW/racks/PUE from operator sites, investor decks, or datacentermap Specs (login) for the top operators (Scala, Ascenty/Digital Realty, ODATA/Aligned, Equinix, CloudHQ, KIO, Cirion, Elea, TAKODA, Tecto).
-- **Telco-owned colos** (Vivo/Telefónica, Claro, Tigo, TELMEX Triara, InterNexa) score high because they publicly offer colocation, but partnership openness for AI/neocloud is uncertain — confirm commercial wholesale/AI appetite directly.
-- **Parent companies** were only auto-derived where stated on-page (e.g. ODATA→Aligned). Confirm ownership for Ascenty (Digital Realty), Scala (DigitalBridge), Cirion (Stonepeak/ex-Lumen), etc.
-- **Pre-launch facilities** (e.g. Equinix SP7, several 2025–2026 builds) show no services yet and are scored conservatively; revisit as they open.
+- **MW is the biggest gap.** For a capacity-based partnership map, pull MW/racks/PUE from operator sites, investor decks, or datacentermap Specs (login) for the top operators: Scala Data Centers, Ascenty Data Centers, Equinix, Elea Data Centers, KIO Networks, CloudHQ, ODATA, an Aligned Data Centers Company, Cirion, TAKODA, Tecto Data Centers.
+- **Telco-owned colos** score high when they publicly offer colocation, but AI/neocloud partnership openness is uncertain — confirm commercial wholesale/AI appetite directly. Candidates flagged Low openness with a colo footprint: (none flagged).
+- **Parent companies** were only auto-derived where stated on-page. Confirm ownership for the top operators via corporate filings / press.
+- **Pre-launch facilities** (2025–2026 builds) show no services yet and are scored conservatively; revisit as they open.

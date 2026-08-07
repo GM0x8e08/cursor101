@@ -16,10 +16,11 @@ import json
 import subprocess
 import csv
 from scraper import scrape, slug_for
+from config import CFG
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(ROOT, "data")
-ENR_DIR = os.path.join(ROOT, ".firecrawl", "enrich")
+ENR_DIR = os.path.join(ROOT, CFG["enrich_dir"])
 
 AI_KEYWORDS = [
     "artificial intelligence", "ai ", " ai", "gpu", "hpc",
@@ -166,11 +167,7 @@ def rate_density(text):
 
 def enrich_metros():
     # Cloudscene market pages follow /market/data-centers-in-<country>/<city>
-    metros = {
-        "sao-paulo": ("Sao Paulo Brazil", "https://cloudscene.com/market/data-centers-in-brazil/sao-paulo"),
-        "queretaro": ("Queretaro Mexico", "https://cloudscene.com/market/data-centers-in-mexico/queretaro"),
-        "bogota": ("Bogota Colombia", "https://cloudscene.com/market/data-centers-in-colombia/bogota"),
-    }
+    metros = CFG["cloudscene"]
     out = {}
     for slug, (q, direct) in metros.items():
         cs = direct
@@ -194,9 +191,9 @@ def enrich_metros():
 def main():
     # qualifying operators from the roll-up
     qualifying = []
-    op_csv = os.path.join(ROOT, "operators_wave_A.csv")
+    op_csv = os.path.join(ROOT, CFG["operators_csv"])
     slug_by_name = {}
-    with open(os.path.join(DATA, "facilities_raw.json"), encoding="utf-8") as f:
+    with open(os.path.join(ROOT, CFG["raw"]), encoding="utf-8") as f:
         for r in json.load(f):
             if r.get("operator_slug") and r.get("operator_name"):
                 slug_by_name.setdefault(r["operator_name"], r["operator_slug"])
@@ -213,9 +210,9 @@ def main():
 
     ops = enrich_operators(qualifying)
     metros = enrich_metros()
-    with open(os.path.join(DATA, "enrichment.json"), "w") as f:
+    with open(os.path.join(ROOT, CFG["enrichment"]), "w") as f:
         json.dump({"operators": ops, "metros": metros}, f, indent=2, ensure_ascii=False)
-    print("Wrote enrichment.json")
+    print("Wrote", CFG["enrichment"])
 
 
 if __name__ == "__main__":

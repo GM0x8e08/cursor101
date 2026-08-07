@@ -3,14 +3,15 @@
 import os
 import json
 from scraper import scrape, slug_for
+from config import CFG
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(ROOT, "data")
-FAC_DIR = os.path.join(ROOT, ".firecrawl", "facilities")
+FAC_DIR = os.path.join(ROOT, CFG["fac_dir"])
 
 
 def main():
-    with open(os.path.join(DATA, "facility_urls.json")) as f:
+    with open(os.path.join(ROOT, CFG["facility_urls"])) as f:
         facs = json.load(f)
     urls = sorted(facs.keys())
     ok, failed = 0, []
@@ -23,7 +24,7 @@ def main():
         else:
             failed.append(url)
     print(f"\nFacilities scraped OK: {ok}/{len(urls)}; failed: {len(failed)}")
-    with open(os.path.join(DATA, "facility_scrape_failed.json"), "w") as f:
+    with open(os.path.join(DATA, "facility_scrape_failed_" + CFG["facilities_csv"].replace(".csv", "") + ".json"), "w") as f:
         json.dump(failed, f, indent=2)
 
 

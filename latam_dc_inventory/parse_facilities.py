@@ -9,12 +9,16 @@ import re
 import json
 import glob
 import datetime
+from config import CFG
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(ROOT, "data")
-FAC_DIR = os.path.join(ROOT, ".firecrawl", "facilities")
+FAC_DIR = os.path.join(ROOT, CFG["fac_dir"])
 
-COUNTRY_DISPLAY = {"brazil": "Brazil", "mexico": "Mexico", "colombia": "Colombia"}
+COUNTRY_DISPLAY = {
+    "brazil": "Brazil", "mexico": "Mexico", "colombia": "Colombia",
+    "chile": "Chile", "argentina": "Argentina", "peru": "Peru",
+}
 
 METRO_DISPLAY = {
     "sao-paulo": "São Paulo", "rio-de-janeiro": "Rio de Janeiro",
@@ -25,6 +29,12 @@ METRO_DISPLAY = {
     "sao-jose-do-rio-preto": "São José do Rio Preto", "parnaiba": "Parnaíba",
     "joao-pessoa": "João Pessoa", "itauna": "Itaúna", "ararangu": "Araranguá",
     "muriae": "Muriaé", "guanajato": "Guanajuato",
+    # Wave B
+    "santiago": "Santiago", "buenos-aires": "Buenos Aires", "lima": "Lima",
+    "valparaiso": "Valparaíso", "concepcion": "Concepción", "cordoba": "Córdoba",
+    "san-juan-ar": "San Juan", "san-luis-ar": "San Luis", "santa-fe-ar": "Santa Fe",
+    "santa-rosa-la-pampa": "Santa Rosa (La Pampa)", "rio-cuarto": "Río Cuarto",
+    "puerto-montt": "Puerto Montt", "punta-arenas": "Punta Arenas", "los-andes": "Los Andes",
 }
 _LOWER_WORDS = {"de", "do", "da", "dos", "das", "e"}
 
@@ -389,7 +399,7 @@ def main():
             empty.append(os.path.basename(p))
             continue
         records.append(rec)
-    with open(os.path.join(DATA, "facilities_raw.json"), "w") as f:
+    with open(os.path.join(ROOT, CFG["raw"]), "w") as f:
         json.dump(records, f, indent=2, ensure_ascii=False)
     print(f"Parsed {len(records)} facilities from {len(files)} files; empty/failed: {len(empty)}")
     if empty:

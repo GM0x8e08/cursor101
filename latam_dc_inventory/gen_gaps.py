@@ -4,18 +4,22 @@ import os
 import csv
 import json
 from collections import Counter, defaultdict
+from config import CFG, WAVE
+from parse_facilities import metro_display
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(ROOT, "data")
 
-PRIORITY = {"São Paulo", "Rio de Janeiro", "Querétaro", "Mexico City", "Bogotá", "Medellín"}
+PRIORITY = list(CFG["priority_display"])
+WAVE_COUNTRIES = ", ".join(c.title() for c in CFG["countries"])
+CS_COVERED = [metro_display(slug) for slug in CFG["cloudscene"]]
 
 
 def main():
-    frows = list(csv.DictReader(open(os.path.join(ROOT, "facilities_wave_A.csv"), encoding="utf-8")))
-    orows = list(csv.DictReader(open(os.path.join(ROOT, "operators_wave_A.csv"), encoding="utf-8")))
-    raw = json.load(open(os.path.join(DATA, "facilities_raw.json"), encoding="utf-8"))
-    enr = json.load(open(os.path.join(DATA, "enrichment.json"), encoding="utf-8"))
+    frows = list(csv.DictReader(open(os.path.join(ROOT, CFG["facilities_csv"]), encoding="utf-8")))
+    orows = list(csv.DictReader(open(os.path.join(ROOT, CFG["operators_csv"]), encoding="utf-8")))
+    raw = json.load(open(os.path.join(ROOT, CFG["raw"]), encoding="utf-8"))
+    enr = json.load(open(os.path.join(ROOT, CFG["enrichment"]), encoding="utf-8"))
 
     n = len(frows)
     by_country = Counter(r["country"] for r in frows)
@@ -46,24 +50,25 @@ def main():
 
     dcom_ops = [op for op, v in enr["operators"].items() if not v.get("datacenters_com_url")]
 
+    cs_metros = ", ".join(CS_COVERED)
     lines = []
     A = lines.append
-    A("# Wave A Data-Center Inventory — Gaps & Data-Quality Notes\n")
-    A("_Wave A = Brazil, Mexico, Colombia. Primary source: datacentermap.com "
+    A(f"# Wave {WAVE} Data-Center Inventory — Gaps & Data-Quality Notes\n")
+    A(f"_Wave {WAVE} = {WAVE_COUNTRIES}. Primary source: datacentermap.com "
       "(all public facility Overview tabs). Enrichment: datacenters.com (operator "
-      "profiles) and cloudscene.com (metro connectivity for São Paulo, Querétaro, "
-      "Bogotá only). Specs tabs on datacentermap require login and were not scraped._\n")
+      f"profiles) and cloudscene.com (metro connectivity for {cs_metros} only). "
+      "Specs tabs on datacentermap require login and were not scraped._\n")
 
     A("## Coverage summary\n")
-    A(f"- **Facilities captured:** {n} across {len(by_metro)} markets "
-      f"(Brazil {by_country['Brazil']}, Mexico {by_country['Mexico']}, Colombia {by_country['Colombia']}).")
+    A(f"- **Facilities captured:** {n} across {len(by_metro)} markets ("
+      + ", ".join(f"{c.title()} {by_country.get(c.title(), 0)}" for c in CFG["countries"]) + ").")
     A(f"- **Operators (roll-up):** {len(orows)}.")
     A(f"- **Relevance distribution:** " + ", ".join(f"{k}={scores.get(k,0)}" for k in ['5','4','3','2','1']) + ".")
     A(f"- **Leaseable signal:** " + ", ".join(f"{k}={v}" for k, v in lease.items()) + ".")
     A(f"- **Confidence:** " + ", ".join(f"{k}={v}" for k, v in conf.items()) + ".\n")
 
     A("## Priority-metro facility counts\n")
-    for m in ["São Paulo", "Rio de Janeiro", "Querétaro", "Mexico City", "Bogotá", "Medellín"]:
+    for m in PRIORITY:
         A(f"- {m}: {by_metro.get(m, 0)}")
     A("")
 
@@ -102,24 +107,30 @@ def main():
     A("- **Cloudscene connectivity (metro-level, qualitative):** "
       + "; ".join(f"{k}={v.get('connectivity','?')} ({v.get('connectivity_detail','')})"
                   for k, v in enr["metros"].items()) + ".")
-    A("- Cloudscene was intentionally limited to São Paulo, Querétaro, and Bogotá per scope; other "
-      "priority metros (Rio de Janeiro, Mexico City, Medellín) have no carrier/IX density rating yet.\n")
+    _uncovered = [p for p in PRIORITY if p not in CS_COVERED]
+    A("- Cloudscene was intentionally limited to " + ", ".join(CS_COVERED)
+      + " per scope"
+      + ("; other priority metros (" + ", ".join(_uncovered) + ") have no carrier/IX density rating yet." if _uncovered else ".")
+      + "\n")
 
+    top_ops = ", ".join(o["operator_name"] for o in orows[:10])
+    telco_ops = ", ".join(sorted({o["operator_name"] for o in orows
+                                   if o["partnership_openness_guess"] == "Low"
+                                   and o["has_colo_wholesale"] == "True"})[:8]) or "(none flagged)"
     A("## Known caveats / suggested manual follow-ups\n")
     A("- **MW is the biggest gap.** For a capacity-based partnership map, pull MW/racks/PUE from operator "
-      "sites, investor decks, or datacentermap Specs (login) for the top operators (Scala, Ascenty/Digital "
-      "Realty, ODATA/Aligned, Equinix, CloudHQ, KIO, Cirion, Elea, TAKODA, Tecto).")
-    A("- **Telco-owned colos** (Vivo/Telefónica, Claro, Tigo, TELMEX Triara, InterNexa) score high because "
-      "they publicly offer colocation, but partnership openness for AI/neocloud is uncertain — confirm "
-      "commercial wholesale/AI appetite directly.")
-    A("- **Parent companies** were only auto-derived where stated on-page (e.g. ODATA→Aligned). Confirm "
-      "ownership for Ascenty (Digital Realty), Scala (DigitalBridge), Cirion (Stonepeak/ex-Lumen), etc.")
-    A("- **Pre-launch facilities** (e.g. Equinix SP7, several 2025–2026 builds) show no services yet and "
-      "are scored conservatively; revisit as they open.")
+      "sites, investor decks, or datacentermap Specs (login) for the top operators: " + top_ops + ".")
+    A("- **Telco-owned colos** score high when they publicly offer colocation, but AI/neocloud partnership "
+      "openness is uncertain — confirm commercial wholesale/AI appetite directly. Candidates flagged Low "
+      "openness with a colo footprint: " + telco_ops + ".")
+    A("- **Parent companies** were only auto-derived where stated on-page. Confirm ownership for the top "
+      "operators via corporate filings / press.")
+    A("- **Pre-launch facilities** (2025–2026 builds) show no services yet and are scored conservatively; "
+      "revisit as they open.")
 
-    with open(os.path.join(ROOT, "gaps.md"), "w", encoding="utf-8") as f:
+    with open(os.path.join(ROOT, CFG["gaps"]), "w", encoding="utf-8") as f:
         f.write("\n".join(lines) + "\n")
-    print(f"Wrote gaps.md ({len(manual)} operators flagged for manual research)")
+    print(f"Wrote {CFG['gaps']} ({len(manual)} operators flagged for manual research)")
 
 
 if __name__ == "__main__":

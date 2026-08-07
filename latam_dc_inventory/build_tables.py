@@ -10,16 +10,13 @@ import re
 import json
 import csv
 import unicodedata
+from config import CFG
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(ROOT, "data")
 
-PRIORITY_METRO_SLUGS = {
-    "sao-paulo", "rio-de-janeiro", "queretaro", "mexico-city", "bogota", "medellin",
-}
-PRIORITY_METRO_DISPLAY = {
-    "São Paulo", "Rio de Janeiro", "Querétaro", "Mexico City", "Bogotá", "Medellín",
-}
+PRIORITY_METRO_SLUGS = set(CFG["priority_slugs"])
+PRIORITY_METRO_DISPLAY = set(CFG["priority_display"])
 
 # Known major / hyperscale-class colo & wholesale operators active in LatAm.
 KNOWN_MAJORS = {
@@ -117,7 +114,7 @@ def derive_parent(rec):
 
 
 def load_enrichment():
-    path = os.path.join(DATA, "enrichment.json")
+    path = os.path.join(ROOT, CFG["enrichment"])
     if os.path.exists(path):
         with open(path) as f:
             return json.load(f)
@@ -125,7 +122,7 @@ def load_enrichment():
 
 
 def main():
-    with open(os.path.join(DATA, "facilities_raw.json"), encoding="utf-8") as f:
+    with open(os.path.join(ROOT, CFG["raw"]), encoding="utf-8") as f:
         recs = json.load(f)
     enrich = load_enrichment()
 
@@ -339,7 +336,7 @@ def main():
         })
 
     fac_rows.sort(key=lambda x: (-x["relevance_score"], x["country"], x["metro"], str(x["operator_name"])))
-    with open(os.path.join(ROOT, "facilities_wave_A.csv"), "w", newline="", encoding="utf-8") as f:
+    with open(os.path.join(ROOT, CFG["facilities_csv"]), "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=fac_fields)
         w.writeheader()
         w.writerows(fac_rows)
@@ -402,7 +399,7 @@ def main():
         })
 
     op_rows.sort(key=lambda x: (-x["max_relevance"], -x["facility_count_wave_A"], str(x["operator_name"])))
-    with open(os.path.join(ROOT, "operators_wave_A.csv"), "w", newline="", encoding="utf-8") as f:
+    with open(os.path.join(ROOT, CFG["operators_csv"]), "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=op_fields)
         w.writeheader()
         w.writerows(op_rows)
