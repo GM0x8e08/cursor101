@@ -1,0 +1,32 @@
+operator_name,parent_company,countries_present,facility_count_wave_A,total_mw_known,mw_coverage_pct,has_colo_wholesale,ai_or_gpu_mentions,max_relevance,partnership_openness_guess,priority_for_outreach,source_urls
+Ascenty Data Centers,Unknown,Brazil,16,181.0,38%,True,,4,High,Yes,https://www.datacentermap.com/brazil/campinas/ascenty-hortolandia-campus/ | https://www.datacentermap.com/brazil/campinas/ascenty-hortolandia-htl6/ | https://www.datacentermap.com/brazil/campinas/ascenty-htl04/ | https://www.datacentermap.com/brazil/campinas/ascenty-htl05/ | https://www.datacentermap.com/brazil/campinas/ascenty-sum03/ | https://www.datacentermap.com/brazil/campinas/ascenty-sum04/ | https://www.datacentermap.com/brazil/campinas/ascenty-sumare-campus/ | https://www.datacentermap.com/brazil/campinas/ascenty-sumare-sum5/ | https://www.datacentermap.com/brazil/campinas/ascenty-vin02/ | https://www.datacentermap.com/brazil/campinas/ascenty/ | https://www.datacentermap.com/brazil/campinas/av-2-50-quadra-g1/ | https://www.datacentermap.com/brazil/campinas/r-papa-joao-paulo-ii-4/ | https://www.datacentermap.com/brazil/campinas/rodovia-anhanguera-bldg-1/ | https://www.datacentermap.com/brazil/campinas/rodovia-anhanguera-bldg-2/ | https://www.datacentermap.com/brazil/campinas/rua-papa-joao-paulo-ii-4-building-2/ | https://www.datacentermap.com/brazil/campinas/rua-papa-joao-paulo-ii-4-building-3/
+Elea Data Centers,Unknown,Brazil,4,100.0,25%,True,AI,4,High,Yes,https://www.datacentermap.com/brazil/belem/elea-bel1/ | https://www.datacentermap.com/brazil/brasilia/elea-digital-bsb1/ | https://www.datacentermap.com/brazil/brasilia/elea-digital-bsb2/ | https://www.datacentermap.com/brazil/curitiba/elea-digital-cta1/
+Scala Data Centers,Unknown,Brazil,3,1000.0,67%,True,,4,High,Yes,https://www.datacentermap.com/brazil/campinas/scala-data-centers-campinas-campus/ | https://www.datacentermap.com/brazil/campinas/scala-data-centers-svcpcp02/ | https://www.datacentermap.com/brazil/campinas/scala-svcpcp01/
+Cirion,Unknown,Brazil,1,0,0%,True,,4,High,Yes,https://www.datacentermap.com/brazil/curitiba/cirion-cur1/
+Local DC,Unknown,Brazil,1,12.0,100%,True,"AI, GPU, artificial intelligence, machine learning",4,High,Yes,https://www.datacentermap.com/brazil/campinas/local-dc-campinas/
+CloudHQ,Unknown,Brazil,7,336.0,100%,True,,3,Med,Yes,https://www.datacentermap.com/brazil/campinas/cloudhq-gru-campus/ | https://www.datacentermap.com/brazil/campinas/cloudhq-gru1/ | https://www.datacentermap.com/brazil/campinas/cloudhq-gru2/ | https://www.datacentermap.com/brazil/campinas/cloudhq-gru3/ | https://www.datacentermap.com/brazil/campinas/cloudhq-gru4/ | https://www.datacentermap.com/brazil/campinas/cloudhq-gru5/ | https://www.datacentermap.com/brazil/campinas/cloudhq-gru6/
+Constel Tecnologia,Unknown,Brazil,2,0,0%,True,,3,Med,No,https://www.datacentermap.com/brazil/cascavel/constel-tecnologia-minas/ | https://www.datacentermap.com/brazil/cascavel/constel-tecnologia-para/
+Megatelecom,Unknown,Brazil,2,0,0%,True,,3,Med,No,https://www.datacentermap.com/brazil/aracaju/pix-g8-aracaju/ | https://www.datacentermap.com/brazil/brasilia/pix-g8-brasilia/
+Armazém Cloud,Unknown,Brazil,1,0,0%,True,,2,Med,No,https://www.datacentermap.com/brazil/blumenau/armazem-dc-brusque/
+Century Telecom LTDA,Unknown,Brazil,1,0,0%,True,,2,Med,No,https://www.datacentermap.com/brazil/belo-horizonte/century-cem-dc01/
+Contato Data Center,Unknown,Brazil,1,0,0%,True,,2,Med,No,https://www.datacentermap.com/brazil/ararangu/contato-cloud/
+ENGETRONICS INTERNET DATACENTER,Unknown,Brazil,1,0,0%,True,,2,Med,No,https://www.datacentermap.com/brazil/brasilia/engetronics-brasilia/
+Edge Connection,Unknown,Brazil,1,0,0%,True,,2,Med,No,https://www.datacentermap.com/brazil/campinas/edge-connection--cps01/
+Hasest,Unknown,Brazil,1,0,0%,True,,2,Med,No,https://www.datacentermap.com/brazil/brasilia/hasest-sia/
+Hosting Now,Unknown,Brazil,1,0,0%,True,,2,Med,No,https://www.datacentermap.com/brazil/curitiba/cwbhn-01/
+Hostzone,Unknown,Brazil,1,0,0%,True,,2,Med,No,https://www.datacentermap.com/brazil/campina-grande/hostzone-cge1/
+Master da Web,Unknown,Brazil,1,0,0%,True,,2,Med,No,https://www.datacentermap.com/brazil/belo-horizonte/master-da-web/
+NWI,Unknown,Brazil,1,0,0%,True,,2,Med,No,https://www.datacentermap.com/brazil/brasilia/nwi-brasilia/
+Nicnet Telecom Ltda,Unknown,Brazil,1,0,0%,True,,2,Med,No,https://www.datacentermap.com/brazil/cravinhos/nicnet-cravinhos-data-center/
+Reitec Fibra,Unknown,Brazil,1,0,0%,True,,2,Med,No,https://www.datacentermap.com/brazil/brasilia/idc-centro/
+Sencinet,Unknown,Brazil,1,0,0%,True,,2,Med,No,https://www.datacentermap.com/brazil/campinas/sencinet-brazil/
+Sitelbra,Unknown,Brazil,1,0,0%,True,,2,Med,No,https://www.datacentermap.com/brazil/brasilia/sitelbra-data-center/
+Sonda S.A.,Unknown,Brazil,1,0,0%,True,,2,Med,No,https://www.datacentermap.com/brazil/belo-horizonte/ativas-datacenter-sa/
+TIP Brasil,Unknown,Brazil,1,10.0,100%,True,,2,Med,No,https://www.datacentermap.com/brazil/campinas/tip-brasil-campinas/
+UPX Technologies,Unknown,Brazil,1,0,0%,True,,2,Med,No,https://www.datacentermap.com/brazil/campinas/upx-campinas/
+Unifique,Unknown,Brazil,1,0,0%,True,,2,Med,No,https://www.datacentermap.com/brazil/blumenau/unifique-timb-dc1/
+VSP Solution,Unknown,Brazil,1,0,0%,True,,2,Med,No,https://www.datacentermap.com/brazil/belo-horizonte/valspe/
+Tether Limited Inc.,Unknown,Brazil,2,12.0,50%,False,,1,Unknown,No,https://www.datacentermap.com/brazil/campo-grande/tether-angelica/ | https://www.datacentermap.com/brazil/campo-grande/tether-ivinhema/
+SKY Brasil,Unknown,Brazil,1,0,0%,False,,1,Unknown,No,https://www.datacentermap.com/brazil/campinas/sky-brasil-jaguarina/
+Serpro,Unknown,Brazil,1,12.0,100%,False,"AI, artificial intelligence",1,Low,No,https://www.datacentermap.com/brazil/brasilia/serpro-brasilia/
+Telebras,Unknown,Brazil,1,0,0%,False,,1,Low,No,https://www.datacentermap.com/brazil/brasilia/cope-p/
