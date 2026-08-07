@@ -1,0 +1,15 @@
+[facility 1/343] (fetch) https://www.datacentermap.com/brazil/aracaju/pix-g8-aracaju/
+[facility 2/343] (fetch) https://www.datacentermap.com/brazil/ararangu/contato-cloud/
+[facility 3/343] (fetch) https://www.datacentermap.com/brazil/belem/elea-bel1/
+[facility 4/343] (fetch) https://www.datacentermap.com/brazil/belo-horizonte/ativas-datacenter-sa/
+[facility 5/343] (fetch) https://www.datacentermap.com/brazil/belo-horizonte/century-cem-dc01/
+[facility 6/343] (fetch) https://www.datacentermap.com/brazil/belo-horizonte/master-da-web/
+    [rate-limited] attempt 1/6 for https://www.datacentermap.com/brazil/belo-horizonte/master-da-web/; backing off 4s
+[facility 7/343] (fetch) https://www.datacentermap.com/brazil/belo-horizonte/valspe/
+[facility 8/343] (fetch) https://www.datacentermap.com/brazil/blumenau/armazem-dc-brusque/
+[facility 9/343] (fetch) https://www.datacentermap.com/brazil/blumenau/unifique-timb-dc1/
+[facility 10/343] (fetch) https://www.datacentermap.com/brazil/brasilia/cope-p/
+    [rate-limited] attempt 1/6 for https://www.datacentermap.com/brazil/brasilia/cope-p/; backing off 4s
+    [rate-limited] attempt 2/6 for https://www.datacentermap.com/brazil/brasilia/cope-p/; backing off 8s
+[facility 11/343] (fetch) https://www.datacentermap.com/brazil/brasilia/elea-digital-bsb1/
+[facility 12/343] (fetch) https://www.datacentermap.com/brazil/brasilia/elea-digital-bsb2/

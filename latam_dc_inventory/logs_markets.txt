@@ -1,0 +1,67 @@
+[market 1/56] https://www.datacentermap.com/brazil/aracaju/
+[market 2/56] https://www.datacentermap.com/brazil/ararangu/
+[market 3/56] https://www.datacentermap.com/brazil/belem/
+[market 4/56] https://www.datacentermap.com/brazil/belo-horizonte/
+[market 5/56] https://www.datacentermap.com/brazil/blumenau/
+[market 6/56] https://www.datacentermap.com/brazil/brasilia/
+    [rate-limited] attempt 1/6 for https://www.datacentermap.com/brazil/brasilia/; backing off 4s
+[market 7/56] https://www.datacentermap.com/brazil/campina-grande/
+[market 8/56] https://www.datacentermap.com/brazil/campinas/
+[market 9/56] https://www.datacentermap.com/brazil/campo-grande/
+[market 10/56] https://www.datacentermap.com/brazil/cascavel/
+[market 11/56] https://www.datacentermap.com/brazil/cravinhos/
+[market 12/56] https://www.datacentermap.com/brazil/curitiba/
+[market 13/56] https://www.datacentermap.com/brazil/fortaleza/
+[market 14/56] https://www.datacentermap.com/brazil/goiania/
+[market 15/56] https://www.datacentermap.com/brazil/itauna/
+[market 16/56] https://www.datacentermap.com/brazil/joao-pessoa/
+[market 17/56] https://www.datacentermap.com/brazil/joinville/
+[market 18/56] https://www.datacentermap.com/brazil/lagoa-da-prata/
+[market 19/56] https://www.datacentermap.com/brazil/manaus/
+[market 20/56] https://www.datacentermap.com/brazil/maringa/
+[market 21/56] https://www.datacentermap.com/brazil/muriae/
+[market 22/56] https://www.datacentermap.com/brazil/palmas/
+    [rate-limited] attempt 1/6 for https://www.datacentermap.com/brazil/palmas/; backing off 4s
+[market 23/56] https://www.datacentermap.com/brazil/parnaiba/
+    [rate-limited] attempt 1/6 for https://www.datacentermap.com/brazil/parnaiba/; backing off 4s
+[market 24/56] https://www.datacentermap.com/brazil/porto-alegre/
+[market 25/56] https://www.datacentermap.com/brazil/recife/
+[market 26/56] https://www.datacentermap.com/brazil/ribeirao-preto/
+    [rate-limited] attempt 1/6 for https://www.datacentermap.com/brazil/ribeirao-preto/; backing off 4s
+[market 27/56] https://www.datacentermap.com/brazil/rio-de-janeiro/
+[market 28/56] https://www.datacentermap.com/brazil/santa-maria/
+[market 29/56] https://www.datacentermap.com/brazil/sao-jose-do-rio-preto/
+    [rate-limited] attempt 1/6 for https://www.datacentermap.com/brazil/sao-jose-do-rio-preto/; backing off 4s
+[market 30/56] https://www.datacentermap.com/brazil/sao-jose-dos-campos/
+[market 31/56] https://www.datacentermap.com/brazil/sao-paulo/
+[market 32/56] https://www.datacentermap.com/brazil/tambore/
+[market 33/56] https://www.datacentermap.com/brazil/teresina/
+[market 34/56] https://www.datacentermap.com/brazil/uberlandia/
+    [rate-limited] attempt 1/6 for https://www.datacentermap.com/brazil/uberlandia/; backing off 4s
+[market 35/56] https://www.datacentermap.com/brazil/videira/
+[market 36/56] https://www.datacentermap.com/brazil/vitoria/
+[market 37/56] https://www.datacentermap.com/brazil/xaxim/
+[market 38/56] https://www.datacentermap.com/colombia/barranquilla/
+[market 39/56] https://www.datacentermap.com/colombia/bogota/
+[market 40/56] https://www.datacentermap.com/colombia/cali/
+[market 41/56] https://www.datacentermap.com/colombia/medellin/
+    [rate-limited] attempt 1/6 for https://www.datacentermap.com/colombia/medellin/; backing off 4s
+[market 42/56] https://www.datacentermap.com/mexico/celaya/
+[market 43/56] https://www.datacentermap.com/mexico/durango/
+[market 44/56] https://www.datacentermap.com/mexico/guadalajara/
+    [rate-limited] attempt 1/6 for https://www.datacentermap.com/mexico/guadalajara/; backing off 4s
+[market 45/56] https://www.datacentermap.com/mexico/guanajato/
+[market 46/56] https://www.datacentermap.com/mexico/hermosillo/
+[market 47/56] https://www.datacentermap.com/mexico/leon/
+[market 48/56] https://www.datacentermap.com/mexico/manzanillo/
+[market 49/56] https://www.datacentermap.com/mexico/merida/
+[market 50/56] https://www.datacentermap.com/mexico/mexico-city/
+[market 51/56] https://www.datacentermap.com/mexico/monterrey/
+[market 52/56] https://www.datacentermap.com/mexico/nogales/
+[market 53/56] https://www.datacentermap.com/mexico/queretaro/
+[market 54/56] https://www.datacentermap.com/mexico/san-luis-potosi/
+[market 55/56] https://www.datacentermap.com/mexico/tijuana/
+[market 56/56] https://www.datacentermap.com/mexico/toluca/
+
+Markets scraped OK: 56/56; failed: []
+Unique facility URLs discovered: 343
