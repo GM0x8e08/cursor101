@@ -1,1 +1,6 @@
 .firecrawl/
+
+# working artifacts
+latam_dc_inventory/logs_*.txt
+latam_dc_inventory/raw/
+__pycache__/

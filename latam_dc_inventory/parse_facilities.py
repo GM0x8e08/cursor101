@@ -16,6 +16,25 @@ FAC_DIR = os.path.join(ROOT, ".firecrawl", "facilities")
 
 COUNTRY_DISPLAY = {"brazil": "Brazil", "mexico": "Mexico", "colombia": "Colombia"}
 
+METRO_DISPLAY = {
+    "sao-paulo": "São Paulo", "rio-de-janeiro": "Rio de Janeiro",
+    "queretaro": "Querétaro", "mexico-city": "Mexico City",
+    "bogota": "Bogotá", "medellin": "Medellín", "brasilia": "Brasília",
+    "goiania": "Goiânia", "belem": "Belém", "vitoria": "Vitória",
+    "maringa": "Maringá", "uberlandia": "Uberlândia", "sao-jose-dos-campos": "São José dos Campos",
+    "sao-jose-do-rio-preto": "São José do Rio Preto", "parnaiba": "Parnaíba",
+    "joao-pessoa": "João Pessoa", "itauna": "Itaúna", "ararangu": "Araranguá",
+    "muriae": "Muriaé", "guanajato": "Guanajuato",
+}
+_LOWER_WORDS = {"de", "do", "da", "dos", "das", "e"}
+
+
+def metro_display(slug):
+    if slug in METRO_DISPLAY:
+        return METRO_DISPLAY[slug]
+    words = slug.split("-")
+    return " ".join(w if w in _LOWER_WORDS else w.capitalize() for w in words)
+
 # Service labels shown on DCM overview when the facility offers them.
 SERVICE_LABELS = [
     "Suites",
@@ -56,6 +75,39 @@ CERT_TOKEN_RE = re.compile(
 )
 
 MW_RE = re.compile(r"(\d+(?:[.,]\d+)?)\s*(?:MW|megawatt|mega-watt)s?\b", re.IGNORECASE)
+# facility-scoped capacity cues immediately around the number
+MW_FIRM_AFTER = re.compile(r"^\s*(?:MW|megawatts?)\s+of\s+(?:critical\s+)?(?:it|power|capacity|energy)", re.I)
+MW_FIRM_BEFORE = re.compile(r"(?:it\s+capacity|critical\s+(?:it\s+)?(?:load|power|capacity)|power\s+capacity|capacity)\s+of\s+(?:up\s+to\s+)?$", re.I)
+MW_PLANNED_BEFORE = re.compile(r"(?:up\s+to|scalab\w*|additional|expand(?:ing|s|ed)?\s+to|reach|another)\s*$", re.I)
+MW_PLANNED_AFTER = re.compile(r"^\s*(?:MW|megawatts?)\s+(?:under\s+construction|planned|by\s+\d{4}|when\s+complete)", re.I)
+MW_AGG_CTX = re.compile(
+    r"across|portfolio|combined|company[\s-]?wide|latin america|region|nationwide|"
+    r"globally|worldwide|its\s+\w+\s+data cent|pipeline|planned|future|under construction",
+    re.I,
+)
+
+
+def extract_facility_mw(text):
+    """Return a facility-scoped IT-capacity MW figure, or None. Rejects
+    portfolio-wide, planned, and 'scalable up to' figures (not per-facility)."""
+    best_val, best_score = None, 0
+    for m in MW_RE.finditer(text):
+        val = float(m.group(1).replace(",", "."))
+        if val <= 0 or val > 2000:
+            continue
+        before = text[max(0, m.start() - 30):m.start()]
+        after = text[m.end():m.end() + 40]
+        wide = text[max(0, m.start() - 70):m.end() + 70]
+        score = 0
+        if MW_FIRM_AFTER.match(after) or MW_FIRM_BEFORE.search(before):
+            score += 2
+        if MW_PLANNED_BEFORE.search(before) or MW_PLANNED_AFTER.match(after):
+            score -= 3
+        if MW_AGG_CTX.search(wide):
+            score -= 2
+        if score > best_score or (score == best_score and score > 0 and (best_val is None or val < best_val)):
+            best_score, best_val = score, val
+    return best_val if best_score > 0 else None
 
 AI_PATTERNS = [
     (r"\bartificial intelligence\b", "artificial intelligence"),
@@ -103,7 +155,7 @@ def parse_file(path: str):
     country_slug = parts[0]
     market_slug = parts[1] if len(parts) > 1 else ""
     country = COUNTRY_DISPLAY.get(country_slug, country_slug.title())
-    market = market_slug.replace("-", " ").title()
+    market = metro_display(market_slug)
 
     facility_url = "https://www.datacentermap.com/" + slug.replace("__", "/") + "/"
     scraped_at = (
@@ -266,11 +318,9 @@ def parse_file(path: str):
                         rec["certifications"].append(t)
             break
 
-    # --- IT capacity MW from name + prose ---
-    hay = (rec["facility_name"] or "") + "\n" + prose
-    mws = [float(m.group(1).replace(",", ".")) for m in MW_RE.finditer(hay)]
-    if mws:
-        rec["it_capacity_mw"] = max(mws)
+    # --- IT capacity MW (facility-scoped only) from name + prose ---
+    hay = (rec["facility_name"] or "") + ". " + prose
+    rec["it_capacity_mw"] = extract_facility_mw(hay)
 
     # --- keyword signals from prose ---
     low = prose.lower()

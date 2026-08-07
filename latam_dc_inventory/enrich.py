@@ -85,14 +85,22 @@ def enrich_operators(qualifying):
         dcm_out = os.path.join(ENR_DIR, "op__" + slug + ".md")
         if scrape(dcm_url, dcm_out):
             txt = open(dcm_out, encoding="utf-8", errors="replace").read()
-            m = re.search(r"\[Visit Website\]\((https?://[^)]+)\)", txt)
-            # DCM operator page external website (non-datacentermap)
-            for mm in re.finditer(r"\((https?://(?!www\.datacentermap\.com)[^)]+)\)", txt):
-                entry.setdefault("website", mm.group(1))
-                break
+            # operator website is masked behind a DCM /visit/ redirect
+            m = re.search(r"\[Visit Website\]\((https://www\.datacentermap\.com/visit/[^)]+)\)", txt)
+            if m:
+                entry["website_redirect"] = m.group(1)
+            tk = re.search(r"Ticker:\s*\$?([A-Z.:]+)", txt)
+            if tk:
+                entry["ticker"] = tk.group(1)
             hq = re.search(r"Headquartered in\s+([^\n]+)", txt)
             if hq:
-                entry["hq"] = hq.group(1).strip().rstrip(".")
+                # keep only the first clause (avoid trailing prose)
+                h = re.split(r"[.,]| and | it | which |\bfounded\b", hq.group(1).strip())[0].strip()
+                entry["hq"] = hq.group(1).strip().rstrip(".")[:120]
+            # parent hints: "part of / owned by / subsidiary of / a X company"
+            pm = re.search(r"(?:part of|owned by|subsidiary of|a subsidiary of|founded by|backed by)\s+([A-Z][\w&.,'\- ]{2,40})", txt)
+            if pm:
+                entry["parent"] = pm.group(1).strip().rstrip(".")
             ai_terms, wh = extract_ai_wholesale(txt)
             if ai_terms:
                 entry["ai_terms"] = ai_terms
@@ -123,13 +131,26 @@ def enrich_operators(qualifying):
 
 
 def rate_density(text):
-    # crude qualitative rating from counts on a Cloudscene market page
-    def count(pat):
-        m = re.search(pat, text, re.I)
-        return int(m.group(1).replace(",", "")) if m else 0
-    providers = count(r"([\d,]+)\s+(?:network|service)\s+providers?")
-    fabrics = count(r"([\d,]+)\s+(?:cloud|fabric)")
-    dcs = count(r"([\d,]+)\s+data\s+cent")
+    # crude qualitative rating from counts on a Cloudscene market page.
+    # counts appear either as "254 Service Providers" or "Service Providers (254)".
+    def count(*pats):
+        best = 0
+        for pat in pats:
+            for m in re.finditer(pat, text, re.I):
+                best = max(best, int(m.group(1).replace(",", "")))
+        return best
+    providers = count(
+        r"([\d,]+)\s+(?:network|service)\s+providers?",
+        r"(?:network|service)\s+providers?\s*\(([\d,]+)\)",
+    )
+    fabrics = count(
+        r"([\d,]+)\s+(?:cloud|network)?\s*fabrics?",
+        r"(?:cloud|network)?\s*fabrics?\s*\(([\d,]+)\)",
+    )
+    dcs = count(
+        r"([\d,]+)\s+data\s+cent",
+        r"data\s+centers?\s*\(([\d,]+)\)",
+    )
     score = providers + fabrics
     if providers >= 80 or score >= 120:
         level = "High"
@@ -144,16 +165,20 @@ def rate_density(text):
 
 
 def enrich_metros():
+    # Cloudscene market pages follow /market/data-centers-in-<country>/<city>
     metros = {
-        "sao-paulo": "Sao Paulo Brazil",
-        "queretaro": "Queretaro Mexico",
-        "bogota": "Bogota Colombia",
+        "sao-paulo": ("Sao Paulo Brazil", "https://cloudscene.com/market/data-centers-in-brazil/sao-paulo"),
+        "queretaro": ("Queretaro Mexico", "https://cloudscene.com/market/data-centers-in-mexico/queretaro"),
+        "bogota": ("Bogota Colombia", "https://cloudscene.com/market/data-centers-in-colombia/bogota"),
     }
     out = {}
-    for slug, q in metros.items():
-        urls = fc_search(f"{q} data centers market site:cloudscene.com", limit=6)
-        cs = next((u for u in urls if "cloudscene.com" in u and "/data-centers/" not in u), None) \
-            or next((u for u in urls if "cloudscene.com" in u), None)
+    for slug, (q, direct) in metros.items():
+        cs = direct
+        cs_out = os.path.join(ENR_DIR, "cs__" + slug + ".md")
+        if not scrape(cs, cs_out):
+            urls = fc_search(f"{q} data centers market site:cloudscene.com", limit=6)
+            cs = next((u for u in urls if "cloudscene.com" in u and "/market/" in u), None) \
+                or next((u for u in urls if "cloudscene.com" in u), None)
         entry = {}
         if cs:
             cs_out = os.path.join(ENR_DIR, "cs__" + slug + ".md")
@@ -169,7 +194,7 @@ def enrich_metros():
 def main():
     # qualifying operators from the roll-up
     qualifying = []
-    op_csv = os.path.join(DATA, "operators_wave_A.csv")
+    op_csv = os.path.join(ROOT, "operators_wave_A.csv")
     slug_by_name = {}
     with open(os.path.join(DATA, "facilities_raw.json"), encoding="utf-8") as f:
         for r in json.load(f):

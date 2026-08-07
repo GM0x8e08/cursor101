@@ -160,6 +160,19 @@ def main():
         op = r.get("operator_slug") or norm(r.get("operator_name")) or "unknown"
         op_facs.setdefault(op, []).append(r)
 
+    # Safety net: a MW value repeated identically across >=3 of an operator's
+    # facilities is portfolio/boilerplate, not per-facility -> null it out.
+    from collections import Counter as _C
+    for op, group in op_facs.items():
+        vals = _C(x["it_capacity_mw"] for x in group if x.get("it_capacity_mw") is not None)
+        # only large round figures repeated many times look like portfolio boilerplate;
+        # uniform per-building capacities (e.g. CloudHQ 48 MW) are legitimate and kept.
+        boiler = {v for v, c in vals.items() if c >= 5 and v >= 100}
+        for x in group:
+            if x.get("it_capacity_mw") in boiler:
+                x["_mw_boilerplate"] = x["it_capacity_mw"]
+                x["it_capacity_mw"] = None
+
     def multi_site_latam(r):
         op = r.get("operator_slug") or norm(r.get("operator_name")) or "unknown"
         cnt = len([x for x in op_facs[op] if not x["_is_dup"]])
@@ -326,7 +339,7 @@ def main():
         })
 
     fac_rows.sort(key=lambda x: (-x["relevance_score"], x["country"], x["metro"], str(x["operator_name"])))
-    with open(os.path.join(DATA, "facilities_wave_A.csv"), "w", newline="", encoding="utf-8") as f:
+    with open(os.path.join(ROOT, "facilities_wave_A.csv"), "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=fac_fields)
         w.writeheader()
         w.writerows(fac_rows)
@@ -339,9 +352,11 @@ def main():
     ]
     op_rows = []
     for op, group in op_facs.items():
-        live = [x for x in group if not x["_is_dup"]]
+        # exclude duplicates and umbrella campus listings from the roll-up so
+        # capacity/counts are not double-counted against individual buildings.
+        live = [x for x in group if not x["_is_dup"] and not x.get("_campus_umbrella")]
         if not live:
-            live = group
+            live = [x for x in group if not x["_is_dup"]] or group
         name = live[0].get("operator_name") or op
         parent = next((derive_parent(x) for x in live if derive_parent(x)), None)
         countries = sorted({x.get("country") for x in live if x.get("country")})
@@ -387,7 +402,7 @@ def main():
         })
 
     op_rows.sort(key=lambda x: (-x["max_relevance"], -x["facility_count_wave_A"], str(x["operator_name"])))
-    with open(os.path.join(DATA, "operators_wave_A.csv"), "w", newline="", encoding="utf-8") as f:
+    with open(os.path.join(ROOT, "operators_wave_A.csv"), "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=op_fields)
         w.writeheader()
         w.writerows(op_rows)

@@ -33,11 +33,11 @@ def is_valid_cache(path: str) -> bool:
         return False
     if len(txt) < MIN_BYTES:
         return False
-    # A real DCM page always contains the site chrome + a breadcrumb.
-    if "datacentermap.com" not in txt:
+    # Reject bot-challenge / interstitial captures.
+    low = txt.lower()
+    if "vercel security checkpoint" in low or "security checkpoint" in low:
         return False
-    # Reject Vercel bot-challenge captures.
-    if "Vercel Security Checkpoint" in txt:
+    if "enable javascript and cookies to continue" in low:
         return False
     return True
 
