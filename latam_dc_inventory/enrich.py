@@ -16,7 +16,7 @@ import json
 import subprocess
 import csv
 from scraper import scrape, slug_for
-from config import CFG
+from config import CFG, FCOUNT_COL
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(ROOT, "data")
@@ -199,7 +199,7 @@ def main():
                 slug_by_name.setdefault(r["operator_name"], r["operator_slug"])
     with open(op_csv, encoding="utf-8") as f:
         for o in csv.DictReader(f):
-            if int(o["max_relevance"]) >= 4 or int(o["facility_count_wave_A"]) >= 3:
+            if int(o["max_relevance"]) >= 4 or int(o[FCOUNT_COL]) >= 3:
                 slug = slug_by_name.get(o["operator_name"])
                 if slug:
                     qualifying.append((slug, o["operator_name"]))

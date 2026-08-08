@@ -1,0 +1,49 @@
+operator_name,parent_company,countries_present,facility_count_wave_B,total_mw_known,mw_coverage_pct,has_colo_wholesale,ai_or_gpu_mentions,max_relevance,partnership_openness_guess,priority_for_outreach,source_urls
+Cirion,Unknown,"Argentina, Chile",6,0,0%,True,artificial intelligence,5,High,Yes,https://www.datacentermap.com/argentina/buenos-aires/cirion-bue1/ | https://www.datacentermap.com/argentina/cordoba/cirion-cor1/ | https://www.datacentermap.com/argentina/mendoza/cirion-men1/ | https://www.datacentermap.com/argentina/rosario/cirion-ros1/ | https://www.datacentermap.com/chile/santiago/cirion-san1/ | https://www.datacentermap.com/chile/santiago/cirion-san2/ | https://www.datacenters.com/cirion-technologies-bue1
+EdgeConneX,Unknown,"Argentina, Chile",5,0,0%,True,,5,High,Yes,https://www.datacentermap.com/argentina/buenos-aires/edgeconnex-bue01/ | https://www.datacentermap.com/chile/santiago/edgeconnex-santiago-scl03/ | https://www.datacentermap.com/chile/santiago/edgeconnex-santiago-scl04/ | https://www.datacentermap.com/chile/santiago/edgeconnex-scl01/ | https://www.datacentermap.com/chile/santiago/edgeconnex-scl02/
+Claro,Unknown,"Argentina, Chile",4,0,0%,True,artificial intelligence,5,High,Yes,https://www.datacentermap.com/argentina/buenos-aires/claro-data-center-olleros/ | https://www.datacentermap.com/argentina/buenos-aires/claro-data-center-san-telmo/ | https://www.datacentermap.com/argentina/cordoba/claro-data-center-cordoba/ | https://www.datacentermap.com/chile/santiago/claro-data-center-liray/ | https://www.datacenters.com/providers/claro/data-center-locations
+Equinix,Unknown,Chile,4,15.0,50%,True,"artificial intelligence, gpu",5,High,Yes,https://www.datacentermap.com/chile/santiago/equinix-st1/ | https://www.datacentermap.com/chile/santiago/equinix-st3/ | https://www.datacentermap.com/chile/santiago/equinix-st4/ | https://www.datacentermap.com/chile/santiago/equinix-st5/ | https://www.datacenters.com/providers/equinix/data-center-locations
+GTD Chile,Unknown,Chile,4,0,0%,True,,5,High,Yes,https://www.datacentermap.com/chile/puerto-montt/gtd-puerto-montt/ | https://www.datacentermap.com/chile/santiago/gtd-huerfanos/ | https://www.datacentermap.com/chile/santiago/gtd-lidice-i/ | https://www.datacentermap.com/chile/santiago/gtd-moneda/
+Telecom Argentina,Unknown,Argentina,4,0,0%,True,,5,High,Yes,https://www.datacentermap.com/argentina/buenos-aires/telecom-argentina-datacenter/ | https://www.datacentermap.com/argentina/buenos-aires/telecom-estomba/ | https://www.datacentermap.com/argentina/cordoba/telecom-bosque-alegre/ | https://www.datacentermap.com/argentina/cordoba/telecom-cordoba-oeste/
+Advantun,Unknown,Argentina,3,0,0%,True,,5,High,Yes,https://www.datacentermap.com/argentina/buenos-aires/advantun-benavidez/ | https://www.datacentermap.com/argentina/buenos-aires/advantun-talar/ | https://www.datacentermap.com/argentina/buenos-aires/advantun-zarate/
+NextStream,Unknown,"Argentina, Chile",3,0,0%,True,"AI, artificial intelligence",5,High,Yes,https://www.datacentermap.com/argentina/buenos-aires/nabiax-barracas/ | https://www.datacentermap.com/argentina/buenos-aires/nextstream-velez/ | https://www.datacentermap.com/chile/paine/nabiax-paine/ | https://www.datacenters.com/providers/nextstream
+IPXON Networks,Unknown,Argentina,2,0,0%,True,artificial intelligence,5,High,Yes,https://www.datacentermap.com/argentina/buenos-aires/ipxon-buenos-aires/ | https://www.datacentermap.com/argentina/cordoba/ipxon-crdoba/ | https://www.datacenters.com/providers/ipxon-networks
+"ODATA, an Aligned Data Centers Company",Aligned Data Centers,Chile,2,0,0%,True,"AI, artificial intelligence",5,High,Yes,https://www.datacentermap.com/chile/santiago/aligned-st-01/ | https://www.datacentermap.com/chile/santiago/aligned-st-02/ | https://www.datacenters.com/aligned-odata-dc-sp04
+Ascenty Data Centers,Unknown,Chile,1,0,0%,True,artificial intelligence,4,High,Yes,https://www.datacentermap.com/chile/santiago/ascenty-santiago-scl3/ | https://www.datacenters.com/providers/ascenty
+Data Center TDF,Unknown,Argentina,2,0,0%,True,,3,Med,No,https://www.datacentermap.com/argentina/ushuaia/data-center-tdf-tolhuin/ | https://www.datacentermap.com/argentina/ushuaia/data-center-tdf-ushuaia/
+Google,Unknown,Chile,2,0,0%,False,,3,Unknown,No,https://www.datacentermap.com/chile/santiago/google-quilicura-data-center-2/ | https://www.datacentermap.com/chile/santiago/google-quilicura/
+ARSAT,Unknown,Argentina,1,0,0%,True,,3,Med,No,https://www.datacentermap.com/argentina/buenos-aires/arsat-buenos-aires/
+Allytech S.A:,Unknown,Argentina,1,0,0%,True,,3,Med,No,https://www.datacentermap.com/argentina/buenos-aires/allytech/
+Anacondaweb S.A.,Unknown,Chile,1,0,0%,True,,3,Med,No,https://www.datacentermap.com/chile/santiago/anacondaweb/
+BAEHOST Web Hosting & Cloud,Unknown,Argentina,1,0,0%,True,,3,Med,No,https://www.datacentermap.com/argentina/buenos-aires/baehost/
+Edesal Energía,Unknown,Argentina,1,0,0%,False,"AI, artificial intelligence",3,Unknown,No,https://www.datacentermap.com/argentina/san-luis-ar/edesal-data-center/
+Entel,Unknown,Chile,1,0,0%,True,,3,Med,No,https://www.datacentermap.com/chile/santiago/entel-central/
+G2K Argentina,Unknown,Argentina,1,0,0%,True,,3,Med,No,https://www.datacentermap.com/argentina/buenos-aires/g2k-datacenter/
+Gigared,Unknown,Argentina,1,0,0%,True,,3,Med,No,https://www.datacentermap.com/argentina/buenos-aires/gigared-data-center/
+IFXNetworks,Unknown,Argentina,1,0,0%,True,artificial intelligence,3,High,No,https://www.datacentermap.com/argentina/buenos-aires/ifx-belgrano/ | https://www.datacenters.com/providers/ifx-networks/data-center-locations
+Intermedia SP,Unknown,Argentina,1,0,0%,True,,3,Med,No,https://www.datacentermap.com/argentina/buenos-aires/internet-data-center/
+Kyndryl,Unknown,Argentina,1,0,0%,True,artificial intelligence,3,High,No,https://www.datacentermap.com/argentina/buenos-aires/kyndryl-dc-buenos-aires/ | https://www.datacenters.com/providers/kyndryl/data-center-locations
+Latincloud,Unknown,Argentina,1,0,0%,True,,3,Med,No,https://www.datacentermap.com/argentina/buenos-aires/nxnet/
+Neolo.com,Unknown,Argentina,1,0,0%,True,,3,Med,No,https://www.datacentermap.com/argentina/buenos-aires/neolocom-dc/
+Sencinet,Unknown,Argentina,1,0,0%,True,artificial intelligence,3,High,No,https://www.datacentermap.com/argentina/buenos-aires/sencinet-argentina/ | https://www.datacenters.com/providers/sencinet
+Servicios y Telecomunicaciones SA,Unknown,Argentina,1,0,0%,True,,3,Med,No,https://www.datacentermap.com/argentina/buenos-aires/servicios-y-telecomunicaciones-sa/
+SkyOnline,Unknown,Argentina,1,0,0%,True,,3,Med,No,https://www.datacentermap.com/argentina/buenos-aires/skyonline/
+Telecentro S.A.,Unknown,Argentina,1,0,0%,True,,3,Med,No,https://www.datacentermap.com/argentina/buenos-aires/telecentro-data-center/
+WNPower Hosting,Unknown,Argentina,1,0,0%,True,,3,Med,No,https://www.datacentermap.com/argentina/buenos-aires/wnpower/
+Waugi Cloud,Unknown,Argentina,1,0,0%,True,,3,Med,No,https://www.datacentermap.com/argentina/buenos-aires/waugi-cloud-km37/
+iplan,Unknown,Argentina,1,0,0%,True,,3,Med,No,https://www.datacentermap.com/argentina/buenos-aires/ringo-dci/
+Amazon AWS,Unknown,Chile,2,0,0%,False,,2,Unknown,No,https://www.datacentermap.com/chile/santiago/amazon-aws-scl-huechuraba/ | https://www.datacentermap.com/chile/santiago/amazon-aws-scl-hurtado/
+Apoapsis SpA,Unknown,Chile,1,0,0%,True,,2,Med,No,https://www.datacentermap.com/chile/punta-arenas/apoapsis/
+Autopista de la Información (AUI),AUI,Argentina,1,0,0%,True,,2,Med,No,https://www.datacentermap.com/argentina/san-luis-ar/data-center-la-punta/
+COTO C.I.C.S.A.,Unknown,Argentina,1,0,0%,False,,2,Unknown,No,https://www.datacentermap.com/argentina/buenos-aires/alfredo-coto-data-center/
+Chilecom Datacenter Ltda,Unknown,Chile,1,0,0%,False,,2,Unknown,No,https://www.datacentermap.com/chile/santiago/chilecom-datacenter/
+DonWeb,Unknown,Argentina,1,0,0%,True,,2,Med,No,https://www.datacentermap.com/argentina/rosario/donweb-data-center-manuel-belgrano/
+EMPATEL SAPEM,Unknown,Argentina,1,0,0%,True,,2,Med,No,https://www.datacentermap.com/argentina/santa-rosa-la-pampa/empatel-data-center/
+Fiserv,Unknown,Argentina,1,0,0%,False,,2,Unknown,No,https://www.datacentermap.com/argentina/buenos-aires/fiserv-dc-buenos-aires/
+Hosted Ltda.,Unknown,Chile,1,0,0%,True,,2,Med,No,https://www.datacentermap.com/chile/los-andes/hosted-ltda/
+Prisma Medios de Pago,Unknown,Argentina,1,0,0%,False,,2,Unknown,No,https://www.datacentermap.com/argentina/buenos-aires/prisma-medios-de-pago-dc/
+Opciones S.A.,Unknown,Chile,2,0,0%,False,,1,Unknown,No,https://www.datacentermap.com/chile/concepcion/opciones-concepcin/ | https://www.datacentermap.com/chile/puerto-montt/opciones-puerto-montt/
+Government of San Juan,Unknown,Argentina,1,0,0%,False,,1,Unknown,No,https://www.datacentermap.com/argentina/san-juan-ar/data-center-san-juan/
+Government of Santa Fe,Unknown,Argentina,1,0,0%,False,,1,Unknown,No,https://www.datacentermap.com/argentina/santa-fe-ar/government-of-santa-fe-data-center/
+Keel Infrastructure,Unknown,Argentina,1,54.0,100%,False,,1,Unknown,No,https://www.datacentermap.com/argentina/rio-cuarto/bitfarms-rio-cuarto/
+Universidad Nacional del Litoral,Unknown,Argentina,1,0,0%,False,,1,Unknown,No,https://www.datacentermap.com/argentina/santa-fe-ar/unl-data-center/

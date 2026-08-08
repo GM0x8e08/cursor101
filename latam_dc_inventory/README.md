@@ -1,8 +1,11 @@
-# LatAm Data-Center Inventory — Wave A
+# LatAm Data-Center Inventory — Waves A & B
 
-A facility-level inventory of data centers in **Brazil, Mexico, and Colombia**
-built for a regional AI-inference / neo-cloud partnership map. The atomic unit is
-a **facility** (one building/site); operators are rolled up separately.
+A facility-level inventory of LatAm data centers built for a regional
+AI-inference / neo-cloud partnership map. The atomic unit is a **facility**
+(one building/site); operators are rolled up separately.
+
+- **Wave A — complete:** Brazil, Mexico, Colombia (343 facilities).
+- **Wave B — partial:** Chile, Argentina, Peru (81 of 134 captured; see status below).
 
 ## Deliverables
 
@@ -10,7 +13,35 @@ a **facility** (one building/site); operators are rolled up separately.
 | --- | --- |
 | `facilities_wave_A.csv` | 343 facilities, one row per building/site, fully scored & tagged |
 | `operators_wave_A.csv` | 130 operators rolled up from the facilities |
-| `gaps.md` | Missing-field coverage, manual-research to-dos, caveats |
+| `gaps.md` | Wave A missing-field coverage, manual-research to-dos, caveats |
+| `facilities_wave_B.csv` | 81 Wave B facilities captured so far (Argentina complete; Chile partial; Peru pending) |
+| `operators_wave_B.csv` | 48 Wave B operators rolled up |
+| `gaps_wave_B.md` | Wave B gaps **+ a PARTIAL/PENDING-RE-CRAWL status block** listing the 53 missing facilities |
+
+## Running a wave
+
+The pipeline is parameterized by the `WAVE` env var (`A` default, or `B`) via
+`config.py`. Wave A paths/outputs are unchanged. To (re)build a wave:
+
+```bash
+WAVE=B python3 crawl_markets.py       # country → market → facility URLs
+WAVE=B python3 crawl_facilities.py    # scrape each facility (cached; skips already-fetched)
+WAVE=B python3 parse_facilities.py    # markdown → structured JSON
+WAVE=B python3 enrich.py              # datacenters.com profiles + Cloudscene metro density
+WAVE=B python3 build_tables.py        # dedup, score, tag → facilities/operators CSV
+WAVE=B python3 gen_gaps.py            # gaps_wave_B.md
+```
+
+## ⚠️ Wave B status (partial)
+
+Wave B is **incomplete**: 81 of 134 discovered facilities were captured before
+the **Firecrawl keyless free-tier quota was exhausted** for the session. The 53
+missing facilities are concentrated in the priority metros (**34 in Santiago,
+all 14 in Lima**, plus Valparaíso/Temuco/Tacna). Argentina/Buenos Aires is fully
+captured. Adding a `FIRECRAWL_API_KEY` (Cursor Dashboard → Cloud Agents →
+Secrets) or waiting for the quota to reset and re-running `crawl_facilities.py`
+completes it (cached pages are skipped). Full detail + the missing-URL list are
+in `gaps_wave_B.md` and `data/wave_B_missing_urls.json`.
 
 Every facility row carries `source_url` + `scraped_at`. No fields were invented;
 missing values are left blank / `Unclear` / `Unknown`.
@@ -31,9 +62,10 @@ Firecrawl CLI (JS-rendered, cached to `.firecrawl/`, not committed).
 
 ## Geo scope
 
-- **Wave A (this deliverable):** Brazil (232), Mexico (69), Colombia (42) = 343 facilities, 56 markets.
-- Priority metros: São Paulo, Rio de Janeiro, Querétaro, Mexico City, Bogotá, Medellín.
-- Wave B (Chile, Argentina, Peru) is **out of scope** here.
+- **Wave A:** Brazil (232), Mexico (69), Colombia (42) = 343 facilities, 56 markets.
+  Priority metros: São Paulo, Rio de Janeiro, Querétaro, Mexico City, Bogotá, Medellín.
+- **Wave B (partial):** Chile, Argentina, Peru = 134 discovered, 81 captured.
+  Priority metros: Santiago (explicit), plus Buenos Aires and Lima (primary hubs).
 
 ## Relevance scoring (1–5)
 

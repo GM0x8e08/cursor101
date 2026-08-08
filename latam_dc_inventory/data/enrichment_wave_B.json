@@ -1,0 +1,109 @@
+{
+  "operators": {
+    "ipxon-networks": {
+      "website_redirect": "https://www.datacentermap.com/visit/c/ipxon-networks/",
+      "hq": "Cordoba, Cordoba",
+      "dcm_operator_url": "https://www.datacentermap.com/c/ipxon-networks/",
+      "datacenters_com_url": "https://www.datacenters.com/providers/ipxon-networks",
+      "ai_terms": [
+        "artificial intelligence"
+      ],
+      "claims": "AI/GPU terms: artificial intelligence | wholesale/hyperscale terms: wholesale | blurb: ## Top Services - [Capacity](https://www.datacenters.com/services/capacity) - [Wholesale](https://www.datacenters.com/services/wholesale) - [Artificial Intelligence](https://www.datacenters.com/services/artificial_intelligence) - [Real Estate](https://www.dat"
+    },
+    "claro": {
+      "website_redirect": "https://www.datacentermap.com/visit/c/claro/",
+      "hq": ", México",
+      "dcm_operator_url": "https://www.datacentermap.com/c/claro/",
+      "datacenters_com_url": "https://www.datacenters.com/providers/claro/data-center-locations",
+      "ai_terms": [
+        "artificial intelligence"
+      ],
+      "claims": "AI/GPU terms: artificial intelligence | wholesale/hyperscale terms: wholesale | blurb: ## Top Services - [Capacity](https://www.datacenters.com/services/capacity) - [Wholesale](https://www.datacenters.com/services/wholesale) - [Artificial Intelligence](https://www.datacenters.com/services/artificial_intelligence) - [Real Estate](https://www.dat"
+    },
+    "odata-an-aligned-data-centers-company": {
+      "website_redirect": "https://www.datacentermap.com/visit/c/odata-an-aligned-data-centers-company/",
+      "hq": "São Paulo, Brazil",
+      "dcm_operator_url": "https://www.datacentermap.com/c/odata-an-aligned-data-centers-company/",
+      "datacenters_com_url": "https://www.datacenters.com/aligned-odata-dc-sp04",
+      "ai_terms": [
+        "AI",
+        "artificial intelligence"
+      ],
+      "claims": "AI/GPU terms: AI, artificial intelligence | wholesale/hyperscale terms: hyperscale, wholesale | blurb: excellent access to domestic and international connectivity.Designed to fulfil wholesale, hyperscale and cloud requirements with scalable infrastructure and flexible design for evolving demands. Located in a region with **very low seismic hazard** (less than"
+    },
+    "actis": {
+      "website_redirect": "https://www.datacentermap.com/visit/c/actis/",
+      "hq": "London, United Kingdom",
+      "ai_terms": [
+        "AI",
+        "artificial intelligence"
+      ],
+      "dcm_operator_url": "https://www.datacentermap.com/c/actis/",
+      "datacenters_com_url": "https://www.datacenters.com/providers/nextstream",
+      "claims": "AI/GPU terms: artificial intelligence | wholesale/hyperscale terms: wholesale | blurb: ## Top Services - [Capacity](https://www.datacenters.com/services/capacity) - [Wholesale](https://www.datacenters.com/services/wholesale) - [Artificial Intelligence](https://www.datacenters.com/services/artificial_intelligence) - [Real Estate](https://www.dat"
+    },
+    "ifxnetworks": {
+      "website_redirect": "https://www.datacentermap.com/visit/c/ifxnetworks/",
+      "hq": "Bogota, Colombia",
+      "dcm_operator_url": "https://www.datacentermap.com/c/ifxnetworks/",
+      "datacenters_com_url": "https://www.datacenters.com/providers/ifx-networks/data-center-locations",
+      "ai_terms": [
+        "artificial intelligence"
+      ],
+      "claims": "AI/GPU terms: artificial intelligence | wholesale/hyperscale terms: wholesale | blurb: ## Top Services - [Capacity](https://www.datacenters.com/services/capacity) - [Wholesale](https://www.datacenters.com/services/wholesale) - [Artificial Intelligence](https://www.datacenters.com/services/artificial_intelligence) - [Real Estate](https://www.dat"
+    },
+    "sencinet": {
+      "website_redirect": "https://www.datacentermap.com/visit/c/sencinet/",
+      "hq": "Sao Pauli, Brazil",
+      "dcm_operator_url": "https://www.datacentermap.com/c/sencinet/",
+      "datacenters_com_url": "https://www.datacenters.com/providers/sencinet",
+      "ai_terms": [
+        "artificial intelligence"
+      ],
+      "claims": "AI/GPU terms: artificial intelligence | wholesale/hyperscale terms: wholesale | blurb: ## Top Services - [Capacity](https://www.datacenters.com/services/capacity) - [Wholesale](https://www.datacenters.com/services/wholesale) - [Artificial Intelligence](https://www.datacenters.com/services/artificial_intelligence) - [Real Estate](https://www.dat"
+    },
+    "equinix": {
+      "website_redirect": "https://www.datacentermap.com/visit/c/equinix/",
+      "ticker": "NASDAQ:EQIX",
+      "hq": "Redwood City, California",
+      "ai_terms": [
+        "artificial intelligence",
+        "gpu"
+      ],
+      "dcm_operator_url": "https://www.datacentermap.com/c/equinix/",
+      "datacenters_com_url": "https://www.datacenters.com/providers/equinix/data-center-locations",
+      "claims": "AI/GPU terms: artificial intelligence | wholesale/hyperscale terms: wholesale | blurb: ## Top Services - [Capacity](https://www.datacenters.com/services/capacity) - [Wholesale](https://www.datacenters.com/services/wholesale) - [Artificial Intelligence](https://www.datacenters.com/services/artificial_intelligence) - [Real Estate](https://www.dat"
+    },
+    "kyndryl": {
+      "website_redirect": "https://www.datacentermap.com/visit/c/kyndryl/",
+      "hq": "Brussels, Belgium",
+      "dcm_operator_url": "https://www.datacentermap.com/c/kyndryl/",
+      "datacenters_com_url": "https://www.datacenters.com/providers/kyndryl/data-center-locations",
+      "ai_terms": [
+        "artificial intelligence"
+      ],
+      "claims": "AI/GPU terms: artificial intelligence | wholesale/hyperscale terms: wholesale | blurb: # Top Services - [Capacity](https://www.datacenters.com/services/capacity) - [Wholesale](https://www.datacenters.com/services/wholesale) - [Artificial Intelligence](https://www.datacenters.com/services/artificial_intelligence) - [Real Estate](https://www.data"
+    },
+    "ascenty-data-centers": {
+      "website_redirect": "https://www.datacentermap.com/visit/c/ascenty-data-centers/",
+      "hq": "Vinhedo, Sao Paulo",
+      "dcm_operator_url": "https://www.datacentermap.com/c/ascenty-data-centers/",
+      "datacenters_com_url": "https://www.datacenters.com/providers/ascenty",
+      "ai_terms": [
+        "artificial intelligence"
+      ],
+      "claims": "AI/GPU terms: artificial intelligence | wholesale/hyperscale terms: wholesale | blurb: ## Top Services - [Capacity](https://www.datacenters.com/services/capacity) - [Wholesale](https://www.datacenters.com/services/wholesale) - [Artificial Intelligence](https://www.datacenters.com/services/artificial_intelligence) - [Real Estate](https://www.dat"
+    },
+    "cirion": {
+      "website_redirect": "https://www.datacentermap.com/visit/c/cirion/",
+      "hq": "Miami, Florida",
+      "dcm_operator_url": "https://www.datacentermap.com/c/cirion/",
+      "datacenters_com_url": "https://www.datacenters.com/cirion-technologies-bue1",
+      "ai_terms": [
+        "artificial intelligence"
+      ],
+      "claims": "AI/GPU terms: artificial intelligence | wholesale/hyperscale terms: wholesale | blurb: ## Top Services - [Capacity](https://www.datacenters.com/services/capacity) - [Wholesale](https://www.datacenters.com/services/wholesale) - [Artificial Intelligence](https://www.datacenters.com/services/artificial_intelligence) - [Real Estate](https://www.dat"
+    }
+  },
+  "metros": {}
+}

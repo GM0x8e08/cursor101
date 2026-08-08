@@ -53,3 +53,4 @@ WAVES = {
 
 WAVE = os.environ.get("WAVE", "A")
 CFG = WAVES[WAVE]
+FCOUNT_COL = "facility_count_wave_" + WAVE

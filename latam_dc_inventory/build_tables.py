@@ -10,7 +10,7 @@ import re
 import json
 import csv
 import unicodedata
-from config import CFG
+from config import CFG, FCOUNT_COL
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(ROOT, "data")
@@ -343,7 +343,7 @@ def main():
 
     # ---------- operator roll-up ----------
     op_fields = [
-        "operator_name", "parent_company", "countries_present", "facility_count_wave_A",
+        "operator_name", "parent_company", "countries_present", FCOUNT_COL,
         "total_mw_known", "mw_coverage_pct", "has_colo_wholesale", "ai_or_gpu_mentions",
         "max_relevance", "partnership_openness_guess", "priority_for_outreach", "source_urls",
     ]
@@ -387,7 +387,7 @@ def main():
             "operator_name": name,
             "parent_company": parent or op_enr.get("parent") or "Unknown",
             "countries_present": ", ".join(countries),
-            "facility_count_wave_A": fcount,
+            FCOUNT_COL: fcount,
             "total_mw_known": total_mw,
             "mw_coverage_pct": f"{int(coverage)}%",
             "has_colo_wholesale": colo_wh,
@@ -398,7 +398,7 @@ def main():
             "source_urls": " | ".join(srcs),
         })
 
-    op_rows.sort(key=lambda x: (-x["max_relevance"], -x["facility_count_wave_A"], str(x["operator_name"])))
+    op_rows.sort(key=lambda x: (-x["max_relevance"], -x[FCOUNT_COL], str(x["operator_name"])))
     with open(os.path.join(ROOT, CFG["operators_csv"]), "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=op_fields)
         w.writeheader()

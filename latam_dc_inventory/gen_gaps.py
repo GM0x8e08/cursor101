@@ -4,7 +4,7 @@ import os
 import csv
 import json
 from collections import Counter, defaultdict
-from config import CFG, WAVE
+from config import CFG, WAVE, FCOUNT_COL
 from parse_facilities import metro_display
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -13,6 +13,53 @@ DATA = os.path.join(ROOT, "data")
 PRIORITY = list(CFG["priority_display"])
 WAVE_COUNTRIES = ", ".join(c.title() for c in CFG["countries"])
 CS_COVERED = [metro_display(slug) for slug in CFG["cloudscene"]]
+
+
+def _status_block(A):
+    """Prepend an incomplete-crawl status callout when a missing-URL file exists."""
+    from collections import Counter as _Counter
+    miss_path = os.path.join(DATA, f"wave_{WAVE}_missing_urls.json")
+    urls_path = os.path.join(ROOT, CFG["facility_urls"])
+    if not (os.path.exists(miss_path) and os.path.exists(urls_path)):
+        return
+    missing = set(json.load(open(miss_path)))
+    if not missing:
+        return
+    facs = json.load(open(urls_path))
+    captured = len(facs) - len(missing)
+    c = _Counter((facs[u]["country"], facs[u]["market"]) for u in missing if u in facs)
+    A("> ## \u26a0\ufe0f STATUS: PARTIAL / PENDING RE-CRAWL")
+    A(">")
+    A(f"> Wave {WAVE} is **incomplete**. **{captured} of {len(facs)}** discovered facilities were")
+    A("> captured before the **Firecrawl keyless free-tier quota was exhausted** (~500+ scrapes")
+    A("> across Wave A + Wave B in one session; every request now returns the keyless rate-limit")
+    A("> error). The crawl is alphabetical by URL, so Argentina completed, Chile is partial")
+    A("> (throttled mid-Santiago), and Peru was not reached.")
+    A(">")
+    A(f"> **{len(missing)} facilities still to capture** (concentrated in priority metros Santiago & Lima):")
+    A(">")
+    A("> | Country | Market | Missing |")
+    A("> | --- | --- | --- |")
+    for (co, mk), n in sorted(c.items(), key=lambda x: -x[1]):
+        A(f"> | {co.title()} | {mk} | {n} |")
+    A(">")
+    A("> **To complete:** add a `FIRECRAWL_API_KEY` (Cursor Dashboard > Cloud Agents > Secrets)")
+    A("> *or* wait for the keyless quota to reset, then re-run. Cached pages are skipped, so only")
+    A("> the missing facilities are fetched:")
+    A(">")
+    A("> ```bash")
+    A("> WAVE=B python3 crawl_facilities.py   # fetches only the missing (captured pages skip)")
+    A("> WAVE=B python3 parse_facilities.py")
+    A("> WAVE=B python3 enrich.py             # full datacenters.com + Santiago Cloudscene")
+    A("> WAVE=B python3 build_tables.py")
+    A("> WAVE=B python3 gen_gaps.py")
+    A("> ```")
+    A(">")
+    A("> **Enrichment note:** overlapping multinational operators (Cirion, Equinix, Ascenty, ODATA,")
+    A("> KIO/IFXNetworks, Claro, IPXON, Actis, Kyndryl, Sencinet) reuse their Wave A datacenters.com")
+    A("> profiles. Santiago Cloudscene connectivity and Chile/Peru-only operator profiles are")
+    A(f"> deferred to the re-crawl. Full missing-URL list: `data/wave_{WAVE}_missing_urls.json`.")
+    A("")
 
 
 def main():
@@ -36,7 +83,7 @@ def main():
     # operators qualifying (rel>=4 or count>=3) missing key fields
     manual = []
     for o in orows:
-        rel = int(o["max_relevance"]); fc = int(o["facility_count_wave_A"])
+        rel = int(o["max_relevance"]); fc = int(o[FCOUNT_COL])
         if rel >= 4 or fc >= 3:
             miss = []
             if o["total_mw_known"] in ("0", "0.0", "") or o["mw_coverage_pct"] in ("0%",):
@@ -53,6 +100,7 @@ def main():
     cs_metros = ", ".join(CS_COVERED)
     lines = []
     A = lines.append
+    _status_block(A)
     A(f"# Wave {WAVE} Data-Center Inventory — Gaps & Data-Quality Notes\n")
     A(f"_Wave {WAVE} = {WAVE_COUNTRIES}. Primary source: datacentermap.com "
       "(all public facility Overview tabs). Enrichment: datacenters.com (operator "
