@@ -5,7 +5,7 @@ AI-inference / neo-cloud partnership map. The atomic unit is a **facility**
 (one building/site); operators are rolled up separately.
 
 - **Wave A — complete:** Brazil, Mexico, Colombia (343 facilities).
-- **Wave B — partial:** Chile, Argentina, Peru (81 of 134 captured; see status below).
+- **Wave B — complete:** Chile, Argentina, Peru (134 facilities).
 
 ## Deliverables
 
@@ -14,9 +14,9 @@ AI-inference / neo-cloud partnership map. The atomic unit is a **facility**
 | `facilities_wave_A.csv` | 343 facilities, one row per building/site, fully scored & tagged |
 | `operators_wave_A.csv` | 130 operators rolled up from the facilities |
 | `gaps.md` | Wave A missing-field coverage, manual-research to-dos, caveats |
-| `facilities_wave_B.csv` | 81 Wave B facilities captured so far (Argentina complete; Chile partial; Peru pending) |
-| `operators_wave_B.csv` | 48 Wave B operators rolled up |
-| `gaps_wave_B.md` | Wave B gaps **+ a PARTIAL/PENDING-RE-CRAWL status block** listing the 53 missing facilities |
+| `facilities_wave_B.csv` | 134 Wave B facilities (Chile 70, Argentina 49, Peru 15), scored & tagged |
+| `operators_wave_B.csv` | 66 Wave B operators rolled up |
+| `gaps_wave_B.md` | Wave B missing-field coverage, manual-research to-dos, caveats |
 
 ## Running a wave
 
@@ -32,30 +32,20 @@ WAVE=B python3 build_tables.py        # dedup, score, tag → facilities/operato
 WAVE=B python3 gen_gaps.py            # gaps_wave_B.md
 ```
 
-## ⚠️ Wave B status (partial)
-
-Wave B is **incomplete**: 81 of 134 discovered facilities were captured before
-the **Firecrawl keyless free-tier quota was exhausted** for the session. The 53
-missing facilities are concentrated in the priority metros (**34 in Santiago,
-all 14 in Lima**, plus Valparaíso/Temuco/Tacna). Argentina/Buenos Aires is fully
-captured. Adding a `FIRECRAWL_API_KEY` (Cursor Dashboard → Cloud Agents →
-Secrets) or waiting for the quota to reset and re-running `crawl_facilities.py`
-completes it (cached pages are skipped). Full detail + the missing-URL list are
-in `gaps_wave_B.md` and `data/wave_B_missing_urls.json`.
-
 Every facility row carries `source_url` + `scraped_at`. No fields were invented;
 missing values are left blank / `Unclear` / `Unknown`.
 
 ## Sources (priority order)
 
 1. **Primary — [datacentermap.com](https://www.datacentermap.com/):** every public
-   facility *Overview* tab across all markets in Brazil, Mexico, Colombia
-   (country → market → facility crawl). Specs tabs require login and were **not**
-   scraped.
+   facility *Overview* tab across all markets in the wave (country → market →
+   facility crawl). Specs tabs require login and were **not** scraped.
 2. **Enrich — [datacenters.com](https://www.datacenters.com/):** operator profiles
    for operators with relevance ≥4 or ≥3 facilities (AI/wholesale claims, blurbs).
 3. **Enrich — [cloudscene.com](https://www.cloudscene.com/):** carrier/IX density
-   (qualitative High/Med/Low) at metro level for **São Paulo, Querétaro, Bogotá** only.
+   (qualitative High/Med/Low) at metro level — Wave A: São Paulo, Querétaro,
+   Bogotá; Wave B: Santiago (Chile country `/all` used as fallback when the city
+   page rendered empty).
 
 The sites are behind a Vercel anti-bot challenge, so pages were fetched via the
 Firecrawl CLI (JS-rendered, cached to `.firecrawl/`, not committed).
@@ -64,7 +54,7 @@ Firecrawl CLI (JS-rendered, cached to `.firecrawl/`, not committed).
 
 - **Wave A:** Brazil (232), Mexico (69), Colombia (42) = 343 facilities, 56 markets.
   Priority metros: São Paulo, Rio de Janeiro, Querétaro, Mexico City, Bogotá, Medellín.
-- **Wave B (partial):** Chile, Argentina, Peru = 134 discovered, 81 captured.
+- **Wave B:** Chile (70), Argentina (49), Peru (15) = 134 facilities, 20 markets.
   Priority metros: Santiago (explicit), plus Buenos Aires and Lima (primary hubs).
 
 ## Relevance scoring (1–5)

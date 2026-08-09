@@ -165,24 +165,49 @@ def rate_density(text):
     return level, detail
 
 
+def _country_all_url(market_url: str) -> str | None:
+    """Derive .../data-centers-in-<country>/all from a city market URL."""
+    m = re.search(r"(https://cloudscene\.com/market/data-centers-in-[a-z-]+)/", market_url)
+    if m:
+        return m.group(1) + "/all"
+    return None
+
+
 def enrich_metros():
     # Cloudscene market pages follow /market/data-centers-in-<country>/<city>
+    # Some city pages (e.g. Santiago) render only chrome without login; fall back
+    # to the country /all page which still exposes provider/DC counts.
     metros = CFG["cloudscene"]
     out = {}
     for slug, (q, direct) in metros.items():
-        cs = direct
-        cs_out = os.path.join(ENR_DIR, "cs__" + slug + ".md")
-        if not scrape(cs, cs_out):
+        candidates = [direct]
+        country_all = _country_all_url(direct)
+        if country_all and country_all not in candidates:
+            candidates.append(country_all)
+        entry = {}
+        for cs in candidates:
+            cs_out = os.path.join(ENR_DIR, "cs__" + slug + ".md")
+            # force re-fetch when retrying a fallback URL after a thin first hit
+            force = bool(entry) or (cs != direct)
+            if not scrape(cs, cs_out, force=force):
+                continue
+            txt = open(cs_out, encoding="utf-8", errors="replace").read()
+            level, detail = rate_density(txt)
+            entry = {"cloudscene_url": cs, "connectivity": level, "connectivity_detail": detail}
+            if level != "Unknown":
+                if cs != direct:
+                    entry["connectivity_detail"] += f" [fallback: country /all; city page {direct} was empty]"
+                break
+        if not entry:
             urls = fc_search(f"{q} data centers market site:cloudscene.com", limit=6)
             cs = next((u for u in urls if "cloudscene.com" in u and "/market/" in u), None) \
                 or next((u for u in urls if "cloudscene.com" in u), None)
-        entry = {}
-        if cs:
-            cs_out = os.path.join(ENR_DIR, "cs__" + slug + ".md")
-            if scrape(cs, cs_out):
-                txt = open(cs_out, encoding="utf-8", errors="replace").read()
-                level, detail = rate_density(txt)
-                entry = {"cloudscene_url": cs, "connectivity": level, "connectivity_detail": detail}
+            if cs:
+                cs_out = os.path.join(ENR_DIR, "cs__" + slug + ".md")
+                if scrape(cs, cs_out, force=True):
+                    txt = open(cs_out, encoding="utf-8", errors="replace").read()
+                    level, detail = rate_density(txt)
+                    entry = {"cloudscene_url": cs, "connectivity": level, "connectivity_detail": detail}
         out[slug] = entry
         print(f"  enriched metro {slug}: {entry.get('connectivity','n/a')}", flush=True)
     return out
