@@ -1,0 +1,1374 @@
+{
+  "https://www.datacentermap.com/brazil/aracaju/pix-g8-aracaju/": {
+    "country": "brazil",
+    "market": "aracaju"
+  },
+  "https://www.datacentermap.com/brazil/ararangu/contato-cloud/": {
+    "country": "brazil",
+    "market": "ararangu"
+  },
+  "https://www.datacentermap.com/brazil/belem/elea-bel1/": {
+    "country": "brazil",
+    "market": "belem"
+  },
+  "https://www.datacentermap.com/brazil/belo-horizonte/ativas-datacenter-sa/": {
+    "country": "brazil",
+    "market": "belo-horizonte"
+  },
+  "https://www.datacentermap.com/brazil/belo-horizonte/century-cem-dc01/": {
+    "country": "brazil",
+    "market": "belo-horizonte"
+  },
+  "https://www.datacentermap.com/brazil/belo-horizonte/master-da-web/": {
+    "country": "brazil",
+    "market": "belo-horizonte"
+  },
+  "https://www.datacentermap.com/brazil/belo-horizonte/valspe/": {
+    "country": "brazil",
+    "market": "belo-horizonte"
+  },
+  "https://www.datacentermap.com/brazil/blumenau/armazem-dc-brusque/": {
+    "country": "brazil",
+    "market": "blumenau"
+  },
+  "https://www.datacentermap.com/brazil/blumenau/unifique-timb-dc1/": {
+    "country": "brazil",
+    "market": "blumenau"
+  },
+  "https://www.datacentermap.com/brazil/brasilia/cope-p/": {
+    "country": "brazil",
+    "market": "brasilia"
+  },
+  "https://www.datacentermap.com/brazil/brasilia/elea-digital-bsb1/": {
+    "country": "brazil",
+    "market": "brasilia"
+  },
+  "https://www.datacentermap.com/brazil/brasilia/elea-digital-bsb2/": {
+    "country": "brazil",
+    "market": "brasilia"
+  },
+  "https://www.datacentermap.com/brazil/brasilia/engetronics-brasilia/": {
+    "country": "brazil",
+    "market": "brasilia"
+  },
+  "https://www.datacentermap.com/brazil/brasilia/hasest-sia/": {
+    "country": "brazil",
+    "market": "brasilia"
+  },
+  "https://www.datacentermap.com/brazil/brasilia/idc-centro/": {
+    "country": "brazil",
+    "market": "brasilia"
+  },
+  "https://www.datacentermap.com/brazil/brasilia/nwi-brasilia/": {
+    "country": "brazil",
+    "market": "brasilia"
+  },
+  "https://www.datacentermap.com/brazil/brasilia/pix-g8-brasilia/": {
+    "country": "brazil",
+    "market": "brasilia"
+  },
+  "https://www.datacentermap.com/brazil/brasilia/serpro-brasilia/": {
+    "country": "brazil",
+    "market": "brasilia"
+  },
+  "https://www.datacentermap.com/brazil/brasilia/sitelbra-data-center/": {
+    "country": "brazil",
+    "market": "brasilia"
+  },
+  "https://www.datacentermap.com/brazil/campina-grande/hostzone-cge1/": {
+    "country": "brazil",
+    "market": "campina-grande"
+  },
+  "https://www.datacentermap.com/brazil/campinas/ascenty-hortolandia-campus/": {
+    "country": "brazil",
+    "market": "campinas"
+  },
+  "https://www.datacentermap.com/brazil/campinas/ascenty-hortolandia-htl6/": {
+    "country": "brazil",
+    "market": "campinas"
+  },
+  "https://www.datacentermap.com/brazil/campinas/ascenty-htl04/": {
+    "country": "brazil",
+    "market": "campinas"
+  },
+  "https://www.datacentermap.com/brazil/campinas/ascenty-htl05/": {
+    "country": "brazil",
+    "market": "campinas"
+  },
+  "https://www.datacentermap.com/brazil/campinas/ascenty-sum03/": {
+    "country": "brazil",
+    "market": "campinas"
+  },
+  "https://www.datacentermap.com/brazil/campinas/ascenty-sum04/": {
+    "country": "brazil",
+    "market": "campinas"
+  },
+  "https://www.datacentermap.com/brazil/campinas/ascenty-sumare-campus/": {
+    "country": "brazil",
+    "market": "campinas"
+  },
+  "https://www.datacentermap.com/brazil/campinas/ascenty-sumare-sum5/": {
+    "country": "brazil",
+    "market": "campinas"
+  },
+  "https://www.datacentermap.com/brazil/campinas/ascenty-vin02/": {
+    "country": "brazil",
+    "market": "campinas"
+  },
+  "https://www.datacentermap.com/brazil/campinas/ascenty/": {
+    "country": "brazil",
+    "market": "campinas"
+  },
+  "https://www.datacentermap.com/brazil/campinas/av-2-50-quadra-g1/": {
+    "country": "brazil",
+    "market": "campinas"
+  },
+  "https://www.datacentermap.com/brazil/campinas/cloudhq-gru-campus/": {
+    "country": "brazil",
+    "market": "campinas"
+  },
+  "https://www.datacentermap.com/brazil/campinas/cloudhq-gru1/": {
+    "country": "brazil",
+    "market": "campinas"
+  },
+  "https://www.datacentermap.com/brazil/campinas/cloudhq-gru2/": {
+    "country": "brazil",
+    "market": "campinas"
+  },
+  "https://www.datacentermap.com/brazil/campinas/cloudhq-gru3/": {
+    "country": "brazil",
+    "market": "campinas"
+  },
+  "https://www.datacentermap.com/brazil/campinas/cloudhq-gru4/": {
+    "country": "brazil",
+    "market": "campinas"
+  },
+  "https://www.datacentermap.com/brazil/campinas/cloudhq-gru5/": {
+    "country": "brazil",
+    "market": "campinas"
+  },
+  "https://www.datacentermap.com/brazil/campinas/cloudhq-gru6/": {
+    "country": "brazil",
+    "market": "campinas"
+  },
+  "https://www.datacentermap.com/brazil/campinas/edge-connection--cps01/": {
+    "country": "brazil",
+    "market": "campinas"
+  },
+  "https://www.datacentermap.com/brazil/campinas/local-dc-campinas/": {
+    "country": "brazil",
+    "market": "campinas"
+  },
+  "https://www.datacentermap.com/brazil/campinas/r-papa-joao-paulo-ii-4/": {
+    "country": "brazil",
+    "market": "campinas"
+  },
+  "https://www.datacentermap.com/brazil/campinas/rodovia-anhanguera-bldg-1/": {
+    "country": "brazil",
+    "market": "campinas"
+  },
+  "https://www.datacentermap.com/brazil/campinas/rodovia-anhanguera-bldg-2/": {
+    "country": "brazil",
+    "market": "campinas"
+  },
+  "https://www.datacentermap.com/brazil/campinas/rua-papa-joao-paulo-ii-4-building-2/": {
+    "country": "brazil",
+    "market": "campinas"
+  },
+  "https://www.datacentermap.com/brazil/campinas/rua-papa-joao-paulo-ii-4-building-3/": {
+    "country": "brazil",
+    "market": "campinas"
+  },
+  "https://www.datacentermap.com/brazil/campinas/scala-data-centers-campinas-campus/": {
+    "country": "brazil",
+    "market": "campinas"
+  },
+  "https://www.datacentermap.com/brazil/campinas/scala-data-centers-svcpcp02/": {
+    "country": "brazil",
+    "market": "campinas"
+  },
+  "https://www.datacentermap.com/brazil/campinas/scala-data-centers-svcpcp03/": {
+    "country": "brazil",
+    "market": "campinas"
+  },
+  "https://www.datacentermap.com/brazil/campinas/scala-svcpcp01/": {
+    "country": "brazil",
+    "market": "campinas"
+  },
+  "https://www.datacentermap.com/brazil/campinas/sencinet-brazil/": {
+    "country": "brazil",
+    "market": "campinas"
+  },
+  "https://www.datacentermap.com/brazil/campinas/sky-brasil-jaguarina/": {
+    "country": "brazil",
+    "market": "campinas"
+  },
+  "https://www.datacentermap.com/brazil/campinas/tip-brasil-campinas/": {
+    "country": "brazil",
+    "market": "campinas"
+  },
+  "https://www.datacentermap.com/brazil/campinas/upx-campinas/": {
+    "country": "brazil",
+    "market": "campinas"
+  },
+  "https://www.datacentermap.com/brazil/campo-grande/tether-angelica/": {
+    "country": "brazil",
+    "market": "campo-grande"
+  },
+  "https://www.datacentermap.com/brazil/campo-grande/tether-ivinhema/": {
+    "country": "brazil",
+    "market": "campo-grande"
+  },
+  "https://www.datacentermap.com/brazil/cascavel/constel-tecnologia-minas/": {
+    "country": "brazil",
+    "market": "cascavel"
+  },
+  "https://www.datacentermap.com/brazil/cascavel/constel-tecnologia-para/": {
+    "country": "brazil",
+    "market": "cascavel"
+  },
+  "https://www.datacentermap.com/brazil/cravinhos/nicnet-cravinhos-data-center/": {
+    "country": "brazil",
+    "market": "cravinhos"
+  },
+  "https://www.datacentermap.com/brazil/curitiba/cirion-cur1/": {
+    "country": "brazil",
+    "market": "curitiba"
+  },
+  "https://www.datacentermap.com/brazil/curitiba/cwbhn-01/": {
+    "country": "brazil",
+    "market": "curitiba"
+  },
+  "https://www.datacentermap.com/brazil/curitiba/elea-digital-cta1/": {
+    "country": "brazil",
+    "market": "curitiba"
+  },
+  "https://www.datacentermap.com/brazil/curitiba/evo-cta-01/": {
+    "country": "brazil",
+    "market": "curitiba"
+  },
+  "https://www.datacentermap.com/brazil/curitiba/gvt-curitiba/": {
+    "country": "brazil",
+    "market": "curitiba"
+  },
+  "https://www.datacentermap.com/brazil/curitiba/hunti-cta1/": {
+    "country": "brazil",
+    "market": "curitiba"
+  },
+  "https://www.datacentermap.com/brazil/curitiba/nextstream-curitiba/": {
+    "country": "brazil",
+    "market": "curitiba"
+  },
+  "https://www.datacentermap.com/brazil/fortaleza/angonap-fortaleza/": {
+    "country": "brazil",
+    "market": "fortaleza"
+  },
+  "https://www.datacentermap.com/brazil/fortaleza/casa-dos-ventos-data-center/": {
+    "country": "brazil",
+    "market": "fortaleza"
+  },
+  "https://www.datacentermap.com/brazil/fortaleza/dc-ultranet-telecom/": {
+    "country": "brazil",
+    "market": "fortaleza"
+  },
+  "https://www.datacentermap.com/brazil/fortaleza/hostweb-fortaleza/": {
+    "country": "brazil",
+    "market": "fortaleza"
+  },
+  "https://www.datacentermap.com/brazil/fortaleza/ipxon-fortaleza/": {
+    "country": "brazil",
+    "market": "fortaleza"
+  },
+  "https://www.datacentermap.com/brazil/fortaleza/lumen-fortaleza/": {
+    "country": "brazil",
+    "market": "fortaleza"
+  },
+  "https://www.datacentermap.com/brazil/fortaleza/provenet-idc/": {
+    "country": "brazil",
+    "market": "fortaleza"
+  },
+  "https://www.datacentermap.com/brazil/fortaleza/rua-quatorze-1161/": {
+    "country": "brazil",
+    "market": "fortaleza"
+  },
+  "https://www.datacentermap.com/brazil/fortaleza/scala-data-centers-fortaleza-campus/": {
+    "country": "brazil",
+    "market": "fortaleza"
+  },
+  "https://www.datacentermap.com/brazil/fortaleza/scala-data-centers-sforpf02/": {
+    "country": "brazil",
+    "market": "fortaleza"
+  },
+  "https://www.datacentermap.com/brazil/fortaleza/scala-sforpf01/": {
+    "country": "brazil",
+    "market": "fortaleza"
+  },
+  "https://www.datacentermap.com/brazil/fortaleza/vtal-big-lobster/": {
+    "country": "brazil",
+    "market": "fortaleza"
+  },
+  "https://www.datacentermap.com/brazil/fortaleza/vtal-mega-lobster/": {
+    "country": "brazil",
+    "market": "fortaleza"
+  },
+  "https://www.datacentermap.com/brazil/goiania/everest-digital-data-center/": {
+    "country": "brazil",
+    "market": "goiania"
+  },
+  "https://www.datacentermap.com/brazil/goiania/pix-g8-goiania/": {
+    "country": "brazil",
+    "market": "goiania"
+  },
+  "https://www.datacentermap.com/brazil/itauna/gox-dc/": {
+    "country": "brazil",
+    "market": "itauna"
+  },
+  "https://www.datacentermap.com/brazil/joao-pessoa/hostdime-brazil/": {
+    "country": "brazil",
+    "market": "joao-pessoa"
+  },
+  "https://www.datacentermap.com/brazil/joinville/armazem-dc-joinville/": {
+    "country": "brazil",
+    "market": "joinville"
+  },
+  "https://www.datacentermap.com/brazil/joinville/avato-joinville/": {
+    "country": "brazil",
+    "market": "joinville"
+  },
+  "https://www.datacentermap.com/brazil/lagoa-da-prata/wise-data/": {
+    "country": "brazil",
+    "market": "lagoa-da-prata"
+  },
+  "https://www.datacentermap.com/brazil/manaus/clickip-datacenters/": {
+    "country": "brazil",
+    "market": "manaus"
+  },
+  "https://www.datacentermap.com/brazil/manaus/pix-g8-manaus/": {
+    "country": "brazil",
+    "market": "manaus"
+  },
+  "https://www.datacentermap.com/brazil/maringa/getcard-data-center/": {
+    "country": "brazil",
+    "market": "maringa"
+  },
+  "https://www.datacentermap.com/brazil/maringa/r4-data-center/": {
+    "country": "brazil",
+    "market": "maringa"
+  },
+  "https://www.datacentermap.com/brazil/maringa/rgk4it-data-center/": {
+    "country": "brazil",
+    "market": "maringa"
+  },
+  "https://www.datacentermap.com/brazil/muriae/tyna-host-data-center/": {
+    "country": "brazil",
+    "market": "muriae"
+  },
+  "https://www.datacentermap.com/brazil/palmas/idx-data-centers-it-services/": {
+    "country": "brazil",
+    "market": "palmas"
+  },
+  "https://www.datacentermap.com/brazil/palmas/to-host-data-centers/": {
+    "country": "brazil",
+    "market": "palmas"
+  },
+  "https://www.datacentermap.com/brazil/parnaiba/enegix-piau/": {
+    "country": "brazil",
+    "market": "parnaiba"
+  },
+  "https://www.datacentermap.com/brazil/porto-alegre/adentro/": {
+    "country": "brazil",
+    "market": "porto-alegre"
+  },
+  "https://www.datacentermap.com/brazil/porto-alegre/elea-digital-poa1/": {
+    "country": "brazil",
+    "market": "porto-alegre"
+  },
+  "https://www.datacentermap.com/brazil/porto-alegre/elea-digital-poa2/": {
+    "country": "brazil",
+    "market": "porto-alegre"
+  },
+  "https://www.datacentermap.com/brazil/porto-alegre/kinghost/": {
+    "country": "brazil",
+    "market": "porto-alegre"
+  },
+  "https://www.datacentermap.com/brazil/porto-alegre/maila-networks-dc1/": {
+    "country": "brazil",
+    "market": "porto-alegre"
+  },
+  "https://www.datacentermap.com/brazil/porto-alegre/maila-networks-dc2/": {
+    "country": "brazil",
+    "market": "porto-alegre"
+  },
+  "https://www.datacentermap.com/brazil/porto-alegre/parks-data-center-cachoeirinha/": {
+    "country": "brazil",
+    "market": "porto-alegre"
+  },
+  "https://www.datacentermap.com/brazil/porto-alegre/quantico-canoas/": {
+    "country": "brazil",
+    "market": "porto-alegre"
+  },
+  "https://www.datacentermap.com/brazil/porto-alegre/scala-ai-city/": {
+    "country": "brazil",
+    "market": "porto-alegre"
+  },
+  "https://www.datacentermap.com/brazil/porto-alegre/scala-spoapa01/": {
+    "country": "brazil",
+    "market": "porto-alegre"
+  },
+  "https://www.datacentermap.com/brazil/porto-alegre/teccloud-campo-bom/": {
+    "country": "brazil",
+    "market": "porto-alegre"
+  },
+  "https://www.datacentermap.com/brazil/porto-alegre/teccloud-porto-alegre/": {
+    "country": "brazil",
+    "market": "porto-alegre"
+  },
+  "https://www.datacentermap.com/brazil/porto-alegre/tecto-tpoa1/": {
+    "country": "brazil",
+    "market": "porto-alegre"
+  },
+  "https://www.datacentermap.com/brazil/porto-alegre/telium-data-center--poa/": {
+    "country": "brazil",
+    "market": "porto-alegre"
+  },
+  "https://www.datacentermap.com/brazil/porto-alegre/vtal-voa/": {
+    "country": "brazil",
+    "market": "porto-alegre"
+  },
+  "https://www.datacentermap.com/brazil/recife/hotlink-internet/": {
+    "country": "brazil",
+    "market": "recife"
+  },
+  "https://www.datacentermap.com/brazil/recife/recife1/": {
+    "country": "brazil",
+    "market": "recife"
+  },
+  "https://www.datacentermap.com/brazil/recife/surfix-data-center/": {
+    "country": "brazil",
+    "market": "recife"
+  },
+  "https://www.datacentermap.com/brazil/ribeirao-preto/convex-idc-rpo/": {
+    "country": "brazil",
+    "market": "ribeirao-preto"
+  },
+  "https://www.datacentermap.com/brazil/rio-de-janeiro/ada-rio-de-janeiro/": {
+    "country": "brazil",
+    "market": "rio-de-janeiro"
+  },
+  "https://www.datacentermap.com/brazil/rio-de-janeiro/aligned-rj-01/": {
+    "country": "brazil",
+    "market": "rio-de-janeiro"
+  },
+  "https://www.datacentermap.com/brazil/rio-de-janeiro/cirion-rio2/": {
+    "country": "brazil",
+    "market": "rio-de-janeiro"
+  },
+  "https://www.datacentermap.com/brazil/rio-de-janeiro/cloudhq-gig1/": {
+    "country": "brazil",
+    "market": "rio-de-janeiro"
+  },
+  "https://www.datacentermap.com/brazil/rio-de-janeiro/cope-s/": {
+    "country": "brazil",
+    "market": "rio-de-janeiro"
+  },
+  "https://www.datacentermap.com/brazil/rio-de-janeiro/dc-ultranet-telecom1/": {
+    "country": "brazil",
+    "market": "rio-de-janeiro"
+  },
+  "https://www.datacentermap.com/brazil/rio-de-janeiro/elea-digital-rjo1/": {
+    "country": "brazil",
+    "market": "rio-de-janeiro"
+  },
+  "https://www.datacentermap.com/brazil/rio-de-janeiro/elea-rjo2/": {
+    "country": "brazil",
+    "market": "rio-de-janeiro"
+  },
+  "https://www.datacentermap.com/brazil/rio-de-janeiro/elea-rjo3/": {
+    "country": "brazil",
+    "market": "rio-de-janeiro"
+  },
+  "https://www.datacentermap.com/brazil/rio-de-janeiro/elea-rjo4/": {
+    "country": "brazil",
+    "market": "rio-de-janeiro"
+  },
+  "https://www.datacentermap.com/brazil/rio-de-janeiro/equinix-rj1/": {
+    "country": "brazil",
+    "market": "rio-de-janeiro"
+  },
+  "https://www.datacentermap.com/brazil/rio-de-janeiro/equinix-rj2/": {
+    "country": "brazil",
+    "market": "rio-de-janeiro"
+  },
+  "https://www.datacentermap.com/brazil/rio-de-janeiro/equinix-rj3/": {
+    "country": "brazil",
+    "market": "rio-de-janeiro"
+  },
+  "https://www.datacentermap.com/brazil/rio-de-janeiro/gblx-rio/": {
+    "country": "brazil",
+    "market": "rio-de-janeiro"
+  },
+  "https://www.datacentermap.com/brazil/rio-de-janeiro/gvt-rio-de-janeiro/": {
+    "country": "brazil",
+    "market": "rio-de-janeiro"
+  },
+  "https://www.datacentermap.com/brazil/rio-de-janeiro/hexam2/": {
+    "country": "brazil",
+    "market": "rio-de-janeiro"
+  },
+  "https://www.datacentermap.com/brazil/rio-de-janeiro/ipxon-rio-de-janeiro/": {
+    "country": "brazil",
+    "market": "rio-de-janeiro"
+  },
+  "https://www.datacentermap.com/brazil/rio-de-janeiro/r4c-networks/": {
+    "country": "brazil",
+    "market": "rio-de-janeiro"
+  },
+  "https://www.datacentermap.com/brazil/rio-de-janeiro/rio-ai-city/": {
+    "country": "brazil",
+    "market": "rio-de-janeiro"
+  },
+  "https://www.datacentermap.com/brazil/rio-de-janeiro/scala-data-centers-sgigsm02/": {
+    "country": "brazil",
+    "market": "rio-de-janeiro"
+  },
+  "https://www.datacentermap.com/brazil/rio-de-janeiro/scala-data-centers-sgigsm03/": {
+    "country": "brazil",
+    "market": "rio-de-janeiro"
+  },
+  "https://www.datacentermap.com/brazil/rio-de-janeiro/scala-sgigsm01/": {
+    "country": "brazil",
+    "market": "rio-de-janeiro"
+  },
+  "https://www.datacentermap.com/brazil/rio-de-janeiro/takoda-rio-de-janeiro-rj1/": {
+    "country": "brazil",
+    "market": "rio-de-janeiro"
+  },
+  "https://www.datacentermap.com/brazil/rio-de-janeiro/teleporto-rj/": {
+    "country": "brazil",
+    "market": "rio-de-janeiro"
+  },
+  "https://www.datacentermap.com/brazil/santa-maria/dc-coracao-do-rio-grande/": {
+    "country": "brazil",
+    "market": "santa-maria"
+  },
+  "https://www.datacentermap.com/brazil/sao-jose-do-rio-preto/sjrp01/": {
+    "country": "brazil",
+    "market": "sao-jose-do-rio-preto"
+  },
+  "https://www.datacentermap.com/brazil/sao-jose-dos-campos/tsdata/": {
+    "country": "brazil",
+    "market": "sao-jose-dos-campos"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/3rd-cta-sao-paulo-data-center/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/ada-sao-paulo/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/aligned-sp-01/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/aligned-sp-02/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/aligned-sp-03/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/asap-sp1/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/ascenty-jundiai1/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/ascenty-jundiai2/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/ascenty-sao-paulo-sp5/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/ascenty-sao-paulo-sp6/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/ascenty-sp4/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/av-roberto-pinto-sobrinho-350-1/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/av-roberto-pinto-sobrinho-350-2/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/av-roberto-pinto-sobrinho-350-3/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/b3-data-center/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/cdznet-data-center/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/claro-lapa/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/cma/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/connect-web/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/datacenter-locaweb-itapaiuna/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/datacenter-locaweb-jk/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/elea-digital-spo1/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/elea-digital-spo2/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/elea-digital-spo3/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/equinix-sp1/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/equinix-sp2/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/equinix-sp3/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/equinix-sp4/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/equinix-sp5x/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/equinix-sp6/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/equinix-sp7/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/gvt-sao-paulo/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/hostdime-so-paulo/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/ipxon-sao-paulo/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/kyndryl-dc-hortolandia/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/lumen-parque-sao-georgia/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/matrix/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/maxihost/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/microsoft-hortolandia/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/microsoft-sao-paulo/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/microsoft-taquara-branca/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/minidc-mcr1/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/nabiax-tambore/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/odata-sp02-dc1/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/odata-sp02-dc2/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/odata-sp04/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/pix-g8-sao-paulo/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/qnax-data-center/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/riverhook-village-18-campus/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/riverhook-village-18-dc1/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/riverhook-village-18-dc2/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/rpodc/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/scala-data-centers-sgrutb10/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/scala-data-centers-sgrutb11/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/scala-data-centers-sgrutb14/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/scala-data-centers-sgrutb15/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/scala-data-centers-svcpjd01/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/scala-data-centers-svcpjd02/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/scala-sgrusp02/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/serpro-so-paulo/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/takdoa-sao-paulo-sp1/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/takdoa-sao-paulo-sp2/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/takoda-sumare-campus/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/takoda-sumare-sp3/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/takoda-sumare-sp4/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/takoda-sumare-sp5/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/tecto-so-paulo-1/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/telium-data-center--spo/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/ultranet-telecom/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/sao-paulo/vivo-tambore-1-data-center/": {
+    "country": "brazil",
+    "market": "sao-paulo"
+  },
+  "https://www.datacentermap.com/brazil/tambore/scala-data-centers-sgrutb06/": {
+    "country": "brazil",
+    "market": "tambore"
+  },
+  "https://www.datacentermap.com/brazil/tambore/scala-data-centers-sgrutb07/": {
+    "country": "brazil",
+    "market": "tambore"
+  },
+  "https://www.datacentermap.com/brazil/tambore/scala-data-centers-sgrutb08/": {
+    "country": "brazil",
+    "market": "tambore"
+  },
+  "https://www.datacentermap.com/brazil/tambore/scala-data-centers-sgrutb09/": {
+    "country": "brazil",
+    "market": "tambore"
+  },
+  "https://www.datacentermap.com/brazil/tambore/scala-data-centers-sgrutb12/": {
+    "country": "brazil",
+    "market": "tambore"
+  },
+  "https://www.datacentermap.com/brazil/tambore/scala-data-centers-tambore-campus/": {
+    "country": "brazil",
+    "market": "tambore"
+  },
+  "https://www.datacentermap.com/brazil/tambore/scala-sgrutb01/": {
+    "country": "brazil",
+    "market": "tambore"
+  },
+  "https://www.datacentermap.com/brazil/tambore/scala-sgrutb03/": {
+    "country": "brazil",
+    "market": "tambore"
+  },
+  "https://www.datacentermap.com/brazil/tambore/scala-sgrutb04/": {
+    "country": "brazil",
+    "market": "tambore"
+  },
+  "https://www.datacentermap.com/brazil/tambore/scala-sgrutb05/": {
+    "country": "brazil",
+    "market": "tambore"
+  },
+  "https://www.datacentermap.com/brazil/tambore/sky-brasil-tambore/": {
+    "country": "brazil",
+    "market": "tambore"
+  },
+  "https://www.datacentermap.com/brazil/teresina/piau-link-data-center/": {
+    "country": "brazil",
+    "market": "teresina"
+  },
+  "https://www.datacentermap.com/brazil/uberlandia/algar-tech-uberlandia/": {
+    "country": "brazil",
+    "market": "uberlandia"
+  },
+  "https://www.datacentermap.com/brazil/uberlandia/algar-tecnologia/": {
+    "country": "brazil",
+    "market": "uberlandia"
+  },
+  "https://www.datacentermap.com/brazil/uberlandia/rt-one-uberlndia/": {
+    "country": "brazil",
+    "market": "uberlandia"
+  },
+  "https://www.datacentermap.com/brazil/videira/brdrive-data-center/": {
+    "country": "brazil",
+    "market": "videira"
+  },
+  "https://www.datacentermap.com/brazil/videira/brdrive-sc-vda/": {
+    "country": "brazil",
+    "market": "videira"
+  },
+  "https://www.datacentermap.com/brazil/vitoria/nuv-datacenter-nuv1/": {
+    "country": "brazil",
+    "market": "vitoria"
+  },
+  "https://www.datacentermap.com/brazil/vitoria/nuv-datacenter-nuv2/": {
+    "country": "brazil",
+    "market": "vitoria"
+  },
+  "https://www.datacentermap.com/brazil/vitoria/vix-datacenter/": {
+    "country": "brazil",
+    "market": "vitoria"
+  },
+  "https://www.datacentermap.com/brazil/xaxim/ferenz-networks/": {
+    "country": "brazil",
+    "market": "xaxim"
+  },
+  "https://www.datacentermap.com/brazil/xaxim/viso-datacenter/": {
+    "country": "brazil",
+    "market": "xaxim"
+  },
+  "https://www.datacentermap.com/colombia/barranquilla/csn-1-salgarbarranquilla/": {
+    "country": "colombia",
+    "market": "barranquilla"
+  },
+  "https://www.datacentermap.com/colombia/barranquilla/vtal-chiva-1/": {
+    "country": "colombia",
+    "market": "barranquilla"
+  },
+  "https://www.datacentermap.com/colombia/barranquilla/vtal-chiva-2/": {
+    "country": "colombia",
+    "market": "barranquilla"
+  },
+  "https://www.datacentermap.com/colombia/bogota/aligned-bg-01/": {
+    "country": "colombia",
+    "market": "bogota"
+  },
+  "https://www.datacentermap.com/colombia/bogota/ascenty-bogota-bog1/": {
+    "country": "colombia",
+    "market": "bogota"
+  },
+  "https://www.datacentermap.com/colombia/bogota/ascenty-bogota-bog2/": {
+    "country": "colombia",
+    "market": "bogota"
+  },
+  "https://www.datacentermap.com/colombia/bogota/cirion-bog1/": {
+    "country": "colombia",
+    "market": "bogota"
+  },
+  "https://www.datacentermap.com/colombia/bogota/claro-data-center-triara/": {
+    "country": "colombia",
+    "market": "bogota"
+  },
+  "https://www.datacentermap.com/colombia/bogota/dhamericas-bog-01/": {
+    "country": "colombia",
+    "market": "bogota"
+  },
+  "https://www.datacentermap.com/colombia/bogota/dhamericas-bogota-campus/": {
+    "country": "colombia",
+    "market": "bogota"
+  },
+  "https://www.datacentermap.com/colombia/bogota/equinix-bg1/": {
+    "country": "colombia",
+    "market": "bogota"
+  },
+  "https://www.datacentermap.com/colombia/bogota/equinix-bg2/": {
+    "country": "colombia",
+    "market": "bogota"
+  },
+  "https://www.datacentermap.com/colombia/bogota/faoba-dc/": {
+    "country": "colombia",
+    "market": "bogota"
+  },
+  "https://www.datacentermap.com/colombia/bogota/hostdime-colombia/": {
+    "country": "colombia",
+    "market": "bogota"
+  },
+  "https://www.datacentermap.com/colombia/bogota/ifx-jupiter1/": {
+    "country": "colombia",
+    "market": "bogota"
+  },
+  "https://www.datacentermap.com/colombia/bogota/ifx-saturno/": {
+    "country": "colombia",
+    "market": "bogota"
+  },
+  "https://www.datacentermap.com/colombia/bogota/ifx-wbp-i/": {
+    "country": "colombia",
+    "market": "bogota"
+  },
+  "https://www.datacentermap.com/colombia/bogota/ifx-wbp-ii/": {
+    "country": "colombia",
+    "market": "bogota"
+  },
+  "https://www.datacentermap.com/colombia/bogota/internexa-bogota/": {
+    "country": "colombia",
+    "market": "bogota"
+  },
+  "https://www.datacentermap.com/colombia/bogota/ipxon/": {
+    "country": "colombia",
+    "market": "bogota"
+  },
+  "https://www.datacentermap.com/colombia/bogota/kio-bogot/": {
+    "country": "colombia",
+    "market": "bogota"
+  },
+  "https://www.datacentermap.com/colombia/bogota/lumen-bogota/": {
+    "country": "colombia",
+    "market": "bogota"
+  },
+  "https://www.datacentermap.com/colombia/bogota/odata-bg02/": {
+    "country": "colombia",
+    "market": "bogota"
+  },
+  "https://www.datacentermap.com/colombia/bogota/odata-bg03/": {
+    "country": "colombia",
+    "market": "bogota"
+  },
+  "https://www.datacentermap.com/colombia/bogota/s3-heroes/": {
+    "country": "colombia",
+    "market": "bogota"
+  },
+  "https://www.datacentermap.com/colombia/bogota/s3-san-martin/": {
+    "country": "colombia",
+    "market": "bogota"
+  },
+  "https://www.datacentermap.com/colombia/bogota/scala-data-centers-bogota-campus/": {
+    "country": "colombia",
+    "market": "bogota"
+  },
+  "https://www.datacentermap.com/colombia/bogota/scala-data-centers-sbogzb01/": {
+    "country": "colombia",
+    "market": "bogota"
+  },
+  "https://www.datacentermap.com/colombia/bogota/scala-data-centers-sbogzb02/": {
+    "country": "colombia",
+    "market": "bogota"
+  },
+  "https://www.datacentermap.com/colombia/bogota/scala-data-centers-sbogzm01/": {
+    "country": "colombia",
+    "market": "bogota"
+  },
+  "https://www.datacentermap.com/colombia/bogota/scala-data-centers-sbogzt01/": {
+    "country": "colombia",
+    "market": "bogota"
+  },
+  "https://www.datacentermap.com/colombia/bogota/sencinet-naos/": {
+    "country": "colombia",
+    "market": "bogota"
+  },
+  "https://www.datacentermap.com/colombia/bogota/sencinet-nimbus/": {
+    "country": "colombia",
+    "market": "bogota"
+  },
+  "https://www.datacentermap.com/colombia/bogota/takoda-bogot-colombia1/": {
+    "country": "colombia",
+    "market": "bogota"
+  },
+  "https://www.datacentermap.com/colombia/bogota/tigo-dc-la-castellana/": {
+    "country": "colombia",
+    "market": "bogota"
+  },
+  "https://www.datacentermap.com/colombia/bogota/tigo-une-titanium/": {
+    "country": "colombia",
+    "market": "bogota"
+  },
+  "https://www.datacentermap.com/colombia/cali/cirion-cal1/": {
+    "country": "colombia",
+    "market": "cali"
+  },
+  "https://www.datacentermap.com/colombia/cali/netgroup-sa/": {
+    "country": "colombia",
+    "market": "cali"
+  },
+  "https://www.datacentermap.com/colombia/medellin/datamovilidad/": {
+    "country": "colombia",
+    "market": "medellin"
+  },
+  "https://www.datacentermap.com/colombia/medellin/dataware-sistemas/": {
+    "country": "colombia",
+    "market": "medellin"
+  },
+  "https://www.datacentermap.com/colombia/medellin/gtd-el-poblado/": {
+    "country": "colombia",
+    "market": "medellin"
+  },
+  "https://www.datacentermap.com/colombia/medellin/internexa-medellin/": {
+    "country": "colombia",
+    "market": "medellin"
+  },
+  "https://www.datacentermap.com/mexico/celaya/layer-9-project-falcon/": {
+    "country": "mexico",
+    "market": "celaya"
+  },
+  "https://www.datacentermap.com/mexico/durango/fermaca-digital-city/": {
+    "country": "mexico",
+    "market": "durango"
+  },
+  "https://www.datacentermap.com/mexico/guadalajara/assetel-data-center/": {
+    "country": "mexico",
+    "market": "guadalajara"
+  },
+  "https://www.datacentermap.com/mexico/guadalajara/c5-tlajomulco-data-center/": {
+    "country": "mexico",
+    "market": "guadalajara"
+  },
+  "https://www.datacentermap.com/mexico/guadalajara/hostdime-mexico-2/": {
+    "country": "mexico",
+    "market": "guadalajara"
+  },
+  "https://www.datacentermap.com/mexico/guadalajara/ipxon-guadalajara/": {
+    "country": "mexico",
+    "market": "guadalajara"
+  },
+  "https://www.datacentermap.com/mexico/guadalajara/kyndryl-dc-guadalajara/": {
+    "country": "mexico",
+    "market": "guadalajara"
+  },
+  "https://www.datacentermap.com/mexico/guadalajara/marcatel-guadalajara/": {
+    "country": "mexico",
+    "market": "guadalajara"
+  },
+  "https://www.datacentermap.com/mexico/guadalajara/mega-data-center/": {
+    "country": "mexico",
+    "market": "guadalajara"
+  },
+  "https://www.datacentermap.com/mexico/guadalajara/mexicogdl-dc2/": {
+    "country": "mexico",
+    "market": "guadalajara"
+  },
+  "https://www.datacentermap.com/mexico/guadalajara/triara-guadalajara/": {
+    "country": "mexico",
+    "market": "guadalajara"
+  },
+  "https://www.datacentermap.com/mexico/guanajato/odata-qr04/": {
+    "country": "mexico",
+    "market": "guanajato"
+  },
+  "https://www.datacentermap.com/mexico/guanajato/terranova-san-miguel-de-allende/": {
+    "country": "mexico",
+    "market": "guanajato"
+  },
+  "https://www.datacentermap.com/mexico/hermosillo/kio-hermosillo/": {
+    "country": "mexico",
+    "market": "hermosillo"
+  },
+  "https://www.datacentermap.com/mexico/leon/mtp-edge-len/": {
+    "country": "mexico",
+    "market": "leon"
+  },
+  "https://www.datacentermap.com/mexico/manzanillo/hospedaje-servidores/": {
+    "country": "mexico",
+    "market": "manzanillo"
+  },
+  "https://www.datacentermap.com/mexico/merida/aitelecom-data-center/": {
+    "country": "mexico",
+    "market": "merida"
+  },
+  "https://www.datacentermap.com/mexico/merida/kio-merida-1/": {
+    "country": "mexico",
+    "market": "merida"
+  },
+  "https://www.datacentermap.com/mexico/merida/kio-merida-2/": {
+    "country": "mexico",
+    "market": "merida"
+  },
+  "https://www.datacentermap.com/mexico/merida/mtp-edge-merida/": {
+    "country": "mexico",
+    "market": "merida"
+  },
+  "https://www.datacentermap.com/mexico/merida/triara-cancun/": {
+    "country": "mexico",
+    "market": "merida"
+  },
+  "https://www.datacentermap.com/mexico/mexico-city/cirion-mex1/": {
+    "country": "mexico",
+    "market": "mexico-city"
+  },
+  "https://www.datacentermap.com/mexico/mexico-city/equinix-mx1/": {
+    "country": "mexico",
+    "market": "mexico-city"
+  },
+  "https://www.datacentermap.com/mexico/mexico-city/equinix-mx2/": {
+    "country": "mexico",
+    "market": "mexico-city"
+  },
+  "https://www.datacentermap.com/mexico/mexico-city/ipxon-mexico-df/": {
+    "country": "mexico",
+    "market": "mexico-city"
+  },
+  "https://www.datacentermap.com/mexico/mexico-city/kio-mexico-2/": {
+    "country": "mexico",
+    "market": "mexico-city"
+  },
+  "https://www.datacentermap.com/mexico/mexico-city/kio-networks/": {
+    "country": "mexico",
+    "market": "mexico-city"
+  },
+  "https://www.datacentermap.com/mexico/mexico-city/kio-santa-fe-4/": {
+    "country": "mexico",
+    "market": "mexico-city"
+  },
+  "https://www.datacentermap.com/mexico/mexico-city/marcatel-mexico-city/": {
+    "country": "mexico",
+    "market": "mexico-city"
+  },
+  "https://www.datacentermap.com/mexico/mexico-city/mtp-santa-fe/": {
+    "country": "mexico",
+    "market": "mexico-city"
+  },
+  "https://www.datacentermap.com/mexico/mexico-city/pentafon-data-center/": {
+    "country": "mexico",
+    "market": "mexico-city"
+  },
+  "https://www.datacentermap.com/mexico/mexico-city/reditdatapark/": {
+    "country": "mexico",
+    "market": "mexico-city"
+  },
+  "https://www.datacentermap.com/mexico/mexico-city/scala-smextp01/": {
+    "country": "mexico",
+    "market": "mexico-city"
+  },
+  "https://www.datacentermap.com/mexico/mexico-city/sdr/": {
+    "country": "mexico",
+    "market": "mexico-city"
+  },
+  "https://www.datacentermap.com/mexico/mexico-city/triara-mexico-city/": {
+    "country": "mexico",
+    "market": "mexico-city"
+  },
+  "https://www.datacentermap.com/mexico/mexico-city/xertix-interlomas/": {
+    "country": "mexico",
+    "market": "mexico-city"
+  },
+  "https://www.datacentermap.com/mexico/mexico-city/xertix/": {
+    "country": "mexico",
+    "market": "mexico-city"
+  },
+  "https://www.datacentermap.com/mexico/monterrey/equinix-mo1/": {
+    "country": "mexico",
+    "market": "monterrey"
+  },
+  "https://www.datacentermap.com/mexico/monterrey/equinix-mo2/": {
+    "country": "mexico",
+    "market": "monterrey"
+  },
+  "https://www.datacentermap.com/mexico/monterrey/marcatel-monterrey/": {
+    "country": "mexico",
+    "market": "monterrey"
+  },
+  "https://www.datacentermap.com/mexico/monterrey/nh-solutions-edc1/": {
+    "country": "mexico",
+    "market": "monterrey"
+  },
+  "https://www.datacentermap.com/mexico/monterrey/nh-solutions-edc2/": {
+    "country": "mexico",
+    "market": "monterrey"
+  },
+  "https://www.datacentermap.com/mexico/monterrey/triara-monterrey/": {
+    "country": "mexico",
+    "market": "monterrey"
+  },
+  "https://www.datacentermap.com/mexico/monterrey/xertix-monterrey/": {
+    "country": "mexico",
+    "market": "monterrey"
+  },
+  "https://www.datacentermap.com/mexico/nogales/ngx-networks-dc01/": {
+    "country": "mexico",
+    "market": "nogales"
+  },
+  "https://www.datacentermap.com/mexico/queretaro/aligned-qr-01/": {
+    "country": "mexico",
+    "market": "queretaro"
+  },
+  "https://www.datacentermap.com/mexico/queretaro/aligned-qr-02/": {
+    "country": "mexico",
+    "market": "queretaro"
+  },
+  "https://www.datacentermap.com/mexico/queretaro/amazon-aws-qro-productividad/": {
+    "country": "mexico",
+    "market": "queretaro"
+  },
+  "https://www.datacentermap.com/mexico/queretaro/ascenty-queretaro-qro3/": {
+    "country": "mexico",
+    "market": "queretaro"
+  },
+  "https://www.datacentermap.com/mexico/queretaro/bleeding-edge-qro1/": {
+    "country": "mexico",
+    "market": "queretaro"
+  },
+  "https://www.datacentermap.com/mexico/queretaro/camino-a-nativitas-800-colon/": {
+    "country": "mexico",
+    "market": "queretaro"
+  },
+  "https://www.datacentermap.com/mexico/queretaro/carretera-estatal-100-colon/": {
+    "country": "mexico",
+    "market": "queretaro"
+  },
+  "https://www.datacentermap.com/mexico/queretaro/cloudhq-qro-campus/": {
+    "country": "mexico",
+    "market": "queretaro"
+  },
+  "https://www.datacentermap.com/mexico/queretaro/cloudhq-qro1/": {
+    "country": "mexico",
+    "market": "queretaro"
+  },
+  "https://www.datacentermap.com/mexico/queretaro/cloudhq-qro2/": {
+    "country": "mexico",
+    "market": "queretaro"
+  },
+  "https://www.datacentermap.com/mexico/queretaro/cloudhq-qro3/": {
+    "country": "mexico",
+    "market": "queretaro"
+  },
+  "https://www.datacentermap.com/mexico/queretaro/cloudhq-qro4/": {
+    "country": "mexico",
+    "market": "queretaro"
+  },
+  "https://www.datacentermap.com/mexico/queretaro/cloudhq-qro5/": {
+    "country": "mexico",
+    "market": "queretaro"
+  },
+  "https://www.datacentermap.com/mexico/queretaro/cloudhq-qro6/": {
+    "country": "mexico",
+    "market": "queretaro"
+  },
+  "https://www.datacentermap.com/mexico/queretaro/equinix-mx3x/": {
+    "country": "mexico",
+    "market": "queretaro"
+  },
+  "https://www.datacentermap.com/mexico/queretaro/kio-networks2/": {
+    "country": "mexico",
+    "market": "queretaro"
+  },
+  "https://www.datacentermap.com/mexico/queretaro/kio-queretaro-2/": {
+    "country": "mexico",
+    "market": "queretaro"
+  },
+  "https://www.datacentermap.com/mexico/queretaro/marcatel-queretaro/": {
+    "country": "mexico",
+    "market": "queretaro"
+  },
+  "https://www.datacentermap.com/mexico/queretaro/odata-qr03/": {
+    "country": "mexico",
+    "market": "queretaro"
+  },
+  "https://www.datacentermap.com/mexico/queretaro/triara-queretaro/": {
+    "country": "mexico",
+    "market": "queretaro"
+  },
+  "https://www.datacentermap.com/mexico/san-luis-potosi/mtp-edge-san-luis-potosi/": {
+    "country": "mexico",
+    "market": "san-luis-potosi"
+  },
+  "https://www.datacentermap.com/mexico/tijuana/mtp-edge-tijuana/": {
+    "country": "mexico",
+    "market": "tijuana"
+  },
+  "https://www.datacentermap.com/mexico/toluca/kio-toluca/": {
+    "country": "mexico",
+    "market": "toluca"
+  },
+  "https://www.datacentermap.com/mexico/toluca/nabiax-ixtlahuaca/": {
+    "country": "mexico",
+    "market": "toluca"
+  }
+}
