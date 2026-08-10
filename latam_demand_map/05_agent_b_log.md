@@ -909,3 +909,18 @@ User requested adding **Alberto Mayoral** (`https://www.linkedin.com/in/albertom
 - Created via **native Airtable MCP** (`create_records_for_table`) — Zapier MCP still returning "insufficient tasks on account" (quota exhausted).
 - Vambe already marked "Selected" at company level; no company-level change needed.
 - Contacts table: 174 → **175**.
+
+## Additional contacts added 2026-08-10 (Alexander Maridueña & Luigi Basantes → Jelou)
+
+User requested adding 2 contacts (companies not specified by user):
+1. **Alexander Maridueña** (`https://www.linkedin.com/in/alexander-maridueña-a67821ab/`)
+2. **Luigi Basantes** (`https://www.linkedin.com/in/luigi-basantes/`)
+
+- Identified via web research: both are C-level executives at **Jelou AI** (in our base, `rec9otOba5m9tMjHb`, already "Selected").
+  - **Alexander Maridueña** — Chief Innovation Officer at Jelou (current, since Jan 2026); previously Chief Product Officer (Nov 2024–Jan 2026) and Chief Technology Officer; long-standing key executive since Jelou's 2017 inception. Based in Ecuador.
+  - **Luigi Basantes** — Chief Technology Officer at Jelou (current); leads technical architecture / AI-driven conversational agents; based in Ecuador (GitHub: github.com/luigi-basantes).
+- Created 2 contacts via **native Airtable MCP** (`create_records_for_table`) — Zapier MCP still returning "insufficient tasks on account" (quota exhausted).
+  - Alexander Maridueña (`recG7o2DKFtnsXnjU`): Role "Other", Current Title "Chief Innovation Officer", LinkedIn, Confidence High, Source LinkedIn, Outreach Status Verified.
+  - Luigi Basantes (`recKDctpodjK6NENN`): Role "CTO", Current Title "Chief Technology Officer", LinkedIn, Confidence High, Source LinkedIn, Outreach Status Verified.
+- Jelou already marked "Selected" at company level; no company-level change needed.
+- Contacts table: 175 → **177**.
