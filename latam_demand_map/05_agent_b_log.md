@@ -940,3 +940,12 @@ User requested adding 2 contacts (companies not specified by user):
 - Set Jota company Outreach Status: Not started → **Selected** (first selected contacts for this company).
 - Selected companies: 11 → **12** (Jota added).
 - Contacts table: 177 → **179**.
+
+## Additional contact added 2026-08-10 (Josue Hernandez → Dapta)
+
+User requested adding **Josue Hernandez** (`https://www.linkedin.com/in/josue-hernandez04/`) (company not specified by user).
+- Identified via web research: **AI and Automation Specialist / Growth Strategist at Dapta AI** (current). Focuses on product growth (community, academy, U.S. expansion, use-case content, office hours). Based in Phoenix, AZ. Self-taught AI automation; joined via founder Nicolas Rojas.
+- Dapta is already in the base (`recGqoeLf8ACAytN7`, already "Selected") → associated the contact with Dapta.
+- Created contact `recPtJnTx08KNFV85` via **native Airtable MCP**: Role "Other", Current Title "AI and Automation Specialist / Growth Strategist", LinkedIn, Confidence High, Source LinkedIn, Outreach Status Verified.
+- Dapta already marked "Selected" at company level; no company-level change needed.
+- Contacts table: 179 → **180**.
