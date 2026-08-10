@@ -924,3 +924,19 @@ User requested adding 2 contacts (companies not specified by user):
   - Luigi Basantes (`recKDctpodjK6NENN`): Role "CTO", Current Title "Chief Technology Officer", LinkedIn, Confidence High, Source LinkedIn, Outreach Status Verified.
 - Jelou already marked "Selected" at company level; no company-level change needed.
 - Contacts table: 175 → **177**.
+
+## Additional contacts added 2026-08-10 (Paulo Favero Pereira & Giovanni Bonetti → Jota)
+
+User requested adding 2 contacts (companies not specified by user):
+1. **Paulo Henrique Favero Pereira** (`https://www.linkedin.com/in/paulofaveropereira/`)
+2. **Giovanni K Bonetti** (`https://www.linkedin.com/in/giovanni-bonetti/`)
+
+- Identified via web research: both are **Founding Software Engineers at Jota** (in our base, `recMnVihNTdJDRgXA`, was "Not started").
+  - **Paulo Henrique Favero Pereira** — Founding Software Engineer at Jota (current). Previously Founding Software Engineer at Sybill, Software Engineer at Kasco R&D Technologies, J-1 Intern at Siemens. Based in Campinas, São Paulo, Brazil.
+  - **Giovanni K Bonetti** — Founding Software Engineer at Jota (current, ~2 yrs). Previously Principal Engineer at Nilo, Senior SWE at CareMessage, Head of Engineering at CloudWalk; co-founded Beauty Date (500 Startups batch 17, acquired by Avec). Based in Brazil.
+- Created 2 contacts via **native Airtable MCP** (`create_records_for_table`).
+  - Paulo Henrique Favero Pereira (`recEvLv16GOUCpL0E`): Role "Other", Current Title "Founding Software Engineer", LinkedIn, Confidence High, Source LinkedIn, Outreach Status Verified.
+  - Giovanni K Bonetti (`recyBceWp4MtwWhu3`): Role "Other", Current Title "Founding Software Engineer", LinkedIn, Confidence High, Source LinkedIn, Outreach Status Verified.
+- Set Jota company Outreach Status: Not started → **Selected** (first selected contacts for this company).
+- Selected companies: 11 → **12** (Jota added).
+- Contacts table: 177 → **179**.
