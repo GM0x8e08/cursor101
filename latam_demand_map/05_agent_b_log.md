@@ -949,3 +949,12 @@ User requested adding **Josue Hernandez** (`https://www.linkedin.com/in/josue-he
 - Created contact `recPtJnTx08KNFV85` via **native Airtable MCP**: Role "Other", Current Title "AI and Automation Specialist / Growth Strategist", LinkedIn, Confidence High, Source LinkedIn, Outreach Status Verified.
 - Dapta already marked "Selected" at company level; no company-level change needed.
 - Contacts table: 179 → **180**.
+
+## Additional contact added 2026-08-11 (Lucas Kawazoi → Lexter)
+
+User requested adding **Lucas Kawazoi** (`https://www.linkedin.com/in/lucaskawazoi/`) (company not specified by user).
+- Identified via web research: **Co-founder at Lexter.ai** (YC W22; current). Co-founded Lexter in 2020 with Pedro Jahara, Guilherme Delai, Pedro Calderón (and others). Ex-Lead ML Engineer NLP at Letrus; ex-Bain & Company (4 yrs). Data science / AI (MLOps, NLP). Based in São Paulo. Scale-Up Endeavor 2023.
+- Lexter is already in the base (`recdyCBS1VT4vIqQd`, company Outreach Status already "In progress") → associated the contact with Lexter.
+- Created contact `recywU4vQDxLyGlOf` via **native Airtable MCP**: Role "Founder", Current Title "Co-founder", LinkedIn, Confidence High, Source LinkedIn, Outreach Status Verified.
+- No company-level Outreach Status change needed (already In progress).
+- Contacts table: 180 → **181**.
